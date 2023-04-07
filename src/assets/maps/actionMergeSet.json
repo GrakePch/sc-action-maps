@@ -1,0 +1,10 @@
+{
+    "mergeSets": [
+        ["force_respawn", "incapacitatedRespawn"],
+        ["v_view_freelook_mode", "eva_toggle_headlook_mode"],
+        ["free_thirdperson_camera", "view_switch_to_alternative"],
+        ["v_view_cycle_fwd", "thirdperson"],
+        ["v_hud_open_scoreboard", "pl_hud_open_scoreboard"],
+        ["v_space_brake", "eva_brake", "v_brake"]
+    ]
+}

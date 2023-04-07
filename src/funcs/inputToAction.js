@@ -1,5 +1,6 @@
 import input2ActionDefault from "../assets/maps/input2ActionDefault.json";
 import actionsNeedHold from "../assets/maps/actionsNeedHold.json";
+import actionMergeSet from "../assets/maps/actionMergeSet.json";
 /*
   _:      single tap key
   _2tap:  double tap key
@@ -12,30 +13,52 @@ import actionsNeedHold from "../assets/maps/actionsNeedHold.json";
 */
 
 export default function getActionsWithInput(input, device) {
+
+  // actionList = [[actionId, modifier], ...]
   var actionList = [];
+
+  // toBeMergedActionBuffer = {modifier: [actionId, ...], ...}
+  var toBeMergedActionBuffer = {};
+
   for (const [_actionMap, inputGroup] of Object.entries(input2ActionDefault[device])) {
     for (const [modifier, inputs] of Object.entries(inputGroup)) {
       let actions = inputs[input];
       if (!actions) continue;
       if (Array.isArray(actions))
         for (const action of actions)
-          pushActionModifierToList(actionList, action, modifier);
+          checkIfHold_pushActionModifierToList(actionList, action, modifier, toBeMergedActionBuffer);
       else
-        pushActionModifierToList(actionList, actions, modifier);
+        checkIfHold_pushActionModifierToList(actionList, actions, modifier, toBeMergedActionBuffer);
     }
   }
   return actionList;
 }
 
-function pushActionModifierToList(actionList, action, modifier) {
+function checkIfHold_pushActionModifierToList(actionList, action, modifier, toBeMergedActionBuffer) {
   if (modifier === "_" && actionsNeedHold[action]) {
     if (actionsNeedHold[action] === 1) {
-      pushUniqueArrToArr(actionList, [action, "_hold"]);
+      checkMerge_pushActionModifierToList(actionList, [action, "_hold"], toBeMergedActionBuffer);
     } else if (Array.isArray(actionsNeedHold[action])) {
-      pushUniqueArrToArr(actionList, [actionsNeedHold[action][0], "_"]);
-      pushUniqueArrToArr(actionList, [actionsNeedHold[action][1], "_hold"]);
+      checkMerge_pushActionModifierToList(actionList, [actionsNeedHold[action][0], "_"], toBeMergedActionBuffer);
+      checkMerge_pushActionModifierToList(actionList, [actionsNeedHold[action][1], "_hold"], toBeMergedActionBuffer);
     }
     return;
+  }
+  checkMerge_pushActionModifierToList(actionList, [action, modifier], toBeMergedActionBuffer);
+}
+
+function checkMerge_pushActionModifierToList(actionList, [action, modifier], toBeMergedActionBuffer) {
+  // If action is included by the mergeSet of the same modifier. T: skip it; F: continue
+  const mergeSet = toBeMergedActionBuffer[modifier];
+  if (mergeSet?.includes(action)) return;
+
+  // If the action to be pushed is in the pre-set MergeSet, update toBeMergedActionBuffer (for future merging)
+  for (const set of actionMergeSet.mergeSets) {
+    if (set.includes(action)) {
+      if (!toBeMergedActionBuffer[modifier])
+        toBeMergedActionBuffer[modifier] = []
+      toBeMergedActionBuffer[modifier] = toBeMergedActionBuffer[modifier].concat(set);
+    }
   }
   pushUniqueArrToArr(actionList, [action, modifier]);
 }
