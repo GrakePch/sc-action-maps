@@ -1,0 +1,10 @@
+.F60WithFn-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.F60WithFn-root>div {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+}

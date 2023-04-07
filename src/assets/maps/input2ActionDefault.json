@@ -1,0 +1,633 @@
+{
+    "kb1": {
+        "seat_general": {
+            "_": {
+                "m": [
+                    "v_toggle_mining_mode",
+                    "v_toggle_salvage_mode"
+                ],
+                "v": "v_toggle_scan_mode",
+                "b": "v_toggle_quantum_mode"
+            },
+            "lshift": {
+                "u": "v_emergency_exit"
+            },
+            "lalt": {
+                "y": "v_eject"
+            }
+        },
+        "spaceship_general": {
+            "_": {
+                "backspace": "v_self_destruct",
+                "r": "v_flightready"
+            }
+        },
+        "spaceship_view": {
+            "_": {
+                "f4": "v_view_cycle_fwd",
+                "z": "v_view_freelook_mode"
+            }
+        },
+        "spaceship_movement": {
+            "_": {
+                "q": "v_roll_left",
+                "e": "v_roll_right",
+                "space": "v_strafe_up",
+                "lctrl": "v_strafe_down",
+                "a": "v_strafe_left",
+                "d": "v_strafe_right",
+                "w": "v_strafe_forward",
+                "s": "v_strafe_back",
+                "lshift": "v_afterburner",
+                "x": "v_space_brake",
+                "rshift": "v_lock_rotation",
+                "c": "v_ifcs_toggle_cruise_control",
+                "n": [
+                    "v_toggle_landing_system",
+                    "v_autoland"
+                ],
+                "k": "v_toggle_vtol"
+            },
+            "lalt": {
+                "c": "v_ifcs_toggle_vector_decoupling",
+                "k": "v_transform_cycle",
+                "n": "v_atc_request"
+            }
+        },
+        "spaceship_quantum": {
+            "_": {
+                "b": "v_toggle_qdrive_engagement"
+            }
+        },
+        "spaceship_docking": {
+            "_": {
+                "n": [
+                    "v_toggle_docking_mode",
+                    "v_invoke_docking"
+                ],
+                "0": "v_dock_toggle_view"
+            }
+        },
+        "spaceship_targeting": {
+            "_": {
+                "1": "v_target_toggle_lock_index_1",
+                "2": "v_target_toggle_lock_index_2",
+                "3": "v_target_toggle_lock_index_3",
+                "0": "v_target_remove_all_pins"
+            },
+            "lalt": {
+                "1": "v_target_toggle_pin_index_1",
+                "2": "v_target_toggle_pin_index_2",
+                "3": "v_target_toggle_pin_index_3",
+                "t": "v_target_unlock_selected",
+                "l": "v_look_ahead_enable"
+            }
+        },
+        "spaceship_targeting_advanced": {
+            "_": {
+                "r": "v_target_cycle_selection_fwd",
+                "t": [
+                    "v_target_cycle_in_view_fwd",
+                    "v_target_cycle_in_view_reset"
+                ],
+                "4": "v_target_cycle_attacker_fwd",
+                "5": "v_target_cycle_hostile_fwd",
+                "6": "v_target_cycle_friendly_fwd",
+                "7": "v_target_cycle_all_fwd",
+                "8": "v_target_cycle_subitem_fwd"
+            },
+            "lalt": {
+                "r": "v_target_cycle_selection_reset",
+                "4": "v_target_cycle_attacker_reset",
+                "5": "v_target_cycle_hostile_reset",
+                "6": "v_target_cycle_friendly_reset",
+                "7": "v_target_cycle_all_reset",
+                "8": "v_target_cycle_subitem_reset"
+            }
+        },
+        "spaceship_target_hailing": {
+            "_": {
+                "9": "v_target_hail"
+            }
+        },
+        "spaceship_radar": {
+            "_": {
+                "tab": "v_invoke_ping",
+                "period": "v_inc_ping_angle",
+                "comma": "v_dec_ping_angle"
+            }
+        },
+        "radar_tagging": {
+            "_": {
+                "p": "tag_target"
+            }
+        },
+        "spaceship_mining": {
+            "lalt": {
+                "1": "v_mining_use_consumable1",
+                "2": "v_mining_use_consumable2",
+                "3": "v_mining_use_consumable3",
+                "j": "v_jettison_volatile_cargo"
+            }
+        },
+        "spaceship_salvage": {
+            "_": {
+                "g": "v_salvage_toggle_gimbal_mode"
+            }
+        },
+        "turret_movement": {
+            "_": {
+                "q": "turret_toggle_mouse_mode",
+                "y": "turret_remote_exit"
+            }
+        },
+        "turret_advanced": {
+            "_": {
+                "e": "turret_esp_toggle",
+                "c": "turret_recenter",
+                "x": "turret_gyromode",
+                "a": [
+                    "turret_limiter_toggle",
+                    "turret_limiter_rel_decrease"
+                ],
+                "d": "turret_limiter_rel_increase",
+                "b": "turret_change_firemode",
+                "lshift": "turret_instant_zoom",
+                "s": "turret_change_position"
+            }
+        },
+        "spaceship_weapons": {
+            "_": {
+                "g": [
+                    "v_weapon_gimbal_mode_cycle_fixed_auto",
+                    "v_weapon_gimbal_mode_set_manual_long"
+                ]
+            },
+            "lalt": {
+                "g": "v_weapon_manual_gimbal_cycle_source"
+            },
+            "ralt": {
+                "g": "v_weapon_manual_gimbal_lock_vector"
+            }
+        },
+        "spaceship_missiles": {
+            "_": {
+                "g": "v_weapon_increase_max_missiles",
+                "t": "v_weapon_bombing_toggle_desired_impact_point_hold"
+            },
+            "lalt": {
+                "g": "v_weapon_reset_max_missiles"
+            }
+        },
+        "spaceship_defensive": {
+            "_": {
+                "h": "v_weapon_countermeasure_decoy_launch",
+                "j": "v_weapon_countermeasure_noise_launch",
+                "np_8": "v_shield_raise_level_forward",
+                "np_2": "v_shield_raise_level_back",
+                "np_4": "v_shield_raise_level_left",
+                "np_6": "v_shield_raise_level_right",
+                "np_7": "v_shield_raise_level_up",
+                "np_1": "v_shield_raise_level_down",
+                "np_5": "v_shield_reset_level"
+            },
+            "lalt": {
+                "h": "v_weapon_countermeasure_decoy_burst_decrease"
+            },
+            "ralt": {
+                "h": "v_weapon_countermeasure_decoy_burst_increase"
+            }
+        },
+        "vehicle_capacitor_assignment": {
+            "_": {
+                "f5": "v_capacitor_assignment_weapon_combined_increase_max",
+                "f6": "v_capacitor_assignment_engine_combined_increase_max",
+                "f7": "v_capacitor_assignment_shield_combined_increase_max",
+                "f8": "v_capacitor_assignment_reset"
+            }
+        },
+        "spaceship_power": {
+            "_": {
+                "u": "v_power_toggle",
+                "i": "v_power_toggle_thrusters",
+                "o": "v_power_toggle_shields",
+                "p": "v_power_toggle_weapons",
+                "f9": "v_power_throttle_down",
+                "f10": "v_power_throttle_up"
+            },
+            "_2tap": {
+                "f9": "v_power_throttle_min",
+                "f10": "v_power_throttle_max"
+            }
+        },
+        "spaceship_hud": {
+            "_": {
+                "f1": [
+                    "mobiglas",
+                    "v_hud_open_scoreboard"
+                ],
+                "f2": "v_starmap"
+            },
+            "lalt": {
+                "x": "visor_wipe"
+            }
+        },
+        "lights_controller": {
+            "_": {
+                "l": "v_lights"
+            }
+        },
+        "stopwatch": {},
+        "player": {
+            "_": {
+                "a": "moveleft",
+                "d": "moveright",
+                "w": "moveforward",
+                "s": "moveback",
+                "space": [
+                    "jump",
+                    "ledgegrab"
+                ],
+                "lctrl": "crouch",
+                "x": "prone",
+                "lshift": [
+                    "sprint",
+                    "stabilize"
+                ],
+                "q": "leanleft",
+                "e": "leanright",
+                "1": "selectpistol",
+                "2": "selectprimary",
+                "3": "selectsecondary",
+                "4": "selectgadget",
+                "5": "selectMeleeWeapon",
+                "6": "selectUtilityItem",
+                "0": "selectUnarmedCombat",
+                "r": [
+                    "reload",
+                    "holster"
+                ],
+                "j": "customize",
+                "u": "weapon_auxiliary_action",
+                "b": "weapon_change_firemode",
+                "pgdn": "weapon_zeroing_decrease",
+                "pgup": "weapon_zeroing_increase",
+                "m": "downedRevivalRequest",
+                "t": "toggle_flashlight",
+                "f4": "thirdperson",
+                "z": "free_thirdperson_camera",
+                "f1": [
+                    "mobiglas",
+                    "pl_hud_open_scoreboard"
+                ],
+                "f2": "v_starmap",
+                "backspace": "force_respawn"
+            },
+            "_2tap": {
+                "a": "melee_dodgeLeft",
+                "d": "melee_dodgeRight",
+                "s": "melee_dodgeBack"
+            },
+            "lalt": {
+                "r": "reloadSecondary",
+                "x": "visor_wipe"
+            }
+        },
+        "prone": {
+            "_2tap": {
+                "q": "prone_rollleft",
+                "e": "prone_rollright"
+            }
+        },
+        "incapacitated": {
+            "_": {
+                "backspace": "incapacitatedRespawn"
+            }
+        },
+        "zero_gravity_eva": {
+            "_": {
+                "q": "eva_roll_left",
+                "e": "eva_roll_right",
+                "space": "eva_strafe_up",
+                "lctrl": "eva_strafe_down",
+                "a": "eva_strafe_left",
+                "d": "eva_strafe_right",
+                "w": "eva_strafe_forward",
+                "s": "eva_strafe_back",
+                "x": "eva_brake",
+                "lshift": "eva_boost",
+                "z": "eva_toggle_headlook_mode"
+            }
+        },
+        "zero_gravity_traversal": {
+            "_": {
+                "space": "zgt_launch",
+                "y": "zgt_detach",
+                "q": "zgt_roll_left",
+                "e": "zgt_roll_right"
+            }
+        },
+        "vehicle_general": {
+            "_": {
+                "space": "v_horn",
+                "f4": "v_view_cycle_fwd",
+                "z": "v_view_freelook_mode",
+                "f1": "mobiglas",
+                "r": "v_flightready",
+                "f2": "v_starmap"
+            },
+            "lalt": {
+                "x": "visor_wipe"
+            }
+        },
+        "vehicle_driver": {
+            "_": {
+                "w": "v_move_forward",
+                "s": "v_move_back",
+                "a": "v_yaw_left",
+                "d": "v_yaw_right",
+                "x": "v_brake",
+                "lshift": "v_boost",
+                "rshift": "v_lock_rotation",
+                "v": "v_mgv_switch_brake_on_idle"
+            }
+        },
+        "spectator": {
+            "_": {
+                "1": "spectate_toggle_lock_target",
+                "b": "spectate_toggle_hud",
+                "f4": "spectate_gen_nextmode"
+            }
+        },
+        "default": {
+            "_": {
+                "x": "respawn",
+                "y": "pl_exit",
+                "f11": "toggle_contact",
+                "f12": "toggle_chat",
+                "enter": "focus_on_chat_textinput",
+                "np_enter": "focus_on_chat_textinput"
+            }
+        },
+        "ui_notification": {
+            "_": {
+                "lbracket": "ui_notification_accept",
+                "rbracket": [
+                    "ui_notification_decline",
+                    "ui_notification_ignore"
+                ]
+            }
+        },
+        "player_emotes": {
+            "_": {
+                "np_5": "emote_cs_forward",
+                "np_1": "emote_cs_left",
+                "np_3": "emote_cs_right",
+                "np_2": "emote_cs_stop",
+                "np_4": "emote_cs_yes",
+                "np_6": "emote_cs_no"
+            }
+        },
+        "player_input_optical_tracking": {
+            "_": {
+                "np_divide": "headtrack_enabled",
+                "np_add": "foip_pushtotalk",
+                "np_subtract": "foip_viewownplayer",
+                "np_multiply": "foip_recalibrate",
+                "np_period": "foip_cyclechannel"
+            },
+            "lalt": {
+                "np_add": "foip_pushtotalk_proximity"
+            }
+        },
+        "player_choice": {
+            "_": {
+                "f": "pc_interaction_mode",
+                "a": "pc_screen_focus_left",
+                "d": "pc_screen_focus_right",
+                "w": "pc_screen_focus_up",
+                "s": "pc_screen_focus_down",
+                "np_0": "pc_personal_back",
+                "i": "pc_pit_inventory",
+                "3": "pc_qs_weapons_pistol",
+                "1": "pc_qs_weapons_primary",
+                "2": "pc_qs_weapons_secondary",
+                "g": "pc_qs_grenades",
+                "c": "pc_qs_consumables"
+            },
+            "lalt": {
+                "m": "pc_pit_miningmode_actions"
+            },
+            "lshift": {
+                "tab": "pc_qs_flight_mode"
+            }
+        },
+        "view_director_mode": {
+            "_": {
+                "f4": "view_enable_camview_mode",
+                "z": "view_switch_to_alternative",
+                "np_1": [
+                    "view_save_view_1",
+                    "view_load_view_1"
+                ],
+                "np_2": [
+                    "view_save_view_2",
+                    "view_load_view_2"
+                ],
+                "np_3": [
+                    "view_save_view_3",
+                    "view_load_view_3"
+                ],
+                "np_4": [
+                    "view_save_view_4",
+                    "view_load_view_4"
+                ],
+                "np_5": [
+                    "view_save_view_5",
+                    "view_load_view_5"
+                ],
+                "np_6": [
+                    "view_save_view_6",
+                    "view_load_view_6"
+                ],
+                "np_7": [
+                    "view_save_view_7",
+                    "view_load_view_7"
+                ],
+                "np_8": [
+                    "view_save_view_8",
+                    "view_load_view_8"
+                ],
+                "np_9": [
+                    "view_save_view_9",
+                    "view_load_view_9"
+                ],
+                "np_0": "view_reset_saved",
+                "right": "view_move_target_X_pos",
+                "left": "view_move_target_X_neg",
+                "up": "view_move_target_Y_pos",
+                "down": "view_move_target_Y_neg",
+                "pgup": "view_move_target_Z_pos",
+                "pgdn": "view_move_target_Z_neg",
+                "np_add": "view_fov_in",
+                "np_subtract": "view_fov_out",
+                "home": "view_fstop_in",
+                "end": "view_fstop_out",
+                "np_multiply": "view_restore_defaults"
+            }
+        }
+    },
+    "mo1": {
+        "seat_general": {
+            "_": {
+                "mouse3": "v_toggle_missile_mode"
+            }
+        },
+        "spaceship_view": {
+            "_": {
+                "maxis_x": "v_view_yaw_mouse",
+                "maxis_y": "v_view_pitch_mouse",
+                "mwheel_up": "v_view_zoom_in",
+                "mwheel_down": "v_view_zoom_out"
+            }
+        },
+        "spaceship_movement": {
+            "_": {
+                "maxis_y": "v_pitch_mouse",
+                "maxis_x": "v_yaw_mouse",
+                "maxis_z": "v_speed_range_rel"
+            },
+            "ralt": {
+                "maxis_z": "v_accel_range_rel"
+            }
+        },
+        "spaceship_scanning": {
+            "_": {
+                "mouse1": "v_scanning_trigger_scan",
+                "mwheel_up": "v_inc_scan_focus_level",
+                "mwheel_down": "v_dec_scan_focus_level"
+            }
+        },
+        "spaceship_mining": {
+            "_": {
+                "mouse1": "v_toggle_mining_laser_fire",
+                "mouse2": "v_toggle_mining_laser_type",
+                "mwheel_up": "v_increase_mining_throttle",
+                "mwheel_down": "v_decrease_mining_throttle"
+            }
+        },
+        "spaceship_salvage": {
+            "_": {
+                "mouse2": [
+                    "v_salvage_cycle_modifiers_left",
+                    "v_salvage_cycle_modifiers_right"
+                ]
+            },
+            "lalt": {
+                "maxis_z": "v_salvage_beam_spacing_rel",
+                "mouse2": "v_salvage_toggle_beam_spacing_axis"
+            }
+        },
+        "turret_movement": {
+            "_": {
+                "maxis_y": "turret_pitch_mouse",
+                "maxis_x": "turret_yaw_mouse"
+            }
+        },
+        "turret_advanced": {
+            "_": {
+                "maxis_z": "turret_limiter_rel",
+                "mouse2": "turret_change_movement_type"
+            }
+        },
+        "spaceship_weapons": {
+            "_": {
+                "mouse1": "v_attack_group1",
+                "mouse2": "v_attack_group2"
+            }
+        },
+        "spaceship_missiles": {
+            "_": {
+                "mouse1": "v_weapon_toggle_launch_missile",
+                "mouse2": "v_weapon_cycle_missile_fwd"
+            }
+        },
+        "player": {
+            "_": {
+                "mouse1": [
+                    "attack1",
+                    "melee_AttackLightLeft",
+                    "melee_AttackHeavyLeft",
+                    "throw_overhand",
+                    "consume",
+                    "port_modification_select"
+                ],
+                "mouse2": [
+                    "melee_AttackLightRight",
+                    "melee_AttackHeavyRight",
+                    "melee_AttackSyringeStab",
+                    "throw_underhand",
+                    "zoom"
+                ],
+                "mouse1_2": "melee_block",
+                "mouse3": "weapon_melee",
+                "mwheel_down": [
+                    "fixed_speed_decrement",
+                    "zoom_out"
+                ],
+                "mwheel_up": [
+                    "fixed_speed_increment",
+                    "zoom_in"
+                ]
+            }
+        },
+        "tractor_beam": {
+            "_": {
+                "mwheel_up": "tractor_beam_increase_distance",
+                "mwheel_down": "tractor_beam_decrease_distance"
+            }
+        },
+        "zero_gravity_eva": {
+            "_": {
+                "maxis_x": "eva_view_yaw_mouse",
+                "maxis_y": "eva_view_pitch_mouse"
+            }
+        },
+        "vehicle_general": {
+            "_": {
+                "mwheel_up": "v_view_zoom_in",
+                "mwheel_down": "v_view_zoom_out",
+                "maxis_x": "v_view_yaw_mouse",
+                "maxis_y": "v_view_pitch_mouse",
+                "mouse1": "v_attack_group1",
+                "mouse2": "v_attack_group2"
+            }
+        },
+        "spectator": {
+            "_": {
+                "mouse2": "spectate_next_target",
+                "mouse1": "spectate_prev_target",
+                "maxis_z": "spectate_zoom",
+                "mwheel_up": "spectate_zoom_in",
+                "mwheel_down": "spectate_zoom_out",
+                "maxis_x": "spectate_rotateyaw_mouse",
+                "maxis_y": "spectate_rotatepitch_mouse"
+            }
+        },
+        "player_choice": {
+            "_": {
+                "mouse2": [
+                    "pc_interaction_select",
+                    "pc_camera_orbit"
+                ],
+                "mouse1": "pc_select",
+                "mouse3": "pc_focus",
+                "mwheel_up": "pc_zoom_in",
+                "mwheel_down": "pc_zoom_out"
+            },
+            "f": {
+                "mouse2": "pc_personal_thought"
+            }
+        }
+    }
+}

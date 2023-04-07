@@ -1,0 +1,6 @@
+.Full-root {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+}

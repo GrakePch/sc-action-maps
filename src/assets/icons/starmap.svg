@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="right" class="cls-1" d="M230,0L330,100V220l-80,80v40l60-60V260l20-20v60L230,400V280l80-80V120L250,60v40l40,40v40l-60-60V0Z"/>
+  <path id="left" class="cls-1" d="M170,0L70,100V220l80,80v40L90,280V260L70,240v60L170,400V280L90,200V120l60-60v40l-40,40v40l60-60V0Z"/>
+  <path id="star" class="cls-1" d="M200,120l20,60,60,20-60,20-20,60-20-60-60-20,60-20Z"/>
+</svg>

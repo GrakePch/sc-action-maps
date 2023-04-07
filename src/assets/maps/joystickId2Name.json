@@ -1,0 +1,23 @@
+{
+    "type": "joystick",
+    "prefix": "js1_",
+    "map": {
+        "button1": "1",
+        "button2": "2",
+        "button3": "3",
+        "button4": "4",
+        "button5": "5",
+        "button6": "6",
+        "button7": "7",
+        "button8": "8",
+        "button9": "9",
+        "button10": "10",
+        "button11": "11",
+        "button12": "12",
+        "slider1": "Slider1",
+        "hat1_up": "\u2BC5",
+        "hat1_down": "\u2BC6",
+        "hat1_left": "\u2BC7",
+        "hat1_right": "\u2BC8"
+    }
+}

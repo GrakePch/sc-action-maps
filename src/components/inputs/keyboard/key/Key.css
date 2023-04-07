@@ -1,0 +1,91 @@
+.Key-root {
+    padding: .25rem;
+    user-select: none;
+    font-family: Bahnschrift, 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.Key-cap {
+    position: relative;
+    height: 100%;
+    border-radius: .5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #40414f;
+}
+
+.Key-name {
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+    font-size: .875rem;
+    margin: 0;
+    text-align: left;
+}
+
+.Key-icon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .2rem;
+}
+
+.icon-1x1 {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.icon-2x2 {
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-3x3 {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.color-_ {
+    filter: invert(84%) sepia(23%) saturate(646%) hue-rotate(169deg) brightness(104%) contrast(91%);
+}
+
+.color-_hold {
+    filter: invert(63%) sepia(41%) saturate(607%) hue-rotate(165deg) brightness(104%) contrast(102%);
+}
+
+.color-_2tap {
+    filter: invert(53%) sepia(52%) saturate(616%) hue-rotate(174deg) brightness(91%) contrast(95%);
+}
+
+.color-lalt {
+    filter: invert(68%) sepia(64%) saturate(1581%) hue-rotate(341deg) brightness(98%) contrast(98%);
+}
+
+.color-lshift {
+    filter: invert(31%) sepia(42%) saturate(2975%) hue-rotate(335deg) brightness(98%) contrast(96%);
+}
+
+.color-lctrl {
+    filter: invert(73%) sepia(13%) saturate(4872%) hue-rotate(67deg) brightness(90%) contrast(72%);
+}
+
+.color-ralt {
+    filter: invert(35%) sepia(94%) saturate(7289%) hue-rotate(317deg) brightness(88%) contrast(106%);
+}
+
+.color-rshift {
+    filter: invert(64%) sepia(36%) saturate(810%) hue-rotate(305deg) brightness(102%) contrast(111%);
+}
+
+.color-rctrl {
+    filter: invert(61%) sepia(66%) saturate(374%) hue-rotate(114deg) brightness(93%) contrast(88%);
+}
+
+.color-f {
+    filter: invert(37%) sepia(29%) saturate(5273%) hue-rotate(252deg) brightness(90%) contrast(91%);
+}
+
+.star-citizen-logo {
+    height: 4rem;
+}

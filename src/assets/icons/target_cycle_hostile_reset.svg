@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path id="target" class="cls-1" d="M340,380H300V340h40V300h40v40A40,40,0,0,1,340,380Zm0-320H300V20h40a40,40,0,0,1,40,40v40H340V60ZM200,0l30,60H170ZM20,340V300H60v40h40v40H60A40,40,0,0,1,20,340ZM60,100H20V60A40,40,0,0,1,60,20h40V60H60v40Z"/>
+  <path id="hostile" class="cls-2" d="M260,170a30,30,0,1,1,30-30A30,30,0,0,1,260,170Zm-120,0a30,30,0,1,1,30-30A30,30,0,0,1,140,170Zm60,50a120.036,120.036,0,0,1,104.005,60H96A120.035,120.035,0,0,1,200,220Z"/>
+</svg>

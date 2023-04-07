@@ -1,0 +1,10 @@
+.F96-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.F96-root > div {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+}

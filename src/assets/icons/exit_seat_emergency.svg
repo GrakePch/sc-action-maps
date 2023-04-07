@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{enable-background:new    ;}
+</style>
+<g id="seat_00000044149265037804402150000013036795892322973349_" class="st0">
+	<g id="seat">
+		<g>
+			<polygon points="320.32,100.42 287.67,280 160,280 160,320 260,320 280.4,320 321.06,320 359.68,107.58 			"/>
+		</g>
+	</g>
+</g>
+<g id="people_00000162352222686112170990000014620422429829435278_" class="st0">
+	<g id="people">
+		<g>
+			<path d="M210,80c16.57,0,30-13.43,30-30s-13.43-30-30-30s-30,13.43-30,30S193.43,80,210,80z M210,100c-16.57,0-30,8.95-30,20v60
+				v5.36V220h-32.25H120h-14.42L61.03,353.68l37.95,12.65L134.42,260H200c22.09,0,40-17.91,40-40V120C240,108.95,226.57,100,210,100
+				z"/>
+		</g>
+	</g>
+</g>
+<g id="arrow_00000016761375929334272350000003091636723913993858_" class="st0">
+	<g id="arrow">
+		<g>
+			<polygon points="60,160 60,120 0,180 60,240 60,200 120,200 120,160 			"/>
+		</g>
+	</g>
+</g>
+<g id="emergency">
+	<rect x="90" y="100" width="30" height="30"/>
+	<rect x="90" width="30" height="80"/>
+</g>
+</svg>

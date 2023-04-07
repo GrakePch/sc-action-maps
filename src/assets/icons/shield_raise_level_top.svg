@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ship_side" class="cls-1" d="M0,150H40l90,20,10-10h70l10,10h80l100,40s0,20-20,20H320l-20,20H260l-10-10H190l-10,10H110l-10-10L40,250H20L10,240l70-20-20-5V185l20-5h0L20,160,0,155v-5Zm280,30h20l50,20H300ZM50,185v30l-20-5V190Z"/>
+  <path id="raised" class="cls-1" d="M279,109.714a119.875,119.875,0,0,0-158,0L68.3,49.49a199.97,199.97,0,0,1,263.392,0Z"/>
+  <path id="normal_single" class="cls-1" d="M136.859,313.653a130.116,130.116,0,0,0,126.282,0l14.57,26.228a160.142,160.142,0,0,1-155.422,0Z"/>
+</svg>

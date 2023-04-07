@@ -1,0 +1,10 @@
+.NP-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.NP-root>div {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+}

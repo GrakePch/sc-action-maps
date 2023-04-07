@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path id="trail0_拷贝_2" data-name="trail0 拷贝 2" class="cls-1" d="M340,220H300L320,60Z"/>
+  <path id="trail0" class="cls-1" d="M220,210H180L200,60Z"/>
+  <path id="trail0_拷贝" data-name="trail0 拷贝" class="cls-1" d="M100,200H60L80,60Z"/>
+  <path id="ship_side" class="cls-2" d="M0,220H40l90,20,10-10h70l10,10h80l100,40s0,20-20,20H320l-20,20H260l-10-10H190l-10,10H110l-10-10L40,320H20L10,310l70-20-20-5V255l20-5h0L20,230,0,225v-5Zm280,30h20l50,20H300ZM50,255v30l-20-5V260Z"/>
+</svg>

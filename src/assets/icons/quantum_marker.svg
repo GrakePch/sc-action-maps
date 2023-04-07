@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="qt" class="cls-1" d="M200,0L400,200,200,400,0,200Zm0,20L380,200,200,380,20,200Zm0,20L360,200,200,360,40,200Zm0,30L330,200,200,330,70,200Zm49,179H151V151h98v98Zm-29-29H180V180h40v40Z"/>
+</svg>

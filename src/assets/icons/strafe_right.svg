@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path id="ship" class="cls-1" d="M210,270l-10,70h20l10-60h10v30h40V280h10l10,60h20l-10-70,90,30V260l-90-70V160l-20-30v0h0V120c0-20-20-60-20-60H250s-20,40-20,60v10l-20,30v30l-90,70v40Z"/>
+  <path id="trail1" class="cls-2" d="M210,135V105L50,120Z"/>
+  <path id="trail2" class="cls-2" d="M160,215V185L30,200Z"/>
+  <path id="trail3" class="cls-2" d="M100,295V265L0,280Z"/>
+</svg>

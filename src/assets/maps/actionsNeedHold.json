@@ -1,0 +1,60 @@
+{
+    "v_self_destruct": 1,
+    "v_ifcs_esp_hold": 1,
+    "v_autoland": 1,
+    "v_toggle_qdrive_engagement": 1,
+    "v_target_toggle_pin_index_1_hold": 1,
+    "v_target_toggle_pin_index_2_hold": 1,
+    "v_target_toggle_pin_index_3_hold": 1,
+    "v_target_unpin_selected_hold": 1,
+    "v_target_pin_selected_hold": 1,
+    "turret_esp_hold": 1,
+    "turret_recenter": 1,
+    "v_weapon_gimbal_mode_set_auto_long": 1,
+    "v_weapon_gimbal_mode_set_fixed_long": 1,
+    "v_weapon_gimbal_mode_set_manual_long": 1,
+    "v_weapon_launch_missile": 1,
+    "v_weapon_bombing_toggle_desired_impact_point_hold": 1,
+    "v_weapon_launch_missile_cinematic_hold": 1,
+    "v_weapon_countermeasure_decoy_launch": [
+        "v_weapon_countermeasure_decoy_launch",
+        "custom_v_weapon_countermeasure_decoy_set_launch"
+    ],
+    "v_capacitor_assignment_engine_combined_decrease_min": [
+        "v_capacitor_assignment_engine_decrease",
+        "v_capacitor_assignment_engine_min"
+    ],
+    "v_capacitor_assignment_engine_combined_increase_max": [
+        "v_capacitor_assignment_engine_increase",
+        "v_capacitor_assignment_engine_max"
+    ],
+    "v_capacitor_assignment_shield_combined_decrease_min": [
+        "v_capacitor_assignment_shield_decrease",
+        "v_capacitor_assignment_shield_min"
+    ],
+    "v_capacitor_assignment_shield_combined_increase_max": [
+        "v_capacitor_assignment_shield_increase",
+        "v_capacitor_assignment_shield_max"
+    ],
+    "v_capacitor_assignment_weapon_combined_decrease_min": [
+        "v_capacitor_assignment_weapon_decrease",
+        "v_capacitor_assignment_weapon_min"
+    ],
+    "v_capacitor_assignment_weapon_combined_increase_max": [
+        "v_capacitor_assignment_weapon_increase",
+        "v_capacitor_assignment_weapon_max"
+    ],
+    "stopwatch_reset": 1,
+    "force_respawn": 1,
+    "incapacitatedRespawn": 1,
+    "melee_AttackHeavyLeft": 1,
+    "melee_AttackHeavyRight": 1,
+    "melee_block": 1,
+    "downedRevivalRequest": 1,
+    "free_thirdperson_camera": 1,
+    "eva_toggle_headlook_mode": 1,
+    "ui_notification_ignore": 1,
+    "headtrack_hold": 1,
+    "view_enable_camview_mode": 1,
+    "view_switch_to_alternative": 1
+}

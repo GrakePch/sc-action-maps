@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="seat" class="cls-1" d="M321.055,320H160V280H287.672l32.651-179.578,39.354,7.156Z"/>
+  <path id="people" class="cls-1" d="M200,260H134.415L98.974,366.325l-37.947-12.65L105.585,220H180V120c0-11.046,13.431-20,30-20s30,8.954,30,20V220A40,40,0,0,1,200,260ZM210,80a30,30,0,1,1,30-30A30,30,0,0,1,210,80Z"/>
+  <path id="arrow" class="cls-1" d="M120,160H60v40L0,140,60,80v40h60v40Z"/>
+</svg>
