@@ -4,7 +4,6 @@
 	 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill-rule:evenodd;clip-rule:evenodd;}
-	.st1{enable-background:new    ;}
 </style>
 <g id="cycle_x5F_forward">
 	<rect x="88.8" y="67.2" width="7.2" height="28.8"/>
@@ -14,13 +13,12 @@
 	<path class="st0" d="M81.6,14.4H72V4.8h9.6c5.3,0,9.6,4.3,9.6,9.6V24h-9.6V14.4z M48,0l7.2,14.4H40.8L48,0z M4.8,81.6V72h9.6v9.6
 		H24v9.6h-9.6C9.1,91.2,4.8,86.9,4.8,81.6z M14.4,24H4.8v-9.6c0-5.3,4.3-9.6,9.6-9.6H24v9.6h-9.6V24z"/>
 </g>
-<g id="under_x5F_reticle" class="st1">
-	<g id="Image_xA0_15">
-		<g>
-			<path d="M48,43.2c-2.65,0-4.8,2.15-4.8,4.8s2.15,4.8,4.8,4.8s4.8-2.15,4.8-4.8S50.65,43.2,48,43.2z M43.2,33.6l4.8,4.8l4.8-4.8
-				V19.2h-9.6L43.2,33.6z M43.2,62.4v14.4h9.6V62.4L48,57.6L43.2,62.4z M62.4,43.2L57.6,48l4.8,4.8h14.4v-9.6L62.4,43.2z M19.2,43.2
-				v9.6h14.4l4.8-4.8l-4.8-4.8L19.2,43.2z"/>
-		</g>
-	</g>
+<g>
+	<path d="M24,28.8v9.6h7.2v-7.2h7.2V24h-9.6C26.15,24,24,26.15,24,28.8z"/>
+	<circle cx="48" cy="48" r="4.8"/>
+	<path d="M31.2,57.6H24v9.6c0,2.65,2.15,4.8,4.8,4.8h9.6v-7.2h-7.2V57.6z"/>
+	<rect x="57.6" y="64.8" width="7.2" height="7.2"/>
+	<path d="M67.2,24h-9.6v7.2h7.2v7.2H72v-9.6C72,26.15,69.85,24,67.2,24z"/>
+	<rect x="64.8" y="57.6" width="7.2" height="7.2"/>
 </g>
 </svg>
