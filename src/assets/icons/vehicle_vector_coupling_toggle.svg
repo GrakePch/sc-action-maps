@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill-rule:evenodd;clip-rule:evenodd;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;stroke:#000000;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<path id="cursor" class="st0" d="M200,200l-20-10V60h40v130L200,200z M200,200v28.29l-84.85,84.85l-28.28-28.28L180,190L200,200
+	L200,200z M200,200l20-10l93.14,94.85l-28.28,28.28L200,228.29V200z"/>
+<polygon class="st1" points="140,200 30,310 0,280 80,200 0,120 30,90 "/>
+<polygon class="st1" points="260,200 370,90 400,120 320,200 400,280 370,310 "/>
+<rect x="180" y="50" class="st2" width="40" height="120"/>
+<circle class="st2" cx="200" cy="200" r="20"/>
+<rect x="116.57" y="203.43" transform="matrix(0.7071 0.7071 -0.7071 0.7071 226.2742 -19.4113)" class="st2" width="40" height="120"/>
+<rect x="243.43" y="203.43" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -109.1169 263.4315)" class="st2" width="40" height="120"/>
+</svg>

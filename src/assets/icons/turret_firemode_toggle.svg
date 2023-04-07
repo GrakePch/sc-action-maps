@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<g id="turret_base">
+	<polygon points="200,360 160,400 199.7,400 229.74,370 259.74,400 299.74,400 250,350 	"/>
+</g>
+<g id="turret_gun">
+	<rect x="258.16" y="287.45" transform="matrix(0.9848 -0.1736 0.1736 0.9848 -46.8179 59.7676)" width="120" height="20"/>
+	<polygon points="264.29,337.41 136.26,359.99 126.03,301.05 253.87,278.32 	"/>
+	<rect x="357.25" y="272.03" transform="matrix(0.9848 -0.1736 0.1736 0.9848 -44.111 69.8699)" width="40" height="30"/>
+</g>
+<g id="staggered">
+	<rect y="80" width="90" height="30"/>
+	<rect x="70" y="140" width="100" height="30"/>
+	<rect x="150" y="80" width="100" height="30"/>
+	<rect x="230" y="140" width="100" height="30"/>
+	<rect x="310" y="80" width="90" height="31"/>
+</g>
+</svg>

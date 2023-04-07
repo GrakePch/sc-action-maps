@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<g id="cargo">
+	<g>
+		<path d="M270,200H130c-11.72,11.72-18.28,18.28-30,30v140c11.72,11.72,18.28,18.28,30,30h140c11.72-11.72,18.28-18.28,30-30V230
+			C288.28,218.28,281.72,211.72,270,200z M280,360l-20,20H140l-20-20V240l20-20h120l20,20V360z"/>
+	</g>
+	<rect x="140" y="220" width="20" height="160"/>
+	<rect x="240" y="220" width="20" height="160"/>
+	<rect x="190" y="330" width="20" height="20"/>
+	<rect x="190" y="250" width="20" height="60"/>
+</g>
+<g id="eject">
+	<rect x="120" y="120" width="160" height="30"/>
+	<polygon points="120,100 280,100 200,20 	"/>
+</g>
+</svg>
