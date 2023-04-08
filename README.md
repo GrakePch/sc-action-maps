@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Star Citizen Keybinding Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A WIP react app that visualizes the complicated action maps of Star Citizen with icons.
 
-## Available Scripts
+![preview](./images/preview.png)
 
-In the project directory, you can run:
+A preview for the current build. Only showing the default keybindings. Squares with texts are placeholders for the actions that do not have an icon, and will be assigned with an icon in the future updates.
 
-### `npm start`
+## Functionalities
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [x] Showing available actions for each key on a standard keyboard.
+- [ ] Showing available actions for each key on a mouse.
+- [ ] Showing available actions for each key on a controller.
+- [ ] Showing available actions for each key on a joystick.
+- [ ] Uploading actionmaps.xml and show user's customized keybindings.
+- [ ] Allow user to change priorities of different action categories. 
+  - e.g. pilot combat > pilot mining > on foot > ...
+- [ ] Allow user to change order of modifiers. 
+  - e.g. left alt > right alt > left ctrl > ...
+- [ ] Saving user's setting and customized keybindings in cookie.
+- [ ] Hovering (or clicking) on keys to show detailed action info.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Icon sources
 
-### `npm test`
+Most are original. Some of the icons are inspired by [icons from Star Citizen](https://robertsspaceindustries.com/pledge/ships/gladius/Gladius#holo-viewer) and [Material Design Icons](https://pictogrammers.com/library/mdi/), or modified from them (as part of the icon), or use them as the whole icon.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
