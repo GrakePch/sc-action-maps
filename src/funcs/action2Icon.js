@@ -43,6 +43,11 @@ export default function getElementsWithActions(inputId, actionList, showing = "i
     const [action, modifier] = actionList[a];
     const iconFileName = action2IconFileName[action];
 
+    // Special size for actionList == 5
+    let currentClsName = clsName;
+    if (actionList.length == 5 && a <= 1)
+      currentClsName = "icon-2x2";
+
     if (iconFileName) {
       let iconFound = false;
       for (let i = 0; i < icons.length; i++) {
@@ -52,7 +57,7 @@ export default function getElementsWithActions(inputId, actionList, showing = "i
               key={a}
               src={icons[i].fPath}
               alt={icons[i].fName}
-              className={clsName + " color-" + modifier} />
+              className={currentClsName + " color-" + modifier} />
           )
           iconFound = true;
           break;
@@ -66,7 +71,7 @@ export default function getElementsWithActions(inputId, actionList, showing = "i
         key={a}
         actionId={action}
         modifier={modifier}
-        className={clsName} />
+        className={currentClsName} />
     )
 
   }

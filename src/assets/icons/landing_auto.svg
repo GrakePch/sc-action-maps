@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<g id="Layer_1">
+	<path id="ship_side" class="st0" d="M0,59.67h40l90,20l10-10h70l10,10h80l100,40c0,0,0,20-20,20h-60l-20,20h-40l-10-10h-60l-10,10
+		h-70l-10-10l-60,10H20l-10-10l70-20l-20-5v-30l20-5l0,0l-60-20l-20-5V59.67z M280,89.67h20l50,20h-50L280,89.67z M50,94.67v30
+		l-20-5v-20L50,94.67z"/>
+	<polygon class="st0" points="306.55,179.67 286.55,179.67 275,159.67 295,159.67 	"/>
+	<rect x="270" y="179.67" class="st0" width="60" height="15"/>
+	<polygon class="st0" points="151.36,179.67 131.36,179.67 138.64,159.67 158.64,159.67 	"/>
+	<rect x="110" y="179.67" class="st0" width="60" height="15"/>
+</g>
+<g id="Layer_2">
+	<rect y="320" class="st0" width="400" height="40"/>
+	<rect x="180" y="200" class="st0" width="40" height="40"/>
+	<polygon class="st0" points="140,240 260,240 200,300 	"/>
+</g>
+</svg>

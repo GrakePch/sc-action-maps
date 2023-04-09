@@ -9,6 +9,8 @@
         ["v_strafe_forward", "v_move_forward", "eva_strafe_forward", "moveforward"],
         ["v_strafe_back", "v_move_back", "eva_strafe_back", "moveback"],
         ["v_strafe_left", "v_yaw_left", "eva_strafe_left", "moveleft"],
-        ["v_strafe_right", "v_yaw_right", "eva_strafe_right", "moveright"]
+        ["v_strafe_right", "v_yaw_right", "eva_strafe_right", "moveright"],
+        ["v_roll_left", "eva_roll_left"],
+        ["v_roll_right", "eva_roll_right"]
     ]
 }

@@ -2,6 +2,7 @@
     "v_self_destruct": 1,
     "v_ifcs_esp_hold": 1,
     "v_autoland": 1,
+    "v_invoke_docking": 1,
     "v_toggle_qdrive_engagement": 1,
     "v_target_toggle_pin_index_1_hold": 1,
     "v_target_toggle_pin_index_2_hold": 1,
