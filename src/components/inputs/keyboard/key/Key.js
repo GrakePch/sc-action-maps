@@ -28,7 +28,7 @@ function Key({
           boxShadow: "0 0 0 2px " + globalConstants.modifierColorMap[id]
         }}>
           {
-            actionList.length <= 2 &&
+            actionList.length <= 3 &&
             <p className="Key-name">{kbId2Name.map[id]}</p>
           }
           <div className="Key-icon-container">{getElementsWithActions(id, actionList, isDebug ? "debug" : "icon")}</div>

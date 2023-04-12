@@ -27,6 +27,20 @@
 .Key-icon-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.Key-icon-first-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .2rem;
+}
+
+.Key-icon-remained-rows {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: .2rem;
 }
