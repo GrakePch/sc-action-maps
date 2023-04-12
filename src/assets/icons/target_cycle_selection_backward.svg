@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<g id="cycle_x5F_forward">
+	<rect x="67.2" y="67.2" width="7.2" height="28.8"/>
+	<polygon points="76.8,81.6 96,96 96,67.2 	"/>
+</g>
+<path id="ship" class="st0" d="M57.6,28.11L72,26.06v4.11l-12.34,2.06v2.06h6.17v8.23h-6.17v2.06L72,46.63v4.11l-14.4-2.06
+	l6.17,18.51h-8.23l-14.4-18.51h-6.17l-6.17-4.11l0,0l0,0h-2.06c-4.11,0-12.34-4.11-12.34-4.11v-4.11c0,0,8.23-4.11,12.34-4.11h2.06
+	l6.17-4.11h6.17L55.54,9.6h8.23L57.6,28.11z"/>
+<polygon class="st0" points="43.2,67.2 28.8,81.6 33.6,86.4 43.2,76.8 52.8,86.4 57.6,81.6 "/>
+</svg>
