@@ -11,7 +11,7 @@ import action2InputDefault from "../assets/maps/action2InputDefault.json";
 export default function jsonToA2I(json, includeDefault = false) {
   let result;
   if (includeDefault) {
-    result = action2InputDefault;
+    result = JSON.parse(JSON.stringify(action2InputDefault));
   } else {
     result = {}
   }

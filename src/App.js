@@ -8,8 +8,8 @@ import action2InputDefault from "./assets/maps/action2InputDefault.json"
 
 function App() {
   const [isDebugging, setIsDebugging] = useState(false);
-  const [actionMapI2A, setActionMapI2A] = useState(convertA2IToI2A(action2InputDefault));
-  
+  const [actionMapI2A, setActionMapI2A] = useState(convertA2IToI2A(JSON.parse(JSON.stringify(action2InputDefault))));
+
   return (
     <div className="App">
       <header className="App-header">
@@ -36,12 +36,12 @@ function handleFileSelect(setActionMap) {
     const parser = new DOMParser();
     const xmlDoc = parser.parseFromString(xmlString, "text/xml");
     const result = xmlToJson(xmlDoc);
-    console.log(result);
+    // console.log(result);
     // console.log(JSON.stringify(result, null, 2));
     let A2I = jsonToA2I(result, true);
-    console.log(A2I);
+    // console.log(A2I);
     let I2A = convertA2IToI2A(A2I);
-    console.log(I2A);
+    // console.log(I2A);
     setActionMap(I2A)
   }
 }
