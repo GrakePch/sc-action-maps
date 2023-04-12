@@ -23,15 +23,15 @@ function Tenkeyless(props) {
             defaultSz={defaultSz}
             widthMod={item[1] ?? 1}
             heightMod={item[2] ?? 1}
-            isDebug={props.isDebugging} />
-          : <Key key={i} id={item} defaultSz={defaultSz} isDebug={props.isDebug} />
+            isDebug={props.isDebugging} actionMapI2A={props.actionMapI2A}/>
+          : <Key key={i} id={item} defaultSz={defaultSz} isDebug={props.isDebug} actionMapI2A={props.actionMapI2A}/>
       )}
     </div>
   )
 
   return (
     <>
-      <F60WithFn defaultSz={props.defaultSz} isDebug={props.isDebug} />
+      <F60WithFn defaultSz={props.defaultSz} isDebug={props.isDebug} actionMapI2A={props.actionMapI2A}/>
       <div className="F60WithFn-root">
         {lineElements}
       </div>

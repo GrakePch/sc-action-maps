@@ -16,8 +16,8 @@ function Numpad(props) {
     <div key={i} id={"NP-l" + i} style={{ height: defaultSz + "rem" }}>
       {l.map((item, i) =>
         Array.isArray(item)
-          ? <Key key={i} id={item[0]} defaultSz={defaultSz} widthMod={item[1] ?? 1} heightMod={item[2] ?? 1} isDebug={props.isDebug} />
-          : <Key key={i} id={item} defaultSz={defaultSz} isDebug={props.isDebug} />
+          ? <Key key={i} id={item[0]} defaultSz={defaultSz} widthMod={item[1] ?? 1} heightMod={item[2] ?? 1} isDebug={props.isDebug} actionMapI2A={props.actionMapI2A}/>
+          : <Key key={i} id={item} defaultSz={defaultSz} isDebug={props.isDebug} actionMapI2A={props.actionMapI2A}/>
       )}
     </div>
   )

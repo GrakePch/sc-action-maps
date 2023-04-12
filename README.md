@@ -6,13 +6,13 @@ A WIP react app that visualizes the complicated action maps of Star Citizen with
 
 A preview for the current build. Only showing the default keybindings. Squares with texts are placeholders for the actions that do not have an icon, and will be assigned with an icon in the future updates.
 
-## Functionalities
+## Functionalities to be done
 
 - [x] Showing available actions for each key on a standard keyboard.
 - [ ] Showing available actions for each key on a mouse.
 - [ ] Showing available actions for each key on a controller.
 - [ ] Showing available actions for each key on a joystick.
-- [ ] Uploading actionmaps.xml and show user's customized keybindings.
+- [x] Uploading actionmaps.xml and show user's customized keybindings.
 - [ ] Allow user to change priorities of different action categories. 
   - e.g. pilot combat > pilot mining > on foot > ...
 - [ ] Allow user to change order of modifiers. 

@@ -1,4 +1,3 @@
-import input2ActionDefault from "../assets/maps/input2ActionDefault.json";
 import actionsNeedHold from "../assets/maps/actionsNeedHold.json";
 import actionMergeSet from "../assets/maps/actionMergeSet.json";
 /*
@@ -12,7 +11,7 @@ import actionMergeSet from "../assets/maps/actionMergeSet.json";
   ralt:   right alt   + key
 */
 
-export default function getActionsWithInput(input, device) {
+export default function getActionsWithInput(input, device, actionMapI2A) {
 
   // actionList = [[actionId, modifier], ...]
   var actionList = [];
@@ -20,7 +19,7 @@ export default function getActionsWithInput(input, device) {
   // toBeMergedActionBuffer = {modifier: [actionId, ...], ...}
   var toBeMergedActionBuffer = {};
 
-  for (const [_actionMap, inputGroup] of Object.entries(input2ActionDefault[device])) {
+  for (const [_actionMap, inputGroup] of Object.entries(actionMapI2A[device])) {
     for (const [modifier, inputs] of Object.entries(inputGroup)) {
       let actions = inputs[input];
       if (!actions) continue;

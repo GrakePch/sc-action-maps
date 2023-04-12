@@ -1,5 +1,14 @@
+import input2ActionDefault from "../assets/maps/input2ActionDefault.json";
+
+/**
+ * Translate raw xml json to action map in a usable format:
+ * device / action_category / modifier / key: action
+ * @param {Map} json raw json from xml
+ * @returns {Map} Formatted ActionMaps
+ */
+
 function jsonToActionMaps(json) {
-  var actionMaps = {};
+  var actionMaps = input2ActionDefault;
 
   var actionMapRaw = null;
   try {
@@ -16,30 +25,39 @@ function jsonToActionMaps(json) {
           let inputRaw = nodeRebind._a.input;
           let idxToSplitDeviceAndId = inputRaw.indexOf("_");
           let deviceRaw = inputRaw.substring(0, idxToSplitDeviceAndId)
-          let inputId = inputRaw.substring(idxToSplitDeviceAndId + 1);
+          let inputIdWithMod = inputRaw.substring(idxToSplitDeviceAndId + 1);
 
           // if input is empty
-          if (!inputId || inputId == " ")
+          if (!inputIdWithMod || inputIdWithMod == " ")
             continue;
 
-          let device = inputId.includes("mouse") ? "mo1" : deviceRaw;
+          let device = inputIdWithMod.includes("mouse") ? "mo1" : deviceRaw;
 
+          // Create upper {}s if not existed.
           if (!actionMaps[device])
             actionMaps[device] = {};
-
           if (!actionMaps[device][nodeActionMap._a.name])
             actionMaps[device][nodeActionMap._a.name] = {};
 
-          if (!actionMaps[device][nodeActionMap._a.name][inputId])
-            actionMaps[device][nodeActionMap._a.name][inputId] = {};
 
-          actionMaps[device][nodeActionMap._a.name][inputId][nodeAction._a.name] = {};
-          if (nodeRebind._a.activationMode)
-            actionMaps[device][nodeActionMap._a.name][inputId][nodeAction._a.name].activationMode = nodeRebind._a.activationMode;
-          if (nodeRebind._a.multiTap)
-            actionMaps[device][nodeActionMap._a.name][inputId][nodeAction._a.name].multiTap = nodeRebind._a.multiTap;
-          if (nodeRebind._a.defaultInput)
-            actionMaps[device][nodeActionMap._a.name][inputId][nodeAction._a.name].defaultInput = nodeRebind._a.defaultInput;
+          // Parse modifier.
+          let modifier = "_";
+          let inputKey;
+          let inputIdSplitted = inputIdWithMod.split("+");
+          if (inputIdSplitted.length > 1) {
+            modifier = inputIdSplitted[0];
+            inputKey = inputIdSplitted[1];
+          } else {
+            inputKey = inputIdSplitted[0];
+          }
+          if (modifier === "_" && (nodeRebind._a.multiTap === "2" || nodeRebind._a.activationMode === "double_tap"))
+            modifier = "_2tap";
+
+          // Create upper {}s if not existed.
+          if (!actionMaps[device][nodeActionMap._a.name][modifier])
+            actionMaps[device][nodeActionMap._a.name][modifier] = {};
+
+          actionMaps[device][nodeActionMap._a.name][modifier][inputKey] = nodeAction._a.name;
         }
       }
     }

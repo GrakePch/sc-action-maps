@@ -11,8 +11,9 @@ function Key({
   widthMod = 1,
   heightMod = 1,
   isDebug = false,
+  actionMapI2A = {}
 }) {
-  var actionList = getActionsWithInput(id, device);
+  var actionList = getActionsWithInput(id, device, actionMapI2A);
   return (
     <div
       className="Key-root"
