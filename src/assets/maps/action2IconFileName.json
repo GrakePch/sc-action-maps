@@ -306,7 +306,7 @@
     "select_sidearm_pit": null,
     "selectgadget": null,
     "selectpistol": "personal_weapon_sidearm",
-    "selectprimary": null,
+    "selectprimary": "personal_weapon_primary",
     "selectsecondary": null,
     "sprint": "sprint",
     "stabilize": null,
