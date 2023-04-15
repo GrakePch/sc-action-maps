@@ -1,9 +1,10 @@
 import globalConstants from "../_globalConstants";
 
 function TextIcon(props) {
-  var showText = props.actionId.split("_").map(s => s === "v" ? "" : s[0].toUpperCase()).join("");
-  if (showText.length < 4) {
-    showText += props.actionId.slice(showText.length - 4).toString();
+  var splittedList = props.actionId.split("_");
+  var showText = splittedList.map(s => s === "v" ? "" : s[0].toUpperCase()).join("");
+  if (showText.length < 4 && splittedList.length > 0) {
+    showText += splittedList[splittedList.length - 1].slice(1, 5 - showText.length).toString();
   }
 
   var color = globalConstants.modifierColorMap[props.modifier];

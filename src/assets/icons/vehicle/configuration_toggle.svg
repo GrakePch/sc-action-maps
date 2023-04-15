@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<polygon points="40,0 0,0 0,320 40,320 58.44,205 83.44,75 "/>
+<path d="M313.44,260l-5,5l-75-55v-5l-130-110l-20,115l55,30l10,15l190,110v-85L313.44,260z M195,230l45-5l5,5l-45,5L195,230z
+	 M225,250l45-5l5,5l-45,5L225,250z M260,275l-5-5l45-5l5,5L260,275z"/>
+<path id="arrow" class="st0" d="M360,100l40,40h-20c0.04,34.59-6.35,68.89-18.85,101.15L329.7,209.7
+	c6.84-22.6,10.31-46.09,10.3-69.7h-20L360,100z M209.71,329.7l31.45,31.45C208.89,373.65,174.59,380.04,140,380v20l-40-40l40-40v20
+	C163.62,340.02,187.1,336.54,209.71,329.7z"/>
+</svg>
