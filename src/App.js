@@ -4,18 +4,28 @@ import Full from "./components/inputs/keyboard/Full";
 import xmlToJson from "./funcs/xmlToJson";
 import jsonToA2I from "./funcs/jsonToA2I";
 import convertA2IToI2A from "./funcs/convertA2IToI2A";
-import action2InputDefault from "./assets/maps/action2InputDefault.json"
+import action2InputDefault from "./assets/maps/action2InputDefault.json";
+import actionCategories from "./assets/maps/actionCategories.json";
+import ActionCatePriorityContext from "./contexts/ActionCatePriorityContext";
+import ActionMapI2AContext from "./contexts/ActionMapI2AContext";
+import ActionPriorityEditor from "./components/ActionPriorityEditor/ActionPriorityEditor";
 
 function App() {
   const [isDebugging, setIsDebugging] = useState(false);
   const [actionMapI2A, setActionMapI2A] = useState(convertA2IToI2A(JSON.parse(JSON.stringify(action2InputDefault))));
+  const [actionCatePriority, setActionCatePriority] = useState(Object.keys(actionCategories));
 
   return (
     <div className="App">
       <header className="App-header">
-        <Full defaultSz={6} isDebug={isDebugging} actionMapI2A={actionMapI2A} />
+        <ActionCatePriorityContext.Provider value={actionCatePriority}>
+          <ActionMapI2AContext.Provider value={actionMapI2A}>
+            <Full defaultSz={6} isDebug={isDebugging} />
+          </ActionMapI2AContext.Provider>
+        </ActionCatePriorityContext.Provider>
       </header>
-      <div className="Upload-container">
+      <div className="Upload-container font-narrow">
+        <ActionPriorityEditor actionCatePriority={actionCatePriority} setActionCatePriority={setActionCatePriority} />
         <label className="upload-label" htmlFor="inputActionMaps">Upload actionmaps.xml</label>
         <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
         <button onClick={() => { setIsDebugging(!isDebugging) }}>Debugging</button>

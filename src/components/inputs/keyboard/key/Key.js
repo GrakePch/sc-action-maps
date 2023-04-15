@@ -3,6 +3,9 @@ import kbId2Name from "../../../../assets/maps/keyboardId2Name.json";
 import getElementsWithActions from "../../../../funcs/action2Icon";
 import getActionsWithInput from "../../../../funcs/inputToAction";
 import globalConstants from "../../../../_globalConstants";
+import { useContext, useEffect, useState } from "react";
+import ActionCatePriorityContext from "../../../../contexts/ActionCatePriorityContext";
+import ActionMapI2AContext from "../../../../contexts/ActionMapI2AContext";
 
 function Key({
   id = "unknown",
@@ -11,9 +14,14 @@ function Key({
   widthMod = 1,
   heightMod = 1,
   isDebug = false,
-  actionMapI2A = {}
 }) {
-  var actionList = getActionsWithInput(id, device, actionMapI2A);
+  const actionCatePriority = useContext(ActionCatePriorityContext);
+  const actionMapI2A = useContext(ActionMapI2AContext);
+  const [actionList, setActionList] = useState(getActionsWithInput(id, device, actionMapI2A, actionCatePriority));
+  useEffect(() => {
+    setActionList(getActionsWithInput(id, device, actionMapI2A, actionCatePriority));
+  }, [actionCatePriority])
+
   return (
     <div
       className="Key-root"

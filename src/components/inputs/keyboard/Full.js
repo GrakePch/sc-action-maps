@@ -5,8 +5,8 @@ import Tenkeyless from "./Tenkeyless";
 function Full(props) {
   return (
     <div className="Full-root">
-      <Tenkeyless defaultSz={props.defaultSz} isDebug={props.isDebug} actionMapI2A={props.actionMapI2A}/>
-      <Numpad defaultSz={props.defaultSz} isDebug={props.isDebug} actionMapI2A={props.actionMapI2A}/>
+      <Tenkeyless defaultSz={props.defaultSz} isDebug={props.isDebug} />
+      <Numpad defaultSz={props.defaultSz} isDebug={props.isDebug} />
     </div>
   )
 }

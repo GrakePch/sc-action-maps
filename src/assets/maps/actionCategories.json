@@ -1,0 +1,74 @@
+{
+    "Spaceship General": [
+        "seat_general",
+        "spaceship_general",
+        "spaceship_view",
+        "spaceship_movement",
+        "spaceship_quantum",
+        "spaceship_docking",
+        "spaceship_power",
+        "spaceship_hud",
+        "lights_controller"
+    ],
+    "Vehicle Targeting": [
+        "spaceship_targeting",
+        "spaceship_targeting_advanced",
+        "spaceship_target_hailing"
+    ],
+    "Vehicle Radar": [
+        "spaceship_radar",
+        "radar_tagging",
+        "spaceship_scanning"
+    ],
+    "Vehicle Mining & Salvaging": [
+        "spaceship_mining",
+        "spaceship_salvage"
+    ],
+    "Turret": [
+        "turret_movement",
+        "turret_advanced"
+    ],
+    "Vehicle Combat": [
+        "spaceship_weapons",
+        "spaceship_missiles",
+        "spaceship_defensive",
+        "vehicle_capacitor_assignment"
+    ],
+    "Stopwatch": [
+        "stopwatch"
+    ],
+    "On Foot": [
+        "player",
+        "prone",
+        "incapacitated",
+        "tractor_beam"
+    ],
+    "E.V.A": [
+        "zero_gravity_eva",
+        "zero_gravity_traversal"
+    ],
+    "Ground Vehicle General": [
+        "seat_general",
+        "vehicle_general",
+        "vehicle_driver"
+    ],
+    "Player General": [
+        "default"
+    ],
+    "Player Interactions": [
+        "player_choice"
+    ],
+    "Social": [
+        "ui_notification",
+        "player_emotes"
+    ],
+    "VOIP/FOIP/Head Tracking": [
+        "player_input_optical_tracking"
+    ],
+    "Electronic Access: Spectator": [
+        "spectator"
+    ],
+    "Camera": [
+        "view_director_mode"
+    ]
+}

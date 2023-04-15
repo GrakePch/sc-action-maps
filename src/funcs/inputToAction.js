@@ -1,5 +1,6 @@
 import actionsNeedHold from "../assets/maps/actionsNeedHold.json";
 import actionMergeSet from "../assets/maps/actionMergeSet.json";
+import actionCategories from "../assets/maps/actionCategories.json";
 /*
   _:      single tap key
   _2tap:  double tap key
@@ -11,7 +12,7 @@ import actionMergeSet from "../assets/maps/actionMergeSet.json";
   ralt:   right alt   + key
 */
 
-export default function getActionsWithInput(input, device, actionMapI2A) {
+export default function getActionsWithInput(input, device, actionMapI2A, actionCatePriority) {
 
   // actionList = [[actionId, modifier], ...]
   var actionList = [];
@@ -19,17 +20,26 @@ export default function getActionsWithInput(input, device, actionMapI2A) {
   // toBeMergedActionBuffer = {modifier: [actionId, ...], ...}
   var toBeMergedActionBuffer = {};
 
-  for (const [_actionMap, inputGroup] of Object.entries(actionMapI2A[device])) {
-    for (const [modifier, inputs] of Object.entries(inputGroup)) {
-      let actions = inputs[input];
-      if (!actions) continue;
-      if (Array.isArray(actions))
-        for (const action of actions)
-          checkIfHold_pushActionModifierToList(actionList, action, modifier, toBeMergedActionBuffer);
-      else
-        checkIfHold_pushActionModifierToList(actionList, actions, modifier, toBeMergedActionBuffer);
+  // const showingCategories = ["Vehicle Combat", "Spaceship General", "Player General", "Vehicle Targeting", "Player Interactions", "Camera", "On Foot"];
+  for (const cate of actionCatePriority) {
+    if (!actionCategories[cate]) continue;
+    for (const actionMap of actionCategories[cate]) {
+      const inputGroup = actionMapI2A[device][actionMap];
+      if (!inputGroup) continue;
+
+      for (const [modifier, inputs] of Object.entries(inputGroup)) {
+        let actions = inputs[input];
+        if (!actions) continue;
+        if (Array.isArray(actions))
+          for (const action of actions)
+            checkIfHold_pushActionModifierToList(actionList, action, modifier, toBeMergedActionBuffer);
+        else
+          checkIfHold_pushActionModifierToList(actionList, actions, modifier, toBeMergedActionBuffer);
+      }
+
     }
   }
+
   return actionList;
 }
 
