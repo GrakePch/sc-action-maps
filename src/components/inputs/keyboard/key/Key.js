@@ -20,7 +20,7 @@ function Key({
   const [actionList, setActionList] = useState(getActionsWithInput(id, device, actionMapI2A, actionCatePriority));
   useEffect(() => {
     setActionList(getActionsWithInput(id, device, actionMapI2A, actionCatePriority));
-  }, [actionCatePriority])
+  }, [actionMapI2A, actionCatePriority])
 
   return (
     <div

@@ -9,11 +9,14 @@ import actionCategories from "./assets/maps/actionCategories.json";
 import ActionCatePriorityContext from "./contexts/ActionCatePriorityContext";
 import ActionMapI2AContext from "./contexts/ActionMapI2AContext";
 import ActionPriorityEditor from "./components/ActionPriorityEditor/ActionPriorityEditor";
+import bug_outline from "./assets/icons_for_ui/bug-outline.svg";
+import upload from "./assets/icons_for_ui/tray-arrow-up.svg";
 
 function App() {
   const [isDebugging, setIsDebugging] = useState(false);
   const [actionMapI2A, setActionMapI2A] = useState(convertA2IToI2A(JSON.parse(JSON.stringify(action2InputDefault))));
-  const [actionCatePriority, setActionCatePriority] = useState(Object.keys(actionCategories));
+  const [actionCatePriority, setActionCatePriority] = useState(Object.keys(actionCategories).map(item => [item, true]));
+  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <div className="App">
@@ -24,11 +27,17 @@ function App() {
           </ActionMapI2AContext.Provider>
         </ActionCatePriorityContext.Provider>
       </header>
-      <div className="Upload-container font-narrow">
+
+      <button className="Menu-toggle font-narrow" onClick={() => setShowMenu(!showMenu)}>Menu ≡</button>
+
+      <div className={`Menu-container Menu-container-${showMenu ? "show" : "hide"} font-narrow`}>
         <ActionPriorityEditor actionCatePriority={actionCatePriority} setActionCatePriority={setActionCatePriority} />
-        <label className="upload-label" htmlFor="inputActionMaps">Upload actionmaps.xml</label>
+        <label className="upload-label" htmlFor="inputActionMaps">
+          <div style={{ backgroundImage: `url(${upload})` }} />
+          Upload actionmaps.xml
+        </label>
         <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
-        <button onClick={() => { setIsDebugging(!isDebugging) }}>Debugging</button>
+        <button className="btn-debug font-narrow" onClick={() => { setIsDebugging(!isDebugging) }}><div style={{ backgroundImage: `url(${bug_outline})` }} />Debug: Toggle Displaying Action Id</button>
       </div>
     </div>
   );

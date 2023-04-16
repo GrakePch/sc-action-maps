@@ -20,10 +20,11 @@ export default function getActionsWithInput(input, device, actionMapI2A, actionC
   // toBeMergedActionBuffer = {modifier: [actionId, ...], ...}
   var toBeMergedActionBuffer = {};
 
-  // const showingCategories = ["Vehicle Combat", "Spaceship General", "Player General", "Vehicle Targeting", "Player Interactions", "Camera", "On Foot"];
-  for (const cate of actionCatePriority) {
-    if (!actionCategories[cate]) continue;
-    for (const actionMap of actionCategories[cate]) {
+  for (const cateTuple of actionCatePriority) {
+    if (!cateTuple[1]) continue;
+    let cateName = cateTuple[0];
+    if (!actionCategories[cateName]) continue;
+    for (const actionMap of actionCategories[cateName]) {
       const inputGroup = actionMapI2A[device][actionMap];
       if (!inputGroup) continue;
 

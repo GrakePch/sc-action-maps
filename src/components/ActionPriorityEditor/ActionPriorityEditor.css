@@ -1,0 +1,93 @@
+.space-between-hor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.editor-title {
+    margin: 0;
+    font-size: 1.75rem;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.editor-info {
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: .8rem;
+    text-align: left;
+    opacity: .8;
+}
+
+.actionCate-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.btn-editor-tool {
+    background-color: #40414f80;
+    border-radius: .5rem;
+}
+
+.actionCate-item {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    background-color: #40414f80;
+    overflow: hidden;
+}
+
+.actionCate-item button {
+    background-color: rgba(0 0 0 / 0);
+    width: 2rem;
+    height: 2rem;
+}
+
+/* General Button */
+
+.btn-small-text, .btn-small-icon {
+    border: none;
+    cursor: pointer;
+    transition: background-color .15s;
+}
+
+.btn-small-text {
+    color: #afe5f4;
+}
+
+.btn-small-icon {
+    width: 2rem;
+    height: 2rem;
+    color: transparent;
+}
+
+.btn-small-icon>div {
+    width: 100%;
+    height: 100%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(84%) sepia(23%) saturate(646%) hue-rotate(169deg) brightness(104%) contrast(91%);
+}
+
+.btn-small-icon:hover, .btn-small-text:hover {
+    background-color: #afe5f420;
+}
+
+.btn-small-icon:active, .btn-small-text:active {
+    background-color: #afe5f440;
+}
+
+.btn-disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+.btn-disabled:hover, .btn-disabled:active {
+    background-color: inherit;
+}

@@ -1,5 +1,5 @@
 {
-    "Spaceship General": [
+    "Flight - Basic": [
         "seat_general",
         "spaceship_general",
         "spaceship_view",
@@ -7,65 +7,63 @@
         "spaceship_quantum",
         "spaceship_docking",
         "spaceship_power",
+        "vehicle_capacitor_assignment",
         "spaceship_hud",
-        "lights_controller"
+        "lights_controller",
+        "stopwatch"
     ],
-    "Vehicle Targeting": [
+    "Vehicle - Targeting & Radar": [
         "spaceship_targeting",
         "spaceship_targeting_advanced",
-        "spaceship_target_hailing"
-    ],
-    "Vehicle Radar": [
+        "spaceship_target_hailing",
         "spaceship_radar",
         "radar_tagging",
         "spaceship_scanning"
     ],
-    "Vehicle Mining & Salvaging": [
+    "Vehicle - Mining & Salvaging": [
         "spaceship_mining",
         "spaceship_salvage"
     ],
-    "Turret": [
+    "Vehicle - Weapons & Defense": [
+        "spaceship_weapons",
+        "spaceship_missiles",
+        "spaceship_defensive"
+    ],
+    "Turret - All": [
         "turret_movement",
         "turret_advanced"
     ],
-    "Vehicle Combat": [
-        "spaceship_weapons",
-        "spaceship_missiles",
-        "spaceship_defensive",
-        "vehicle_capacitor_assignment"
+    "Ground Vehicle - Basic": [
+        "seat_general",
+        "vehicle_general",
+        "spaceship_general",
+        "vehicle_driver",
+        "spaceship_power",
+        "vehicle_capacitor_assignment",
+        "lights_controller"
     ],
-    "Stopwatch": [
-        "stopwatch"
-    ],
-    "On Foot": [
+    "On Foot & E.V.A - All": [
         "player",
         "prone",
         "incapacitated",
-        "tractor_beam"
-    ],
-    "E.V.A": [
+        "tractor_beam",
         "zero_gravity_eva",
         "zero_gravity_traversal"
     ],
-    "Ground Vehicle General": [
-        "seat_general",
-        "vehicle_general",
-        "vehicle_driver"
+    "Player - General & Social": [
+        "default",
+        "ui_notification"
     ],
-    "Player General": [
-        "default"
-    ],
-    "Player Interactions": [
+    "Player - Interactions": [
         "player_choice"
     ],
-    "Social": [
-        "ui_notification",
+    "Player - Emotes": [
         "player_emotes"
     ],
     "VOIP/FOIP/Head Tracking": [
         "player_input_optical_tracking"
     ],
-    "Electronic Access: Spectator": [
+    "Electronic Access - Spectator": [
         "spectator"
     ],
     "Camera": [
