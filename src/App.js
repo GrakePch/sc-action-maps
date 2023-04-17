@@ -13,6 +13,9 @@ import ActionPriorityEditor from "./components/PriorityEditor/ActionPriorityEdit
 import bug_outline from "./assets/icons_for_ui/bug-outline.svg";
 import upload from "./assets/icons_for_ui/tray-arrow-up.svg";
 import ModifierPriorityEditor from "./components/PriorityEditor/ModifierPriorityEditor";
+import i18n from "./assets/i18n/i18n";
+import i18nGetText from "./assets/i18n/i18nGetText";
+import GlobalVarsContext from "./contexts/_globalVarsContext";
 
 function App() {
   const [isDebugging, setIsDebugging] = useState(false);
@@ -22,34 +25,53 @@ function App() {
     ["_1tap", "_2tap", "lalt", "ralt", "lshift", "rshift", "lctrl", "rctrl"].map(item => [item, true])
   );
   const [showMenu, setShowMenu] = useState(false);
+  const [globalVars, setGlobalVars] = useState({
+    lang: "en_US"
+  });
+  const globalVarsWithSetter = { globalVars, setGlobalVars }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <ActionCatePriorityContext.Provider value={actionCatePriority}>
-          <ModifierPriorityContext.Provider value={modifierPriority}>
-            <ActionMapI2AContext.Provider value={actionMapI2A}>
-              <Full defaultSz={6} isDebug={isDebugging} />
-            </ActionMapI2AContext.Provider>
-          </ModifierPriorityContext.Provider>
-        </ActionCatePriorityContext.Provider>
-      </header>
+    <ActionCatePriorityContext.Provider value={actionCatePriority}>
+      <ModifierPriorityContext.Provider value={modifierPriority}>
+        <ActionMapI2AContext.Provider value={actionMapI2A}>
+          <GlobalVarsContext.Provider value={globalVarsWithSetter}>
+            <div className="App">
+              <header className="App-header">
+                <Full defaultSz={6} isDebug={isDebugging} />
+              </header>
 
-      <button className="Menu-toggle font-narrow" onClick={() => setShowMenu(!showMenu)}>Menu ≡</button>
+              <div className="btn-container-float-b-r">
+                <button className="Lang-toggle font-narrow" onClick={() => setGlobalVars(obj => {
+                  let newObj = JSON.parse(JSON.stringify(obj));
+                  newObj.lang = nextLangId(obj.lang);
+                  return newObj;
+                })}>
+                  {i18nGetText(nextLangId(globalVars.lang), "this_lang")}
+                </button>
+                <button className="Menu-toggle font-narrow" onClick={() => setShowMenu(!showMenu)}>
+                  {i18nGetText(globalVars.lang, "btn_menu")}
+                </button>
+              </div>
 
-      <div className={`Menu-container Menu-container-${showMenu ? "show" : "hide"} font-narrow`}>
-        <div className="scrollable-vert">
-          <ModifierPriorityEditor modifierPriority={modifierPriority} setModifierPriority={setModifierPriority} />
-          <ActionPriorityEditor actionCatePriority={actionCatePriority} setActionCatePriority={setActionCatePriority} />
-          <button className="btn-debug font-narrow" onClick={() => { setIsDebugging(!isDebugging) }}><div style={{ backgroundImage: `url(${bug_outline})` }} />Debug: Toggle Displaying Action Id</button>
-        </div>
-        <label className="upload-label" htmlFor="inputActionMaps">
-          <div style={{ backgroundImage: `url(${upload})` }} />
-          Upload actionmaps.xml
-        </label>
-        <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
-      </div>
-    </div>
+              <div className={`Menu-container Menu-container-${showMenu ? "show" : "hide"} font-narrow`}>
+                <div className="scrollable-vert">
+                  <ModifierPriorityEditor modifierPriority={modifierPriority} setModifierPriority={setModifierPriority} />
+                  <ActionPriorityEditor actionCatePriority={actionCatePriority} setActionCatePriority={setActionCatePriority} />
+                  <button className="btn-debug font-narrow" onClick={() => setIsDebugging(!isDebugging)}>
+                    <div style={{ backgroundImage: `url(${bug_outline})` }} />{i18nGetText(globalVars.lang, "btn_debug")}
+                  </button>
+                </div>
+                <label className="upload-label" htmlFor="inputActionMaps">
+                  <div style={{ backgroundImage: `url(${upload})` }} />
+                  {i18nGetText(globalVars.lang, "btn_upload")}
+                </label>
+                <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
+              </div>
+            </div>
+          </GlobalVarsContext.Provider>
+        </ActionMapI2AContext.Provider>
+      </ModifierPriorityContext.Provider>
+    </ActionCatePriorityContext.Provider>
   );
 }
 
@@ -75,5 +97,16 @@ function handleFileSelect(setActionMap) {
   }
 }
 
+function nextLangId(lang) {
+  const langIds = Object.keys(i18n);
+  let i = null;
+  for (i = 0; i < langIds.length; i++)
+    if (langIds[i] == lang) break;
+
+  if (i == null || i === langIds.length - 1)
+    return langIds[0];
+  else
+    return langIds[i + 1];
+}
 
 export default App;

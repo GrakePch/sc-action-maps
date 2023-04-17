@@ -2,12 +2,18 @@ import "./PriorityEditor.css";
 import eye from "../../assets/icons_for_ui/eye.svg";
 import eye_outline from "../../assets/icons_for_ui/eye-outline.svg";
 import globalConstants from "../../_globalConstants";
+import i18nGetText from "../../assets/i18n/i18nGetText";
+import { useContext } from "react";
+import GlobalVarsContext from "../../contexts/_globalVarsContext";
 
 function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
+  const { globalVars, _ } = useContext(GlobalVarsContext);
+  const lang = globalVars.lang;
+
   return (
     <div>
-      <h2 className="editor-title">Modifier Priorities</h2>
-      <p className="editor-info">Modifier near the top will be displayed on the key with higher priority within the same action category.</p>
+      <h2 className="editor-title">{i18nGetText(lang, "txt_modPrior_title")}</h2>
+      <p className="editor-info">{i18nGetText(lang, "txt_modPrior_info")}</p>
 
       <div className="editor-item-container">
         <div className="space-between-hor">
@@ -25,7 +31,7 @@ function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
           <button
             className="btn-small-text btn-editor-tool btn-text-black btn-bg-accent font-narrow"
             onClick={() => setModifierPriority(moveAllVisibleToTop(modifierPriority))}>
-            {"\u2b9d"} Move Visible Modifiers to Top
+            {i18nGetText(lang, "btn_modPrior_visibleToTop")}
           </button>
         </div>
         {
