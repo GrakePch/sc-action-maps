@@ -1,6 +1,7 @@
 import actionsNeedHold from "../assets/maps/actionsNeedHold.json";
 import actionMergeSet from "../assets/maps/actionMergeSet.json";
 import actionCategories from "../assets/maps/actionCategories.json";
+import globalConstants from "../_globalConstants";
 /*
   _:      single tap key
   _2tap:  double tap key
@@ -12,7 +13,8 @@ import actionCategories from "../assets/maps/actionCategories.json";
   ralt:   right alt   + key
 */
 
-export default function getActionsWithInput(input, device, actionMapI2A, actionCatePriority) {
+export default function getActionsWithInput(input, device, actionMapI2A, actionCatePriority, modifierPriority) {
+  const modCombinedMap = globalConstants.modCombinedMap;
 
   // actionList = [[actionId, modifier], ...]
   var actionList = [];
@@ -28,16 +30,22 @@ export default function getActionsWithInput(input, device, actionMapI2A, actionC
       const inputGroup = actionMapI2A[device][actionMap];
       if (!inputGroup) continue;
 
-      for (const [modifier, inputs] of Object.entries(inputGroup)) {
-        let actions = inputs[input];
-        if (!actions) continue;
-        if (Array.isArray(actions))
-          for (const action of actions)
-            checkIfHold_pushActionModifierToList(actionList, action, modifier, toBeMergedActionBuffer);
-        else
-          checkIfHold_pushActionModifierToList(actionList, actions, modifier, toBeMergedActionBuffer);
+      for (const modTuple of modifierPriority) {
+        if (!modTuple[1]) continue;
+        let modName = modTuple[0];
+        if (!modCombinedMap[modName]) continue;
+        for (const modifier of modCombinedMap[modName]) {
+          const inputs = inputGroup[modifier];
+          if (!inputs) continue;
+          let actions = inputs[input];
+          if (!actions) continue;
+          if (Array.isArray(actions))
+            for (const action of actions)
+              checkIfHold_pushActionModifierToList(actionList, action, modifier, toBeMergedActionBuffer);
+          else
+            checkIfHold_pushActionModifierToList(actionList, actions, modifier, toBeMergedActionBuffer);
+        }
       }
-
     }
   }
 

@@ -2,9 +2,11 @@
 
 A WIP react app that visualizes the complicated action maps of Star Citizen with icons.
 
-![preview](./images/preview_230415a.png)
+![preview](./images/preview_230416.png)
 
 A preview for the current build. This is not the final design. Only showing the default keybindings. Squares with texts are placeholders for the actions that do not have an icon, and will be assigned with an icon in the future updates.
+
+Deployed at [grakep.ch/SC-Keybinding-Visualizer](https://grakep.ch/SC-Keybinding-Visualizer/)
 
 ## Functionalities to be done
 
@@ -13,15 +15,12 @@ A preview for the current build. This is not the final design. Only showing the 
 - [ ] Showing available actions for each key on a controller.
 - [ ] Showing available actions for each key on a joystick.
 - [x] Uploading actionmaps.xml and show user's customized keybindings.
-- [ ] Allow user to change priorities of different action categories. 
-  - [x] Basic functionalities
-  - [x] Better appearance
-  - [x] Hide & show certain item
-  - [ ] Drag & drop to a new position
-- [ ] Allow user to change order of modifiers. 
-  - e.g. left alt > right alt > left ctrl > ...
+- [x] Allow user to edit priorities/visibility of action categories. 
+- [x] Allow user to edit priorities/visibility of modifiers. 
+- [ ] Editing priorities/visibility: Drag & drop for an easier experience.
 - [ ] Saving user's setting and customized keybindings in local storage.
 - [ ] Hovering (or clicking) on keys to show detailed action info.
+- [ ] Export to SVG or PNG for printing
 
 ## Icon sources
 

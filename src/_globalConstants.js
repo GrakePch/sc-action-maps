@@ -19,7 +19,26 @@ const globalConstants = {
     rctrl: "#3fbc9c",
     f: "#9c4bdc"
   },
-  modifierOrder: ["_", "_hold", "_2tap", "f", "lalt", "ralt", "lshift", "rshift", "lctrl", "rctrl"]
+  modCombinedMap: {
+    "_1tap": ["_", "_hold", "f"],
+    "_2tap": ["_2tap"],
+    "lalt": ["lalt"],
+    "ralt": ["ralt"],
+    "lshift": ["lshift"],
+    "rshift": ["rshift"],
+    "lctrl": ["lctrl"],
+    "rctrl": ["rctrl"]
+  },
+  modifierNameMap: {
+    "_1tap": "Single Press",
+    "_2tap": "Double Tap",
+    "lalt": "Left Alt",
+    "ralt": "Right Alt",
+    "lshift": "Left Shift",
+    "rshift": "Right Shift",
+    "lctrl": "Left Ctrl",
+    "rctrl": "Right Ctrl"
+  }
 }
 
 export default globalConstants;

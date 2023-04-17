@@ -1,4 +1,4 @@
-import "./ActionPriorityEditor.css";
+import "./PriorityEditor.css";
 import eye from "../../assets/icons_for_ui/eye.svg";
 import eye_outline from "../../assets/icons_for_ui/eye-outline.svg";
 
@@ -8,9 +8,9 @@ function ActionPriorityEditor({ actionCatePriority, setActionCatePriority }) {
       <h2 className="editor-title">Action Priorities</h2>
       <p className="editor-info">Action categories near the top will be displayed on the key with higher priority.</p>
 
-      <div className="actionCate-item-container">
+      <div className="editor-item-container">
         <div className="space-between-hor">
-          <button className="btn-small-icon btn-editor-tool" onClick={() =>
+          <button className="btn-small-icon btn-editor-tool btn-bg-accent" onClick={() =>
             setActionCatePriority(toggleAllVisibility(actionCatePriority))}>
             {actionCatePriority.every(item => item[1])
               ? <><div style={{ backgroundImage: `url(${eye})` }} />V</>
@@ -19,20 +19,20 @@ function ActionPriorityEditor({ actionCatePriority, setActionCatePriority }) {
                 : <><div style={{ backgroundImage: `url(${eye_outline})` }} />-</>
             }
           </button>
-          <button className="btn-small-text btn-editor-tool font-narrow" onClick={() => setActionCatePriority(moveAllVisibleToTop(actionCatePriority))}>
+          <button className="btn-small-text btn-editor-tool btn-bg-accent font-narrow" onClick={() => setActionCatePriority(moveAllVisibleToTop(actionCatePriority))}>
             {"\u2b9d"} Move Visible Actions to Top
           </button>
         </div>
         {
           actionCatePriority.map((item, idx) => (
-            <div key={idx} className="actionCate-item" style={{
+            <div key={idx} className="editor-item" style={{
               borderRadius: idx === 0
                 ? ".5rem .5rem 0 0"
                 : idx === actionCatePriority.length - 1
                   ? "0 0 .5rem .5rem"
                   : 0
             }}>
-              <button className="btn-small-icon" onClick={() =>
+              <button className="btn-small-icon btn-color-accent" onClick={() =>
                 setActionCatePriority(toggleVisibility(actionCatePriority, idx))}>
                 {item[1]
                   ? <><div style={{ backgroundImage: `url(${eye})` }} />V</>
@@ -44,16 +44,16 @@ function ActionPriorityEditor({ actionCatePriority, setActionCatePriority }) {
 
               <div className="flex-grow"></div>
               {idx > 0
-                ? <button className="btn-small-text" onClick={() =>
+                ? <button className="btn-small-text btn-color-accent" onClick={() =>
                   setActionCatePriority(moveItemInArray(idx - 1, idx, actionCatePriority))
                 }>{"\u25B2"}</button>
-                : <button className="btn-small-text btn-disabled" disabled>{"\u25B2"}</button>
+                : <button className="btn-small-text btn-color-accent btn-disabled" disabled>{"\u25B2"}</button>
               }
               {idx < actionCatePriority.length - 1
-                ? <button className="btn-small-text" onClick={() =>
+                ? <button className="btn-small-text btn-color-accent" onClick={() =>
                   setActionCatePriority(moveItemInArray(idx + 1, idx, actionCatePriority))
                 }>{"\u25BC"}</button>
-                : <button className="btn-small-text btn-disabled" disabled>{"\u25BC"}</button>
+                : <button className="btn-small-text btn-color-accent btn-disabled" disabled>{"\u25BC"}</button>
               }
             </div>
           ))

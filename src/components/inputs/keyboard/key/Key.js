@@ -6,6 +6,7 @@ import globalConstants from "../../../../_globalConstants";
 import { useContext, useEffect, useState } from "react";
 import ActionCatePriorityContext from "../../../../contexts/ActionCatePriorityContext";
 import ActionMapI2AContext from "../../../../contexts/ActionMapI2AContext";
+import ModifierPriorityContext from "../../../../contexts/ModifierPriorityContext";
 
 function Key({
   id = "unknown",
@@ -16,11 +17,31 @@ function Key({
   isDebug = false,
 }) {
   const actionCatePriority = useContext(ActionCatePriorityContext);
+  const modifierPriority = useContext(ModifierPriorityContext);
   const actionMapI2A = useContext(ActionMapI2AContext);
-  const [actionList, setActionList] = useState(getActionsWithInput(id, device, actionMapI2A, actionCatePriority));
+  const [actionList, setActionList] = useState(getActionsWithInput(
+    id,
+    device,
+    actionMapI2A,
+    actionCatePriority,
+    modifierPriority
+  ));
+
   useEffect(() => {
-    setActionList(getActionsWithInput(id, device, actionMapI2A, actionCatePriority));
-  }, [actionMapI2A, actionCatePriority])
+
+    setActionList(getActionsWithInput(
+      id,
+      device,
+      actionMapI2A,
+      actionCatePriority,
+      modifierPriority
+    ));
+
+  }, [
+    actionMapI2A,
+    actionCatePriority,
+    modifierPriority
+  ])
 
   return (
     <div
