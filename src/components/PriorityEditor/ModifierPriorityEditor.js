@@ -11,8 +11,10 @@ function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
 
       <div className="editor-item-container">
         <div className="space-between-hor">
-          <button className="btn-small-icon btn-editor-tool btn-bg-accent" onClick={() =>
-            setModifierPriority(toggleAllVisibility(modifierPriority))}>
+          <button
+            className="btn-small-icon btn-editor-tool btn-icon-black btn-bg-accent"
+            onClick={() =>
+              setModifierPriority(toggleAllVisibility(modifierPriority))}>
             {modifierPriority.every(item => item[1])
               ? <><div style={{ backgroundImage: `url(${eye})` }} />V</>
               : modifierPriority.every(item => !item[1])
@@ -20,7 +22,9 @@ function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
                 : <><div style={{ backgroundImage: `url(${eye_outline})` }} />-</>
             }
           </button>
-          <button className="btn-small-text btn-editor-tool btn-bg-accent font-narrow" onClick={() => setModifierPriority(moveAllVisibleToTop(modifierPriority))}>
+          <button
+            className="btn-small-text btn-editor-tool btn-text-black btn-bg-accent font-narrow"
+            onClick={() => setModifierPriority(moveAllVisibleToTop(modifierPriority))}>
             {"\u2b9d"} Move Visible Modifiers to Top
           </button>
         </div>
@@ -33,8 +37,10 @@ function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
                   ? "0 0 .5rem .5rem"
                   : 0
             }}>
-              <button className="btn-small-icon btn-color-accent" onClick={() =>
-                setModifierPriority(toggleVisibility(modifierPriority, idx))}>
+              <button
+                className="btn-small-icon btn-icon-accent btn-bg-dark"
+                onClick={() =>
+                  setModifierPriority(toggleVisibility(modifierPriority, idx))}>
                 {item[1]
                   ? <><div style={{ backgroundImage: `url(${eye})` }} />V</>
                   : "\u2007"
@@ -48,16 +54,24 @@ function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
 
               <div className="flex-grow"></div>
               {idx > 0
-                ? <button className="btn-small-text btn-color-accent" onClick={() =>
-                  setModifierPriority(moveItemInArray(idx - 1, idx, modifierPriority))
-                }>{"\u25B2"}</button>
-                : <button className="btn-small-text btn-color-accent btn-disabled" disabled>{"\u25B2"}</button>
+                ? <button
+                  className="btn-small-text btn-text-accent btn-bg-dark"
+                  onClick={() =>
+                    setModifierPriority(moveItemInArray(idx - 1, idx, modifierPriority))
+                  }>{"\u25B2"}</button>
+                : <button
+                  className="btn-small-text btn-text-accent btn-bg-dark btn-disabled"
+                  disabled>{"\u25B2"}</button>
               }
               {idx < modifierPriority.length - 1
-                ? <button className="btn-small-text btn-color-accent" onClick={() =>
-                  setModifierPriority(moveItemInArray(idx + 1, idx, modifierPriority))
-                }>{"\u25BC"}</button>
-                : <button className="btn-small-text btn-color-accent btn-disabled" disabled>{"\u25BC"}</button>
+                ? <button
+                  className="btn-small-text btn-text-accent btn-bg-dark"
+                  onClick={() =>
+                    setModifierPriority(moveItemInArray(idx + 1, idx, modifierPriority))
+                  }>{"\u25BC"}</button>
+                : <button
+                  className="btn-small-text btn-text-accent btn-bg-dark btn-disabled"
+                  disabled>{"\u25BC"}</button>
               }
             </div>
           ))

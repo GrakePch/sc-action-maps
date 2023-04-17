@@ -77,13 +77,25 @@
     background-color: inherit;
 }
 
-.btn-color-accent {
+.btn-text-accent {
     color: #afe5f4;
-    background-color: rgba(0 0 0 / 0);
 }
 
-.btn-color-accent>div {
+.btn-icon-accent>div {
     filter: invert(84%) sepia(23%) saturate(646%) hue-rotate(169deg) brightness(104%) contrast(91%);
+}
+
+.btn-text-black {
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-icon-black>div {
+    filter: brightness(0);
+}
+
+.btn-bg-dark {
+    background-color: rgba(0 0 0 / 0);
 }
 
 .btn-bg-dark:hover {
@@ -95,13 +107,7 @@
 }
 
 .btn-bg-accent {
-    font-weight: bold;
-    color: #000;
     background-color: #afe5f4ff;
-}
-
-.btn-bg-accent>div {
-    filter: brightness(0);
 }
 
 .btn-bg-accent:hover {
