@@ -29,15 +29,11 @@ const globalConstants = {
     "lctrl": ["lctrl"],
     "rctrl": ["rctrl"]
   },
-  modifierNameMap: {
-    "_1tap": "Single Press",
-    "_2tap": "Double Tap",
-    "lalt": "Left Alt",
-    "ralt": "Right Alt",
-    "lshift": "Left Shift",
-    "rshift": "Right Shift",
-    "lctrl": "Left Ctrl",
-    "rctrl": "Right Ctrl"
+  actionCateDefaultVisible: {
+    flight_basic: 1,
+    v_targeting_radar: 1,
+    v_weapon_defense: 1,
+    p_general_social: 1
   }
 }
 

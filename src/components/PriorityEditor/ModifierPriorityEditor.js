@@ -2,7 +2,7 @@ import "./PriorityEditor.css";
 import eye from "../../assets/icons_for_ui/eye.svg";
 import eye_outline from "../../assets/icons_for_ui/eye-outline.svg";
 import globalConstants from "../../_globalConstants";
-import i18nGetText from "../../assets/i18n/i18nGetText";
+import TextI18n from "../../assets/i18n/i18nGetText";
 import { useContext } from "react";
 import GlobalVarsContext from "../../contexts/_globalVarsContext";
 
@@ -12,8 +12,8 @@ function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
 
   return (
     <div>
-      <h2 className="editor-title">{i18nGetText(lang, "txt_modPrior_title")}</h2>
-      <p className="editor-info">{i18nGetText(lang, "txt_modPrior_info")}</p>
+      <h2 className="editor-title"><TextI18n elem="txt_modPrior_title" /></h2>
+      <p className="editor-info"><TextI18n elem="txt_modPrior_info" /></p>
 
       <div className="editor-item-container">
         <div className="space-between-hor">
@@ -31,7 +31,7 @@ function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
           <button
             className="btn-small-text btn-editor-tool btn-text-black btn-bg-accent font-narrow"
             onClick={() => setModifierPriority(moveAllVisibleToTop(modifierPriority))}>
-            {i18nGetText(lang, "btn_modPrior_visibleToTop")}
+            <TextI18n elem="btn_modPrior_visibleToTop" />
           </button>
         </div>
         {
@@ -53,10 +53,9 @@ function ModifierPriorityEditor({ modifierPriority, setModifierPriority }) {
                 }
               </button>
 
-              {globalConstants.modifierNameMap[item[0]] === "Single Press"
-                ? <>Single Press (Short/<span style={{ color: globalConstants.modifierColorMap._hold }}>Long</span>)</>
-                : <span style={{ color: globalConstants.modifierColorMap[item[0]] }}>{globalConstants.modifierNameMap[item[0]]}</span>
-              }
+              <span style={{ color: globalConstants.modifierColorMap[item[0]] }}>
+                <TextI18n elem={"txt_mod_" + item[0]} />
+              </span>
 
               <div className="flex-grow"></div>
               {idx > 0

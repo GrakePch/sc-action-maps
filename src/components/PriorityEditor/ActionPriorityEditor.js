@@ -3,7 +3,7 @@ import eye from "../../assets/icons_for_ui/eye.svg";
 import eye_outline from "../../assets/icons_for_ui/eye-outline.svg";
 import GlobalVarsContext from "../../contexts/_globalVarsContext";
 import { useContext } from "react";
-import i18nGetText from "../../assets/i18n/i18nGetText";
+import TextI18n from "../../assets/i18n/i18nGetText";
 
 function ActionPriorityEditor({ actionCatePriority, setActionCatePriority }) {
   const { globalVars, _ } = useContext(GlobalVarsContext);
@@ -11,8 +11,8 @@ function ActionPriorityEditor({ actionCatePriority, setActionCatePriority }) {
 
   return (
     <div>
-      <h2 className="editor-title">{i18nGetText(lang, "txt_actionPrior_title")}</h2>
-      <p className="editor-info">{i18nGetText(lang, "txt_actionPrior_info")}</p>
+      <h2 className="editor-title"><TextI18n elem="txt_actionPrior_title" /></h2>
+      <p className="editor-info"><TextI18n elem="txt_actionPrior_info" /></p>
 
       <div className="editor-item-container">
         <div className="space-between-hor">
@@ -30,7 +30,7 @@ function ActionPriorityEditor({ actionCatePriority, setActionCatePriority }) {
           <button
             className="btn-small-text btn-editor-tool btn-text-black btn-bg-accent font-narrow"
             onClick={() => setActionCatePriority(moveAllVisibleToTop(actionCatePriority))}>
-            {i18nGetText(lang, "btn_actionPrior_visibleToTop")}
+            <TextI18n elem="btn_actionPrior_visibleToTop" />
           </button>
         </div>
         {
@@ -52,7 +52,7 @@ function ActionPriorityEditor({ actionCatePriority, setActionCatePriority }) {
                 }
               </button>
 
-              {item[0]}
+              {<TextI18n elem={"txt_action_" + item[0]} />}
 
               <div className="flex-grow"></div>
               {idx > 0

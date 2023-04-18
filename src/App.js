@@ -14,13 +14,16 @@ import bug_outline from "./assets/icons_for_ui/bug-outline.svg";
 import upload from "./assets/icons_for_ui/tray-arrow-up.svg";
 import ModifierPriorityEditor from "./components/PriorityEditor/ModifierPriorityEditor";
 import i18n from "./assets/i18n/i18n";
-import i18nGetText from "./assets/i18n/i18nGetText";
+import TextI18n from "./assets/i18n/i18nGetText";
 import GlobalVarsContext from "./contexts/_globalVarsContext";
+import globalConstants from "./_globalConstants";
 
 function App() {
   const [isDebugging, setIsDebugging] = useState(false);
   const [actionMapI2A, setActionMapI2A] = useState(convertA2IToI2A(JSON.parse(JSON.stringify(action2InputDefault))));
-  const [actionCatePriority, setActionCatePriority] = useState(Object.keys(actionCategories).map(item => [item, true]));
+  const [actionCatePriority, setActionCatePriority] = useState(Object.keys(actionCategories).map(item => globalConstants.actionCateDefaultVisible[item]
+    ? [item, true]
+    : [item, false]));
   const [modifierPriority, setModifierPriority] = useState(
     ["_1tap", "_2tap", "lalt", "ralt", "lshift", "rshift", "lctrl", "rctrl"].map(item => [item, true])
   );
@@ -46,10 +49,10 @@ function App() {
                   newObj.lang = nextLangId(obj.lang);
                   return newObj;
                 })}>
-                  {i18nGetText(nextLangId(globalVars.lang), "this_lang")}
+                  <TextI18n elem="this_lang" langOverride={nextLangId(globalVars.lang)} />
                 </button>
                 <button className="Menu-toggle font-narrow" onClick={() => setShowMenu(!showMenu)}>
-                  {i18nGetText(globalVars.lang, "btn_menu")}
+                  <TextI18n elem="btn_menu" />
                 </button>
               </div>
 
@@ -58,12 +61,13 @@ function App() {
                   <ModifierPriorityEditor modifierPriority={modifierPriority} setModifierPriority={setModifierPriority} />
                   <ActionPriorityEditor actionCatePriority={actionCatePriority} setActionCatePriority={setActionCatePriority} />
                   <button className="btn-debug font-narrow" onClick={() => setIsDebugging(!isDebugging)}>
-                    <div style={{ backgroundImage: `url(${bug_outline})` }} />{i18nGetText(globalVars.lang, "btn_debug")}
+                    <div style={{ backgroundImage: `url(${bug_outline})` }} />
+                    <TextI18n elem="btn_debug" />
                   </button>
                 </div>
                 <label className="upload-label" htmlFor="inputActionMaps">
                   <div style={{ backgroundImage: `url(${upload})` }} />
-                  {i18nGetText(globalVars.lang, "btn_upload")}
+                  <TextI18n elem="btn_upload" />
                 </label>
                 <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
               </div>

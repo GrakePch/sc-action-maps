@@ -1,5 +1,5 @@
 {
-    "Flight - Basic": [
+    "flight_basic": [
         "seat_general",
         "spaceship_general",
         "spaceship_view",
@@ -12,7 +12,7 @@
         "lights_controller",
         "stopwatch"
     ],
-    "Vehicle - Targeting & Radar": [
+    "v_targeting_radar": [
         "spaceship_targeting",
         "spaceship_targeting_advanced",
         "spaceship_target_hailing",
@@ -20,20 +20,20 @@
         "radar_tagging",
         "spaceship_scanning"
     ],
-    "Vehicle - Mining & Salvaging": [
+    "v_mining_salvaging": [
         "spaceship_mining",
         "spaceship_salvage"
     ],
-    "Vehicle - Weapons & Defense": [
+    "v_weapon_defense": [
         "spaceship_weapons",
         "spaceship_missiles",
         "spaceship_defensive"
     ],
-    "Turret - All": [
+    "turret_all": [
         "turret_movement",
         "turret_advanced"
     ],
-    "Ground Vehicle - Basic": [
+    "groundV_basic": [
         "seat_general",
         "vehicle_general",
         "spaceship_general",
@@ -42,7 +42,7 @@
         "vehicle_capacitor_assignment",
         "lights_controller"
     ],
-    "On Foot & E.V.A - All": [
+    "onFoot_eva_all": [
         "player",
         "prone",
         "incapacitated",
@@ -50,23 +50,23 @@
         "zero_gravity_eva",
         "zero_gravity_traversal"
     ],
-    "Player - General & Social": [
+    "p_general_social": [
         "default",
         "ui_notification"
     ],
-    "Player - Interactions": [
+    "p_interactions": [
         "player_choice"
     ],
-    "Player - Emotes": [
+    "p_emotes": [
         "player_emotes"
     ],
-    "VOIP/FOIP/Head Tracking": [
+    "voipFoipHeadTracking": [
         "player_input_optical_tracking"
     ],
-    "Electronic Access - Spectator": [
+    "ea_spectator": [
         "spectator"
     ],
-    "Camera": [
+    "camera": [
         "view_director_mode"
     ]
 }
