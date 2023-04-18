@@ -2,7 +2,7 @@ import "./PriorityEditor.css";
 import eye from "../../assets/icons_for_ui/eye.svg";
 import eye_outline from "../../assets/icons_for_ui/eye-outline.svg";
 import globalConstants from "../../_globalConstants";
-import TextI18n from "../../assets/i18n/i18nGetText";
+import TextI18n from "../../assets/i18n/TextI18n";
 import { useContext } from "react";
 import GlobalVarsContext from "../../contexts/_globalVarsContext";
 

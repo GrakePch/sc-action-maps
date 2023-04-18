@@ -3,7 +3,7 @@ import eye from "../../assets/icons_for_ui/eye.svg";
 import eye_outline from "../../assets/icons_for_ui/eye-outline.svg";
 import GlobalVarsContext from "../../contexts/_globalVarsContext";
 import { useContext } from "react";
-import TextI18n from "../../assets/i18n/i18nGetText";
+import TextI18n from "../../assets/i18n/TextI18n";
 
 function ActionPriorityEditor({ actionCatePriority, setActionCatePriority }) {
   const { globalVars, _ } = useContext(GlobalVarsContext);

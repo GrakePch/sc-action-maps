@@ -14,7 +14,7 @@ import bug_outline from "./assets/icons_for_ui/bug-outline.svg";
 import upload from "./assets/icons_for_ui/tray-arrow-up.svg";
 import ModifierPriorityEditor from "./components/PriorityEditor/ModifierPriorityEditor";
 import i18n from "./assets/i18n/i18n";
-import TextI18n from "./assets/i18n/i18nGetText";
+import TextI18n from "./assets/i18n/TextI18n";
 import GlobalVarsContext from "./contexts/_globalVarsContext";
 import globalConstants from "./_globalConstants";
 
