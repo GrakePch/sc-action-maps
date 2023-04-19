@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;fill:#666666;}
+</style>
+<polygon points="400,60 360,60 360,20 340,20 340,60 300,60 300,80 340,80 340,120 360,120 360,80 400,80 "/>
+<path class="st0" d="M280.15,120L280.15,120c-33.14-33.14-86.86-33.14-120,0l0,0l0,0c-33.14-33.14-86.86-33.14-120,0l0,0
+	c-33.14,33.14-33.14,86.86,0,120l120,120l120-120C313.28,206.86,313.28,153.14,280.15,120z M160.15,300v-60h-40l40-100v60h40
+	L160.15,300z"/>
+<path d="M300,140v-20h-20v-20h-80v20h-20l-0.15,20h-19.71L160,120h-20v-20H60v20H40v20H20v80h20v20h20v20h20v20h20v20h20v20h20v20
+	h20v20h20v-20h20v-20h20v-20h20v-20h20v-20h20v-20h20v-20h20v-80H300z M220,240v20h-20v20h-20v20h-19.85l-0.07-20H180v-20h20v-20
+	h-60h-20v-20v-20h20v-20h20v-20h20v20h-20v20h-20v20h60h20V240z"/>
+</svg>
