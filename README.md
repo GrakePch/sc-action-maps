@@ -2,7 +2,7 @@
 
 A WIP react app that visualizes the complicated action maps of Star Citizen with icons.
 
-![preview](./images/preview_230416.png)
+![preview](./images/preview_230418.png)
 
 A preview for the current build. This is not the final design. Only showing the default keybindings. Squares with texts are placeholders for the actions that do not have an icon, and will be assigned with an icon in the future updates.
 

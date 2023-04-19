@@ -19,7 +19,7 @@
     "v_weapon_launch_missile_cinematic_hold": 1,
     "v_weapon_countermeasure_decoy_launch": [
         "v_weapon_countermeasure_decoy_launch",
-        "custom_v_weapon_countermeasure_decoy_set_launch"
+        "_custom_v_weapon_countermeasure_decoy_set_launch"
     ],
     "v_capacitor_assignment_engine_combined_decrease_min": [
         "v_capacitor_assignment_engine_decrease",

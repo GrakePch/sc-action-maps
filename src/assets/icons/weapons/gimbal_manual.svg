@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<g id="gyro">
+	<g>
+		<path d="M200,0c-49.71,0-90,89.54-90,200s40.29,200,90,200s90-89.54,90-200S249.71,0,200,0z M200,360c-27.62,0-50-71.64-50-160
+			s22.38-160,50-160s50,71.64,50,160S227.62,360,200,360z"/>
+	</g>
+	<g>
+		<path d="M400,200c0-49.71-89.54-90-200-90S0,150.29,0,200s89.54,90,200,90S400,249.71,400,200z M40,200c0-27.62,71.64-50,160-50
+			s160,22.38,160,50s-71.64,50-160,50S40,227.62,40,200z"/>
+	</g>
+</g>
+</svg>

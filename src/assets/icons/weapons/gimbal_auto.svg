@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;stroke-dasharray:29.8463,29.8463;}
+</style>
+<g id="gyro">
+	<g>
+		<path d="M200,60c-33.14,0-60,62.68-60,140s26.86,140,60,140s60-62.68,60-140S233.14,60,200,60z M200,310c-16.57,0-30-49.25-30-110
+			s13.43-110,30-110s30,49.25,30,110S216.57,310,200,310z"/>
+	</g>
+	<g>
+		<path d="M60,200c0,33.14,62.68,60,140,60s140-26.86,140-60s-62.68-60-140-60S60,166.86,60,200z M310,200c0,16.57-49.25,30-110,30
+			S90,216.57,90,200s49.25-30,110-30S310,183.43,310,200z"/>
+	</g>
+</g>
+<g>
+	<circle class="st0" cx="200" cy="200" r="190"/>
+</g>
+</svg>

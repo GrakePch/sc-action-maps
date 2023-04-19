@@ -12,6 +12,7 @@
         ["v_strafe_right", "v_yaw_right", "eva_strafe_right", "moveright"],
         ["v_roll_left", "eva_roll_left"],
         ["v_roll_right", "eva_roll_right"],
-        ["v_afterburner", "v_boost", "eva_boost"]
+        ["v_afterburner", "v_boost", "eva_boost"],
+        ["v_toggle_mining_mode", "v_toggle_salvage_mode"]
     ]
 }
