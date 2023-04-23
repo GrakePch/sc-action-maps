@@ -11,10 +11,10 @@ const i18n = {
     txt_maxIconsOnAKey_info: "Set the max number of icons shown on a key.",
 
     txt_actionPrior_title: "Action Priorities",
-    txt_actionPrior_info: "Action categories near the top will be displayed on the key with higher priority.",
+    txt_actionPrior_info: "Action categories near the top will be displayed on the key with higher priority. Click on the eye icons to change the visibilities.",
     btn_actionPrior_visibleToTop: "⮝ Move Visible Actions to Top",
     txt_modPrior_title: "Modifier Priorities",
-    txt_modPrior_info: "Modifier near the top will be displayed on the key with higher priority within the same action category.",
+    txt_modPrior_info: "Modifiers near the top will be displayed on the key with higher priority within the same action category. Click on the eye icons to change the visibilities.",
     btn_modPrior_visibleToTop: "⮝ Move Visible Modifiers to Top",
 
     txt_action_flight_basic: "Flight - Basic",
@@ -47,13 +47,13 @@ const i18n = {
     btn_debug: "调试切换：显示操作 Id",
 
     txt_maxIconsOnAKey_title: "图标数量",
-    txt_maxIconsOnAKey_info: "设置单个按键显示图标数量上限",
+    txt_maxIconsOnAKey_info: "设置单个按键上显示图标的数量上限。",
 
     txt_actionPrior_title: "操作项优先级",
-    txt_actionPrior_info: "靠近顶端的操作类别将会在按键上优先显示",
+    txt_actionPrior_info: "靠近顶端的操作类别将会在按键上优先显示。点击眼睛图标以更改可见性。",
     btn_actionPrior_visibleToTop: "⮝ 置顶可见操作项",
     txt_modPrior_title: "修饰键优先级",
-    txt_modPrior_info: "同一个操作类别中，靠近顶端的修饰键将会在按键上优先显示",
+    txt_modPrior_info: "同一个操作类别中，靠近顶端的修饰键将会在按键上优先显示。点击眼睛图标以更改可见性。",
     btn_modPrior_visibleToTop: "⮝ 置顶可见修饰键",
 
     txt_action_flight_basic: "飞行 - 基础",
