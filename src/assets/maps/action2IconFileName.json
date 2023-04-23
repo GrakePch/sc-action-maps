@@ -89,7 +89,7 @@
     "v_enter_remote_turret_3": "turret_remote_enter_3",
     "v_look_ahead_enable": "look_ahead_enable",
     "v_look_ahead_start_target_tracking": "target_padlock",
-    "v_target_lock_selected": "v_target_lock_selected",
+    "v_target_lock_selected": "target_lock_selected",
     "v_target_pin_selected": "target_pin_add",
     "v_target_pin_selected_hold": "target_pin_add",
     "v_target_remove_all_pins": "target_pin_clear",
