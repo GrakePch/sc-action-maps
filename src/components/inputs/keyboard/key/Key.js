@@ -54,7 +54,7 @@ function Key({
         width: defaultSz * (widthMod) + "rem",
         height: defaultSz * (heightMod) + "rem",
       }}
-      onClick={() => console.log(actionListObj)}
+      onClick={() => console.log(actionListObj.actionList)}
     >
       {
         id &&
