@@ -15,7 +15,7 @@ const icons = reqIcons.keys().map(p => ({
  * showing: "icon | debug"
  */
 
-export default function getElementsWithActions(inputId, actionList, showing = "icon", limit = 4) {
+export default function getElementsWithActions(inputId, actionListObj, showing = "icon") {
   if (inputId === "win") {
     return <img src={StarCitizenLogo} alt="Star Citizen Logo" className="color-_ star-citizen-logo" />
   }
@@ -25,22 +25,28 @@ export default function getElementsWithActions(inputId, actionList, showing = "i
 
   if (showing === "debug") {
     return <div style={{ fontSize: ".45rem" }}>
-      {actionList.map(([action, modifier], idx) =>
+      {actionListObj.actionList.map(([action, modifier], idx) =>
         <div key={idx} style={{ color: globalConstants.modifierColorMap[modifier] }}>{action}</div>
       )}
     </div>;
   }
 
-  if (actionList.length === 0) return null;
+  if (!actionListObj) return null;
 
-  var [numInFirstRow, clsNameFirstRow, clsNameRemainedRows] = genIconLayoutInfo(inputId, actionList.length);
+  let actionListVisible = [];
+  for (const actionArr of actionListObj.actionList)
+    if (actionArr[actionArr.length - 1]) actionListVisible.push(actionArr);
+
+  if (actionListVisible.length === 0) return null;
+
+  var [numInFirstRow, clsNameFirstRow, clsNameRemainedRows] = genIconLayoutInfo(inputId, actionListVisible.length);
 
   var iconsFirstRow = [];
   var iconsRemainedRows = [];
   for (let a = 0; a < numInFirstRow; a++)
-    genAndPushIconElement(iconsFirstRow, a, actionList, clsNameFirstRow);
-  for (let a = numInFirstRow; a < actionList.length; a++)
-    genAndPushIconElement(iconsRemainedRows, a, actionList, clsNameRemainedRows);
+    genAndPushIconElement(iconsFirstRow, a, actionListVisible, clsNameFirstRow);
+  for (let a = numInFirstRow; a < actionListVisible.length; a++)
+    genAndPushIconElement(iconsRemainedRows, a, actionListVisible, clsNameRemainedRows);
   return <>
     <div className="Key-icon-first-row">{iconsFirstRow}</div>
     {iconsRemainedRows.length > 0 &&
@@ -49,7 +55,8 @@ export default function getElementsWithActions(inputId, actionList, showing = "i
 }
 
 function genAndPushIconElement(destList, actionIdx, actionList, additionalClassName) {
-  const [action, modifier] = actionList[actionIdx];
+  const [action, modifier, category, visibility] = actionList[actionIdx];
+  if (!visibility) return;
   const iconFileName = action2IconFileName[action];
 
   if (iconFileName) {

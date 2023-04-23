@@ -1,44 +1,44 @@
 {
     "flight_basic": [
-        "seat_general",
         "spaceship_general",
         "spaceship_view",
         "spaceship_movement",
+        "spaceship_power",
+        "seat_general",
         "spaceship_quantum",
         "spaceship_docking",
-        "spaceship_power",
         "vehicle_capacitor_assignment",
         "spaceship_hud",
         "lights_controller",
         "stopwatch"
     ],
     "v_targeting_radar": [
-        "spaceship_targeting",
         "spaceship_targeting_advanced",
+        "spaceship_targeting",
         "spaceship_target_hailing",
         "spaceship_radar",
         "radar_tagging",
         "spaceship_scanning"
-    ],
-    "v_mining_salvaging": [
-        "spaceship_mining",
-        "spaceship_salvage"
     ],
     "v_weapon_defense": [
         "spaceship_weapons",
         "spaceship_missiles",
         "spaceship_defensive"
     ],
+    "v_mining_salvaging": [
+        "spaceship_mining",
+        "spaceship_salvage"
+    ],
     "turret_all": [
         "turret_movement",
         "turret_advanced"
     ],
     "groundV_basic": [
-        "seat_general",
         "vehicle_general",
         "spaceship_general",
-        "vehicle_driver",
         "spaceship_power",
+        "seat_general",
+        "vehicle_driver",
         "vehicle_capacitor_assignment",
         "lights_controller"
     ],

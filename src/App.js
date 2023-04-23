@@ -17,6 +17,7 @@ import i18n from "./assets/i18n/i18n";
 import TextI18n from "./assets/i18n/TextI18n";
 import GlobalVarsContext from "./contexts/_globalVarsContext";
 import globalConstants from "./_globalConstants";
+import MaxNumOfIconsEditor from "./components/PriorityEditor/MaxNumOfIconsEditor";
 
 function App() {
   const [isDebugging, setIsDebugging] = useState(false);
@@ -29,9 +30,10 @@ function App() {
   );
   const [showMenu, setShowMenu] = useState(false);
   const [globalVars, setGlobalVars] = useState({
-    lang: "en_US"
+    lang: "en_US",
+    maxIconsOnAKey: 9
   });
-  const globalVarsWithSetter = { globalVars, setGlobalVars }
+  const globalVarsWithSetter = { globalVars, setGlobalVars };
 
   return (
     <ActionCatePriorityContext.Provider value={actionCatePriority}>
@@ -58,18 +60,27 @@ function App() {
 
               <div className={`Menu-container Menu-container-${showMenu ? "show" : "hide"} font-narrow`}>
                 <div className="scrollable-vert">
+
+                  <MaxNumOfIconsEditor />
+
                   <ModifierPriorityEditor modifierPriority={modifierPriority} setModifierPriority={setModifierPriority} />
+
                   <ActionPriorityEditor actionCatePriority={actionCatePriority} setActionCatePriority={setActionCatePriority} />
+
                   <button className="btn-debug font-narrow" onClick={() => setIsDebugging(!isDebugging)}>
                     <div style={{ backgroundImage: `url(${bug_outline})` }} />
                     <TextI18n elem="btn_debug" />
                   </button>
+
                 </div>
+
                 <label className="upload-label" htmlFor="inputActionMaps">
                   <div style={{ backgroundImage: `url(${upload})` }} />
                   <TextI18n elem="btn_upload" />
                 </label>
+
                 <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
+
               </div>
             </div>
           </GlobalVarsContext.Provider>

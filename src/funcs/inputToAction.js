@@ -13,11 +13,11 @@ import globalConstants from "../_globalConstants";
   ralt:   right alt   + key
 */
 
-export default function getActionsWithInput(input, device, actionMapI2A, actionCatePriority, modifierPriority) {
+export default function getActionsWithInput(input, device, actionMapI2A, actionCatePriority, modifierPriority, limit) {
   const modCombinedMap = globalConstants.modCombinedMap;
 
-  // actionList = [[actionId, modifier], ...]
-  var actionList = [];
+  // actionListObj = {numVisible: 0, actionList: [[actionId, modifier, visibility], ...]}
+  var actionListObj = { numVisible: 0, actionList: [] };
 
   // toBeMergedActionBuffer = {modifier: [actionId, ...], ...}
   var toBeMergedActionBuffer = {};
@@ -41,34 +41,34 @@ export default function getActionsWithInput(input, device, actionMapI2A, actionC
           if (!actions) continue;
           if (Array.isArray(actions))
             for (const action of actions)
-              checkIfHold_pushActionModifierToList(actionList, action, modifier, toBeMergedActionBuffer);
+              checkIfHold_pushActionModifierToList(actionListObj, action, modifier, actionMap, toBeMergedActionBuffer, limit);
           else
-            checkIfHold_pushActionModifierToList(actionList, actions, modifier, toBeMergedActionBuffer);
+            checkIfHold_pushActionModifierToList(actionListObj, actions, modifier, actionMap, toBeMergedActionBuffer, limit);
         }
       }
     }
   }
 
-  return actionList;
+  return actionListObj;
 }
 
-function checkIfHold_pushActionModifierToList(actionList, action, modifier, toBeMergedActionBuffer) {
+function checkIfHold_pushActionModifierToList(actionListObj, action, modifier, category, toBeMergedActionBuffer, limit) {
   if (modifier === "_" && actionsNeedHold[action]) {
     if (actionsNeedHold[action] === 1) {
-      checkMerge_pushActionModifierToList(actionList, [action, "_hold"], toBeMergedActionBuffer);
+      checkMerge_pushActionModifierToList(actionListObj, [action, "_hold", category], toBeMergedActionBuffer, limit);
     } else if (Array.isArray(actionsNeedHold[action])) {
-      checkMerge_pushActionModifierToList(actionList, [actionsNeedHold[action][0], "_"], toBeMergedActionBuffer);
-      checkMerge_pushActionModifierToList(actionList, [actionsNeedHold[action][1], "_hold"], toBeMergedActionBuffer);
+      checkMerge_pushActionModifierToList(actionListObj, [actionsNeedHold[action][0], "_", category], toBeMergedActionBuffer, limit);
+      checkMerge_pushActionModifierToList(actionListObj, [actionsNeedHold[action][1], "_hold", category], toBeMergedActionBuffer, limit);
     }
     return;
   }
-  checkMerge_pushActionModifierToList(actionList, [action, modifier], toBeMergedActionBuffer);
+  checkMerge_pushActionModifierToList(actionListObj, [action, modifier, category], toBeMergedActionBuffer, limit);
 }
 
-function checkMerge_pushActionModifierToList(actionList, [action, modifier], toBeMergedActionBuffer) {
+function checkMerge_pushActionModifierToList(actionListObj, [action, modifier, category], toBeMergedActionBuffer, limit) {
   // If action is included by the mergeSet of the same modifier. T: skip it; F: continue
   const mergeSet = toBeMergedActionBuffer[modifier];
-  if (mergeSet?.includes(action)) return;
+  if (mergeSet?.includes(action)) pushUniqueActionInfoToArr(actionListObj, [action, modifier, category, false], limit);
 
   // If the action to be pushed is in the pre-set MergeSet, update toBeMergedActionBuffer (for future merging)
   for (const set of actionMergeSet.mergeSets) {
@@ -78,22 +78,32 @@ function checkMerge_pushActionModifierToList(actionList, [action, modifier], toB
       toBeMergedActionBuffer[modifier] = toBeMergedActionBuffer[modifier].concat(set);
     }
   }
-  pushUniqueArrToArr(actionList, [action, modifier]);
+  pushUniqueActionInfoToArr(actionListObj, [action, modifier, category, true], limit);
 }
 
-function pushUniqueArrToArr(destArr, srcArr) {
-  if (!Array.isArray(destArr)) {
-    console.log("Destination is not an Array.");
-    return;
-  }
+function pushUniqueActionInfoToArr(actionListObj, srcArr, limit = 9) {
   if (!Array.isArray(srcArr)) {
     console.log("Source is not an Array.");
     return;
   }
 
-  var srcStr = srcArr.toString();
-  for (const item of destArr) {
-    if (item.toString() === srcStr.toString()) return;
+  // Check unique
+  for (const item of actionListObj.actionList) {
+    if (item[0] === srcArr[0] && item[1] === srcArr[1]) {
+      // if action, modifier, and category duplicates, skip.
+      if (item[2] === srcArr[2]) return;
+      // if action, modifier duplicates, but category differs, push as invisible
+      actionListObj.actionList.push([srcArr[0], srcArr[1], srcArr[2], false]);
+      return;
+    }
   }
-  destArr.push(srcArr);
+
+  // Check limit
+  if (actionListObj.numVisible >= limit) {
+    actionListObj.actionList.push([srcArr[0], srcArr[1], srcArr[2], false]);
+    return;
+  }
+
+  if (srcArr[3]) actionListObj.numVisible++;
+  actionListObj.actionList.push(srcArr);
 }

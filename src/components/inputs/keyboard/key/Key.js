@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from "react";
 import ActionCatePriorityContext from "../../../../contexts/ActionCatePriorityContext";
 import ActionMapI2AContext from "../../../../contexts/ActionMapI2AContext";
 import ModifierPriorityContext from "../../../../contexts/ModifierPriorityContext";
+import GlobalVarsContext from "../../../../contexts/_globalVarsContext";
 
 function Key({
   id = "unknown",
@@ -19,7 +20,8 @@ function Key({
   const actionCatePriority = useContext(ActionCatePriorityContext);
   const modifierPriority = useContext(ModifierPriorityContext);
   const actionMapI2A = useContext(ActionMapI2AContext);
-  const [actionList, setActionList] = useState(getActionsWithInput(
+  const { globalVars, _setGlobalVars } = useContext(GlobalVarsContext);
+  const [actionListObj, setActionListObj] = useState(getActionsWithInput(
     id,
     device,
     actionMapI2A,
@@ -29,18 +31,20 @@ function Key({
 
   useEffect(() => {
 
-    setActionList(getActionsWithInput(
+    setActionListObj(getActionsWithInput(
       id,
       device,
       actionMapI2A,
       actionCatePriority,
-      modifierPriority
+      modifierPriority,
+      globalVars.maxIconsOnAKey,
     ));
 
   }, [
     actionMapI2A,
     actionCatePriority,
-    modifierPriority
+    modifierPriority,
+    globalVars
   ])
 
   return (
@@ -50,6 +54,7 @@ function Key({
         width: defaultSz * (widthMod) + "rem",
         height: defaultSz * (heightMod) + "rem",
       }}
+      onClick={() => console.log(actionListObj)}
     >
       {
         id &&
@@ -57,10 +62,10 @@ function Key({
           boxShadow: "0 0 0 2px " + globalConstants.modifierColorMap[id]
         }}>
           {
-            actionList.length <= 3 &&
+            actionListObj.numVisible <= 3 &&
             <p className="Key-name">{kbId2Name.map[id]}</p>
           }
-          <div className="Key-icon-container">{getElementsWithActions(id, actionList, isDebug ? "debug" : "icon")}</div>
+          <div className="Key-icon-container">{getElementsWithActions(id, actionListObj, isDebug ? "debug" : "icon")}</div>
         </div>
       }
     </div>

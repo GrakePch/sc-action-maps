@@ -7,6 +7,9 @@ const i18n = {
     btn_upload: "Upload actionmaps.xml",
     btn_debug: "Debug Toggle: Displaying Action Id",
 
+    txt_maxIconsOnAKey_title: "Number of Icons",
+    txt_maxIconsOnAKey_info: "Set the max number of icons shown on a key.",
+
     txt_actionPrior_title: "Action Priorities",
     txt_actionPrior_info: "Action categories near the top will be displayed on the key with higher priority.",
     btn_actionPrior_visibleToTop: "⮝ Move Visible Actions to Top",
@@ -42,6 +45,9 @@ const i18n = {
     btn_menu: "菜单 ≡",
     btn_upload: "上传 actionmaps.xml",
     btn_debug: "调试切换：显示操作 Id",
+
+    txt_maxIconsOnAKey_title: "图标数量",
+    txt_maxIconsOnAKey_info: "设置单个按键显示图标数量上限",
 
     txt_actionPrior_title: "操作项优先级",
     txt_actionPrior_info: "靠近顶端的操作类别将会在按键上优先显示",
