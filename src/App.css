@@ -14,6 +14,10 @@
   background: #343541;
 }
 
+::-webkit-scrollbar-corner {
+  background: #343541;
+}
+
 ::-webkit-scrollbar-thumb {
   background: rgba(0 0 0 / .25);
   border: solid 4px #343541;
@@ -41,6 +45,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-width: min-content;
   font-size: calc(10px + 2vmin);
   color: #afe5f4;
 }
@@ -93,12 +98,23 @@
   padding-right: .5rem;
   /*leave .5rem for scrollbar*/
   border-radius: 1rem;
+  overflow-y: hidden;
   transition: right 0.2s cubic-bezier(0.5, 0, 0, 1) 0s;
 }
 
 .Menu-container>*:not(:first-child) {
   margin-right: .5rem;
   /*To align the non-scrollbar elements*/
+}
+
+@-moz-document url-prefix() {
+  .Menu-container {
+    padding-right: 1rem;
+  }
+
+  .Menu-container>*:not(:first-child) {
+    margin-right: 0;
+  }
 }
 
 .Menu-container-show {
@@ -149,7 +165,8 @@
   cursor: pointer;
   background-color: #afe5f4;
   color: #000;
-  height: 3.5rem;
+  height: 3rem;
+  flex-shrink: 0;
   font-size: 1.25rem;
   font-weight: bold;
   border-radius: .5rem;
