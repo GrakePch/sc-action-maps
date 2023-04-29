@@ -58,9 +58,11 @@ function Key({
         if (!actionListObj || !actionListObj.actionList || actionListObj.actionList.length === 0) return;
         setGlobalVars(obj => {
           let newObj = JSON.parse(JSON.stringify(obj));
-          newObj.keyDetails.lockShowing = !newObj.keyDetails.lockShowing;
-          newObj.keyDetails.keyId = id;
-          newObj.keyDetails.actionListObj = actionListObj;
+          if (newObj.keyDetails.keyId === id) newObj.keyDetails.lockShowing = !newObj.keyDetails.lockShowing;
+          else {
+            newObj.keyDetails.keyId = id;
+            newObj.keyDetails.actionListObj = actionListObj;
+          }
           return newObj;
         })
         // console.log(actionListObj.actionList)

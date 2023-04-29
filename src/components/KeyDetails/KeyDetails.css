@@ -16,7 +16,29 @@
     border-radius: 1rem;
     overflow-Y: auto;
     z-index: 1000;
-    transition: outline-width .05s;
+    transition: outline-width .05s, opacity .2s;
+}
+
+.KeyDetails-container::-webkit-scrollbar {
+    width: .5rem;
+}
+
+.KeyDetails-container::-webkit-scrollbar-track, .KeyDetails-container::-webkit-scrollbar-thumb {
+    border: none;
+    background: transparent;
+    border-radius: .25rem;
+}
+
+.KeyDetails-container:hover::-webkit-scrollbar-thumb {
+    background: rgba(0 0 0 / .4);
+}
+
+.KeyDetails-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(0 0 0 / .525);
+}
+
+.KeyDetails-container::-webkit-scrollbar-thumb:active {
+    background: rgba(0 0 0 / .65);
 }
 
 .KeyDetails-info {
@@ -27,18 +49,22 @@
 }
 
 .KeyDetails-title {
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
     margin: 0;
-    font-size: 1.5rem;
+    margin-top: 8px;
+    height: 1.625rem;
+    font-size: 1.25rem;
     font-weight: normal;
-    text-align: right;
 }
 
 .KeyDetails-title>span {
-    display: inline-block;
+    display: flex;
+    align-items: end;
     color: #000;
     font-weight: bold;
     padding: 0 .4rem;
-    padding-top: .2rem;
     border-radius: .25rem;
 }
 
@@ -59,7 +85,7 @@
 
 .KeyDetails-action {
     display: flex;
-    gap: .5rem;
+    gap: 1.25rem;
     justify-content: space-between;
     align-items: center;
     margin-top: 2px;

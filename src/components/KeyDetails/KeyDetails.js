@@ -5,6 +5,7 @@ import TextI18n from "../../assets/i18n/TextI18n";
 import TextIcon from "../../funcs/TextIcon";
 import kbId2Name from "../../assets/maps/keyboardId2Name.json";
 import action2IconFileName from "../../assets/maps/action2IconFileName.json";
+import actionsNeedHold from "../../assets/maps/actionsNeedHold.json";
 
 const reqIcons = require.context('../../assets/icons/', true, /\.(png|jpe?g|svg|JPE?G)$/)
 
@@ -19,6 +20,7 @@ function KeyDetails(props) {
   const [showOnHoverSelf, setShowOnHoverSelf] = useState(false);
   const lockShowing = props.lockShowing;
   const showOnHoverKey = props.showOnHover;
+  const opacity = props.opacity;
   const [detailListObj, setDetailListObj] = useState({});
 
   useEffect(() => {
@@ -51,6 +53,7 @@ function KeyDetails(props) {
         outlineColor: "#afe5f4",
         outlineStyle: "solid",
         outlineWidth: lockShowing ? 4 : 0,
+        opacity: opacity ? 1 : 0
       }}>
       <p className="KeyDetails-info"><TextI18n elem="txt_keyDetails_lockPrompt" /></p>
       {Object.entries(detailListObj).map(([mod, cateObj], idx) =>
@@ -77,7 +80,9 @@ function KeyDetails(props) {
                 {actionIdList.map((actionId, kdx) =>
                   <div key={kdx} className="KeyDetails-action">
                     {getIcon(actionId, mod)}
-                    {actionId}
+                    {actionId && actionId.startsWith("_custom_")
+                      ? Object.keys(actionsNeedHold).filter(i => Array.isArray(actionsNeedHold[i]) && actionsNeedHold[i].includes(actionId))[0]
+                      : actionId}
                   </div>
                 )}
               </div>

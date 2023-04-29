@@ -89,14 +89,13 @@ function App() {
                 <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
 
               </div>
-              {
-                !showMenu &&
-                <KeyDetails
-                  keyId={globalVars.keyDetails.keyId}
-                  actions={globalVars.keyDetails.actionListObj}
-                  lockShowing={globalVars.keyDetails.lockShowing}
-                  showOnHover={globalVars.keyDetails.showOnHover} />
-              }
+              <KeyDetails
+                keyId={globalVars.keyDetails.keyId}
+                actions={globalVars.keyDetails.actionListObj}
+                lockShowing={globalVars.keyDetails.lockShowing}
+                showOnHover={globalVars.keyDetails.showOnHover}
+                opacity={!showMenu}
+              />
             </div>
           </GlobalVarsContext.Provider>
         </ActionMapI2AContext.Provider>

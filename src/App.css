@@ -104,6 +104,7 @@ body {
   border-radius: 1rem;
   overflow-y: hidden;
   transition: right 0.2s cubic-bezier(0.5, 0, 0, 1) 0s;
+  z-index: 2000;
 }
 
 .Menu-container>*:not(:first-child) {
