@@ -20,7 +20,7 @@ function Key({
   const actionCatePriority = useContext(ActionCatePriorityContext);
   const modifierPriority = useContext(ModifierPriorityContext);
   const actionMapI2A = useContext(ActionMapI2AContext);
-  const { globalVars, _setGlobalVars } = useContext(GlobalVarsContext);
+  const { globalVars, setGlobalVars } = useContext(GlobalVarsContext);
   const [actionListObj, setActionListObj] = useState(getActionsWithInput(
     id,
     device,
@@ -54,11 +54,38 @@ function Key({
         width: defaultSz * (widthMod) + "rem",
         height: defaultSz * (heightMod) + "rem",
       }}
-      onClick={() => console.log(actionListObj.actionList)}
+      onClick={() => {
+        if (!actionListObj || !actionListObj.actionList || actionListObj.actionList.length === 0) return;
+        setGlobalVars(obj => {
+          let newObj = JSON.parse(JSON.stringify(obj));
+          newObj.keyDetails.lockShowing = !newObj.keyDetails.lockShowing;
+          newObj.keyDetails.keyId = id;
+          newObj.keyDetails.actionListObj = actionListObj;
+          return newObj;
+        })
+        // console.log(actionListObj.actionList)
+      }}
+      onMouseEnter={() => {
+        if (globalVars.keyDetails.lockShowing) return;
+        setGlobalVars(obj => {
+          let newObj = JSON.parse(JSON.stringify(obj));
+          newObj.keyDetails.showOnHover = true;
+          newObj.keyDetails.keyId = id;
+          newObj.keyDetails.actionListObj = actionListObj;
+          return newObj;
+        })
+      }}
+      onMouseLeave={() => {
+        setGlobalVars(obj => {
+          let newObj = JSON.parse(JSON.stringify(obj));
+          newObj.keyDetails.showOnHover = false;
+          return newObj;
+        })
+      }}
     >
       {
         id &&
-        <div className="Key-cap" style={globalConstants.modifierColorMap[id] && {
+        <div className={"Key-cap" + (globalVars.keyDetails.lockShowing && globalVars.keyDetails.keyId === id ? " active" : "")} style={globalConstants.modifierColorMap[id] && {
           boxShadow: "0 0 0 2px " + globalConstants.modifierColorMap[id]
         }}>
           {

@@ -5,7 +5,7 @@
     "v_toggle_mining_mode": "v_industrial_mode",
     "v_toggle_missile_mode": "missiles",
     "v_toggle_quantum_mode": "quantum_marker",
-    "v_toggle_salvage_mode": "utility_items",
+    "v_toggle_salvage_mode": "v_industrial_mode",
     "v_toggle_scan_mode": "scan_mode",
     "v_view_look_behind": null,
     "v_close_all_doors": null,

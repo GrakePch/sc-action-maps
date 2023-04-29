@@ -34,6 +34,10 @@
 
 /**/
 
+body {
+  background-color: #343541;
+}
+
 .App {
   text-align: center;
 }

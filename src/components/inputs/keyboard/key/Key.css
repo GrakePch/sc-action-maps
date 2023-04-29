@@ -15,6 +15,10 @@
     background-color: #40414f;
 }
 
+.Key-cap.active, .Key-cap:hover {
+    background-color: #5b5c6d;
+}
+
 .Key-name {
     position: absolute;
     left: .5rem;

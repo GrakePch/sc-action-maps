@@ -12,10 +12,10 @@ const globalConstants = {
     _hold: "#61c6ff",
     _2tap: "#4b8fe2",
     lalt: "#f79723",
-    lshift: "#ee3b3c",
-    lctrl: "#3fbc3f",
     ralt: "#e6077e",
+    lshift: "#ee3b3c",
     rshift: "#ff8ba0",
+    lctrl: "#3fbc3f",
     rctrl: "#3fbc9c",
     f: "#9c4bdc"
   },

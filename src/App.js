@@ -18,6 +18,7 @@ import TextI18n from "./assets/i18n/TextI18n";
 import GlobalVarsContext from "./contexts/_globalVarsContext";
 import globalConstants from "./_globalConstants";
 import MaxNumOfIconsEditor from "./components/PriorityEditor/MaxNumOfIconsEditor";
+import KeyDetails from "./components/KeyDetails/KeyDetails";
 
 function App() {
   const [isDebugging, setIsDebugging] = useState(false);
@@ -31,7 +32,13 @@ function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [globalVars, setGlobalVars] = useState({
     lang: "en_US",
-    maxIconsOnAKey: 9
+    maxIconsOnAKey: 9,
+    keyDetails: {
+      showOnHover: false,
+      lockShowing: false,
+      keyId: null,
+      actionListObj: null
+    }
   });
   const globalVarsWithSetter = { globalVars, setGlobalVars };
 
@@ -41,9 +48,9 @@ function App() {
         <ActionMapI2AContext.Provider value={actionMapI2A}>
           <GlobalVarsContext.Provider value={globalVarsWithSetter}>
             <div className="App">
-              <header className="App-header">
+              <div className="App-header">
                 <Full defaultSz={6} isDebug={isDebugging} />
-              </header>
+              </div>
 
               <div className="btn-container-float-b-r">
                 <button className="Lang-toggle font-narrow" onClick={() => setGlobalVars(obj => {
@@ -82,6 +89,14 @@ function App() {
                 <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
 
               </div>
+              {
+                !showMenu &&
+                <KeyDetails
+                  keyId={globalVars.keyDetails.keyId}
+                  actions={globalVars.keyDetails.actionListObj}
+                  lockShowing={globalVars.keyDetails.lockShowing}
+                  showOnHover={globalVars.keyDetails.showOnHover} />
+              }
             </div>
           </GlobalVarsContext.Provider>
         </ActionMapI2AContext.Provider>

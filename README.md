@@ -19,7 +19,7 @@ Deployed at [grakep.ch/SC-Keybinding-Visualizer](https://grakep.ch/SC-Keybinding
 - [x] Allow user to edit priorities/visibility of modifiers. 
 - [ ] Editing priorities/visibility: Drag & drop for an easier experience.
 - [ ] Saving user's setting and customized keybindings in local storage.
-- [ ] Hovering (or clicking) on keys to show detailed action info.
+- [x] Hovering (or clicking) on keys to show detailed action info.
 - [ ] Export to SVG or PNG for printing
 
 ## Icon sources
