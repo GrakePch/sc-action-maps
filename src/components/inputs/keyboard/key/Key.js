@@ -49,7 +49,7 @@ function Key({
 
   return (
     <div
-      className="Key-root"
+      className="Key-root font-narrow"
       style={{
         width: defaultSz * (widthMod) + "rem",
         height: defaultSz * (heightMod) + "rem",

@@ -3,7 +3,7 @@
 }
 
 .font-narrow {
-  font-family: Bahnschrift, 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+  font-family: Bahnschrift, 'Barlow', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
 }
 
 ::-webkit-scrollbar {
