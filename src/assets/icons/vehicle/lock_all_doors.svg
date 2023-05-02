@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;stroke:#000000;}
+</style>
+<g id="lock">
+	<path id="lock_1" d="M386.68,66.67H280.15c-0.08,0-0.15,0.07-0.15,0.15v79.85L293.33,160h106.52c0.08,0,0.15-0.07,0.15-0.15V79.99
+		L386.68,66.67L386.68,66.67z M380,140h-80V86.67h80V140z"/>
+	<path id="lock_2" d="M340,0L340,0c-22.09,0-40,17.91-40,40v26.67h20V40c0-11.05,8.95-20,20-20c11.05,0,20,8.95,20,20v26.67h20V40
+		C380,17.91,362.09,0,340,0z"/>
+</g>
+<g id="ship">
+	<path id="ship_00000082360423297364911300000009399933656309827479_" class="st0" d="M230.71,315l12.14,85h-24.29l-12.14-72.86
+		h-12.14v36.43h-48.57v-36.43h-12.14L121.43,400H97.14l12.14-85L0,351.43v-48.57l109.29-85v-36.43L133.57,145v-12.14
+		c0-24.29,24.29-72.86,24.29-72.86h24.29c0,0,24.29,48.57,24.29,72.86V145l24.29,36.43v36.43l109.29,85v48.57L230.71,315z"/>
+</g>
+</svg>

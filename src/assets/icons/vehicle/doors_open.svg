@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<g id="ramp">
+	<polygon points="40,80 0,200.11 49.66,200.08 40,155 50,120 69.22,200.07 200,200 240,80 	"/>
+	<polygon points="220,215 185.25,215 300,300 170,300 55.25,215 19.87,215 160,320 360,320 	"/>
+	<polygon points="215,155 230,225 255,245 225,120 	"/>
+	<polygon points="60,160 75,230 100,250 70,125 	"/>
+</g>
+<g id="arrow">
+	<path d="M300,120c0,0,30,30,30,75h-25l40,40l40-40h-25c0,0,0-55-40-95L300,120z"/>
+</g>
+</svg>
