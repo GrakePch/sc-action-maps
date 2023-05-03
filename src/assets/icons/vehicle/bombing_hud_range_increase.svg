@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<g id="bomb">
+	<polygon points="175.3,144.23 125.57,57.55 121.24,60.04 101.35,25.37 75.34,40.29 95.23,74.96 90.9,77.44 140.63,164.12 
+		172.88,180.17 	"/>
+	<polygon points="105.68,22.88 126.71,-0.7 136.65,16.63 115.62,40.22 	"/>
+	<polygon points="71.01,42.77 80.96,60.11 49.98,66.36 40.04,49.03 	"/>
+</g>
+<g id="scale">
+	<rect x="340" y="220" width="20" height="20"/>
+	<rect x="380" y="200" width="20" height="60"/>
+	<rect x="100" y="220" width="20" height="20"/>
+	<rect x="60" y="200" width="20" height="60"/>
+	<rect x="220" y="340" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 580 120)" width="20" height="20"/>
+	<rect x="220" y="360" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 620 160)" width="20" height="60"/>
+	<rect x="140" y="220" width="20" height="20"/>
+	<rect x="300" y="220" width="20" height="20"/>
+	<rect x="220" y="300" width="20" height="20"/>
+	<rect x="220" y="100" transform="matrix(6.123234e-17 -1 1 6.123234e-17 120 340)" width="20" height="20"/>
+	<rect x="220" y="40" transform="matrix(6.123234e-17 -1 1 6.123234e-17 160 300)" width="20" height="60"/>
+	<rect x="220" y="140" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 460 300)" width="20" height="20"/>
+	<path d="M230,180c-27.61,0-50,22.39-50,50c0,27.61,22.39,50,50,50s50-22.39,50-50C280,202.39,257.61,180,230,180z M230,260
+		c-16.57,0-30-13.43-30-30s13.43-30,30-30s30,13.43,30,30S246.57,260,230,260z"/>
+</g>
+</svg>

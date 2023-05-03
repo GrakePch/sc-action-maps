@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<path id="ship" class="st0" d="M227.18,121.54l30.77-41.03l10.26,10.26l-25.64,35.9l5.13,5.13l15.39-15.39l20.51,20.51l-15.38,15.39
+	l5.13,5.13l35.9-25.64l10.26,10.26l-41.03,30.77L340,203.59l-20.51,20.51l-82.05-10.26l-15.38,15.39l-25.64,5.13
+	c-0.96,0.96-2.56,2.56-5.13,5.13C181.03,249.74,150.26,260,150.26,260L140,249.74c0,0,10.26-30.77,20.51-41.03
+	c2.56-2.56,4.17-4.17,5.13-5.13l5.13-25.64l15.39-15.38L175.9,80.51L196.41,60L227.18,121.54z"/>
+<g>
+	<path class="st0" d="M40,320h10v-20H40c-11.05,0-20,8.95-20,20v10h20V320z"/>
+	<path class="st0" d="M40,360v-10H20v10c0,11.05,8.95,20,20,20h10v-20H40z"/>
+	<path class="st0" d="M80,300H70v20h10v10h20v-10C100,308.95,91.05,300,80,300z"/>
+	<path class="st0" d="M80,360H70v20h10c11.05,0,20-8.95,20-20v-10H80V360z"/>
+</g>
+<rect x="98.79" y="272.93" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -162.8427 166.8629)" class="st0" width="42.43" height="14.14"/>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<g id="bomb">
+	<polygon points="174.3,145.23 124.57,58.55 120.24,61.04 100.35,26.37 74.34,41.29 94.23,75.96 89.9,78.44 139.63,165.12 
+		171.88,181.17 	"/>
+	<polygon points="104.68,23.88 125.71,0.3 135.65,17.63 114.62,41.22 	"/>
+	<polygon points="70.01,43.77 79.96,61.11 48.98,67.36 39.04,50.03 	"/>
+</g>
+<g id="scale">
+	<rect x="340" y="220" width="20" height="20"/>
+	<rect x="380" y="200" width="20" height="60"/>
+	<rect x="100" y="220" width="20" height="20"/>
+	<rect x="60" y="200" width="20" height="60"/>
+	<rect x="220" y="340" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 580 120)" width="20" height="20"/>
+	<rect x="220" y="360" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 620 160)" width="20" height="60"/>
+	<rect x="180" y="220" width="20" height="20"/>
+	<rect x="260" y="220" width="20" height="20"/>
+	<rect x="220" y="260" width="20" height="20"/>
+	<rect x="220" y="220" width="20" height="20"/>
+	<rect x="220" y="100" transform="matrix(6.123234e-17 -1 1 6.123234e-17 120 340)" width="20" height="20"/>
+	<rect x="220" y="40" transform="matrix(6.123234e-17 -1 1 6.123234e-17 160 300)" width="20" height="60"/>
+	<rect x="220" y="180" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 460 380)" width="20" height="20"/>
+	<rect x="220" y="140" width="20" height="20"/>
+	<rect x="300" y="220" width="20" height="20"/>
+	<rect x="220" y="300" width="20" height="20"/>
+	<rect x="140" y="220" width="20" height="20"/>
+</g>
+<g id="Layer_3">
+	<polygon points="400,280 350,330 360,330 400,330 	"/>
+	<path d="M378.74,350c-4.44,17.25-20.1,30-38.74,30c-22.09,0-40-17.91-40-40c0-22.09,17.91-40,40-40c18.64,0,34.3,12.75,38.74,30
+		h20.41c-4.76-28.37-29.43-50-59.15-50c-33.14,0-60,26.86-60,60s26.86,60,60,60c29.73,0,54.39-21.63,59.15-50H378.74z"/>
+</g>
+</svg>
