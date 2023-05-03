@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<circle cx="200" cy="200" r="25"/>
+<path d="M260,140h-20l-20-20h-40l-20,20h-20c-11.05,0-20,8.95-20,20v80c0,11.05,8.95,20,20,20h120c11.05,0,20-8.95,20-20v-80
+	C280,148.95,271.05,140,260,140z M260,240H140v-80h30l20-20h20l20,20h30V240z"/>
+<polygon points="63.43,91.72 35.15,120 120,120 120,35.15 91.72,63.43 63.43,35.15 35.15,63.43 "/>
+<polygon points="308.43,63.43 280.15,35.15 280.15,120 365,120 336.72,91.72 365,63.43 336.72,35.15 "/>
+<polygon points="336.72,308.43 365,280.15 280.15,280.15 280.15,365 308.43,336.72 336.72,365 365,336.72 "/>
+<polygon points="91.57,336.57 119.85,364.85 119.85,280 35,280 63.28,308.28 35,336.57 63.28,364.85 "/>
+</svg>

@@ -56,5 +56,15 @@
     "ui_notification_ignore": 1,
     "headtrack_hold": 1,
     "view_enable_camview_mode": 1,
-    "view_switch_to_alternative": 1
+    "view_switch_to_alternative": 1,
+    "view_save_view_1": 1,
+    "view_save_view_2": 1,
+    "view_save_view_3": 1,
+    "view_save_view_4": 1,
+    "view_save_view_5": 1,
+    "view_save_view_6": 1,
+    "view_save_view_7": 1,
+    "view_save_view_8": 1,
+    "view_save_view_9": 1,
+    "view_reset_saved": 1
 }

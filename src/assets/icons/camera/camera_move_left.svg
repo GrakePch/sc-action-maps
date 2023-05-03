@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<circle cx="280" cy="200" r="25"/>
+<path d="M340,140h-20l-20-20h-40l-20,20h-20c-11.05,0-20,8.95-20,20v80c0,11.05,8.95,20,20,20h120c11.05,0,20-8.95,20-20v-80
+	C360,148.95,351.05,140,340,140z M340,240H220v-80h30l20-20h20l20,20h30V240z"/>
+<polygon points="40,190 110,120 110,165 160,165 160,215 110,215 110,260 "/>
+</svg>
