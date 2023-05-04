@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<g id="turret">
+	<polygon points="200,360 160,400 199.7,400 229.74,370 259.74,400 299.74,400 250,350 	"/>
+	<polygon points="360.16,305.28 399.55,298.33 394.34,268.79 354.95,275.73 355.82,280.66 257.34,298.02 253.87,278.32 
+		126.03,301.05 136.26,359.99 264.29,337.41 260.81,317.72 359.29,300.35 	"/>
+</g>
+<g id="recenter">
+	<circle cx="140" cy="140" r="20"/>
+	<polygon points="140,100 110,20 170,20 	"/>
+	<polygon points="180,140 260,110 260,170 	"/>
+	<polygon points="100,140 20,110 20,170 	"/>
+	<polygon points="140,180 110,260 170,260 	"/>
+</g>
+</svg>
