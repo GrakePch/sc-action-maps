@@ -1,5 +1,5 @@
 import "./F60WithFn.css";
-import Key from "./key/Key";
+import Key from "../key/Key";
 
 
 function F60WithFn(props) {

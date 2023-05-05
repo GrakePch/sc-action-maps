@@ -117,15 +117,15 @@
         "mouse1": "ML",
         "mouse2": "MR",
         "mouse3": "M3",
-        "mwheel_up": "Wheel Up",
-        "mwheel_down": "Wheel Down",
+        "mwheel_up": "",
+        "mwheel_down": "",
         "mouse4": "M4",
         "mouse5": "M5",
         "mouse6": "M6",
         "mouse7": "M7",
 
-        "maxis_x": "X axis",
-        "maxis_y": "Y axis",
-        "maxis_z": "wheel axis"
+        "maxis_x": "↔",
+        "maxis_y": "↕",
+        "maxis_z": "Wheel ↕"
     }
 }

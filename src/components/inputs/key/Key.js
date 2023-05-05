@@ -1,13 +1,13 @@
 import "./Key.css";
-import kbId2Name from "../../../../assets/maps/keyboardId2Name.json";
-import getElementsWithActions from "../../../../funcs/action2Icon";
-import getActionsWithInput from "../../../../funcs/inputToAction";
-import globalConstants from "../../../../_globalConstants";
+import kbId2Name from "../../../assets/maps/keyboardId2Name.json";
+import getElementsWithActions from "../../../funcs/action2Icon";
+import getActionsWithInput from "../../../funcs/inputToAction";
+import globalConstants from "../../../_globalConstants";
 import { useContext, useEffect, useState } from "react";
-import ActionCatePriorityContext from "../../../../contexts/ActionCatePriorityContext";
-import ActionMapI2AContext from "../../../../contexts/ActionMapI2AContext";
-import ModifierPriorityContext from "../../../../contexts/ModifierPriorityContext";
-import GlobalVarsContext from "../../../../contexts/_globalVarsContext";
+import ActionCatePriorityContext from "../../../contexts/ActionCatePriorityContext";
+import ActionMapI2AContext from "../../../contexts/ActionMapI2AContext";
+import ModifierPriorityContext from "../../../contexts/ModifierPriorityContext";
+import GlobalVarsContext from "../../../contexts/_globalVarsContext";
 
 function Key({
   id = "unknown",
@@ -91,8 +91,8 @@ function Key({
           boxShadow: "0 0 0 2px " + globalConstants.modifierColorMap[id]
         }}>
           {
-            actionListObj.numVisible <= 3 &&
-            <p className="Key-name">{kbId2Name.map[id]}</p>
+            (actionListObj.numVisible <= 3 || widthMod >= 2 || heightMod > 1)&&
+            <p className="Key-name">{kbId2Name.map[id] ?? id}</p>
           }
           <div className="Key-icon-container">{getElementsWithActions(id, actionListObj, isDebug ? "debug" : "icon")}</div>
         </div>

@@ -1,0 +1,23 @@
+.Mouse-root {
+    display: flex;
+    flex-direction: column;
+}
+
+.Mouse-root>div {
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+}
+
+.Mouse-shape {
+    position: absolute;
+}
+
+.Mouse-shape>div {
+    position: absolute;
+    background-color: #40414f;
+    background-clip: content-box;
+    padding: .25rem;
+    border-radius: .75rem;
+    font-size: .875rem;
+}

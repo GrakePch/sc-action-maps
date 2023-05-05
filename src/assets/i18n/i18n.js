@@ -80,6 +80,19 @@ const i18n = {
     txt_key_np_multiply: "Num *",
     txt_key_np_divide: "Num /",
     txt_key_np_period: "Num .",
+
+    txt_key_mouse1: "Left Mouse Button",
+    txt_key_mouse2: "Right Mouse Button",
+    txt_key_mouse3: "Middle Mouse Button",
+    txt_key_mwheel_up: "Mouse Wheel ↑",
+    txt_key_mwheel_down: "Mouse Wheel ↓",
+    txt_key_mouse4: "Mouse Button 4",
+    txt_key_mouse5: "Mouse Button 5",
+    txt_key_mouse6: "Mouse Button 6",
+    txt_key_mouse7: "Mouse Button 7",
+    txt_key_maxis_x: "Mouse Axis X",
+    txt_key_maxis_y: "Mouse Axis Y",
+    txt_key_maxis_z: "Mouse Wheel Axis"
   },
   zh_CN: {
     this_lang: "简体中文",
@@ -145,6 +158,19 @@ const i18n = {
     txt_key_np_multiply: "数字键 *",
     txt_key_np_divide: "数字键 /",
     txt_key_np_period: "数字键 .",
+    
+    txt_key_mouse1: "鼠标左键",
+    txt_key_mouse2: "鼠标右键",
+    txt_key_mouse3: "鼠标中键",
+    txt_key_mwheel_up: "鼠标滚轮 ↑",
+    txt_key_mwheel_down: "鼠标滚轮 ↓",
+    txt_key_mouse4: "鼠标按键 4",
+    txt_key_mouse5: "鼠标按键 5",
+    txt_key_mouse6: "鼠标按键 6",
+    txt_key_mouse7: "鼠标按键 7",
+    txt_key_maxis_x: "鼠标 X 轴",
+    txt_key_maxis_y: "鼠标 Y 轴",
+    txt_key_maxis_z: "鼠标滚轮轴"
   }
 }
 

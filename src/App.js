@@ -48,7 +48,7 @@ function App() {
         <ActionMapI2AContext.Provider value={actionMapI2A}>
           <GlobalVarsContext.Provider value={globalVarsWithSetter}>
             <div className="App">
-              <div className="App-header">
+              <div className="App-main">
                 <Full defaultSz={6} isDebug={isDebugging} />
               </div>
 

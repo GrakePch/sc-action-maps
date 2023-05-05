@@ -1,6 +1,6 @@
 import "./F60WithFn.css";
 import F60WithFn from "./F60WithFn";
-import Key from "./key/Key";
+import Key from "../key/Key";
 
 function Tenkeyless(props) {
   let defaultSz = props.defaultSz ?? 5.5;

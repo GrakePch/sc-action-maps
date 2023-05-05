@@ -1,5 +1,5 @@
 import "./Numpad.css";
-import Key from "./key/Key";
+import Key from "../key/Key";
 
 
 function Numpad(props) {

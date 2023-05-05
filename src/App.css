@@ -42,12 +42,12 @@ body {
   text-align: center;
 }
 
-.App-header {
+.App-main {
   background-color: #343541;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   min-width: min-content;
   font-size: calc(10px + 2vmin);
