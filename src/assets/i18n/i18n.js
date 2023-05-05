@@ -33,6 +33,7 @@ const i18n = {
 
     txt_mod__1tap: <>Single Press (Short/<span style={{ color: globalConstants.modifierColorMap._hold }}>Long</span>)</>,
     txt_mod__2tap: "Double Tap",
+    txt_mod_f: "F",
     txt_mod_lalt: "Left Alt",
     txt_mod_ralt: "Right Alt",
     txt_mod_lshift: "Left Shift",

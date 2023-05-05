@@ -13,6 +13,11 @@
         ["v_roll_left", "eva_roll_left"],
         ["v_roll_right", "eva_roll_right"],
         ["v_afterburner", "v_boost", "eva_boost"],
-        ["v_toggle_mining_mode", "v_toggle_salvage_mode"]
+        ["v_toggle_mining_mode", "v_toggle_salvage_mode"],
+        ["v_view_pitch_mouse", "v_pitch_mouse", "turret_pitch_mouse", "eva_view_pitch_mouse", "spectate_rotatepitch_mouse"],
+        ["v_view_yaw_mouse", "v_yaw_mouse", "turret_yaw_mouse", "eva_view_yaw_mouse", "spectate_rotateyaw_mouse"],
+        ["attack1", "v_attack_group1", "v_toggle_mining_laser_fire"],
+        ["v_view_zoom_in", "zoom_in", "pc_zoom_in", "spectate_zoom_in"],
+        ["v_view_zoom_out", "zoom_out", "pc_zoom_out", "spectate_zoom_out"]
     ]
 }

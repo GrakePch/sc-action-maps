@@ -51,7 +51,8 @@ function Mouse(props) {
           width: defaultSz + "rem",
           height: defaultSz + "rem",
           writingMode: "vertical-rl",
-          transform: "rotate(180deg)"
+          transform: "rotate(180deg)",
+          userSelect: "none",
         }}><p style={{ marginRight: ".25rem" }}>Wheel →</p></div>
         <div style={{
           left: 3.75 * defaultSz + "rem",
@@ -59,7 +60,8 @@ function Mouse(props) {
           width: defaultSz + "rem",
           height: defaultSz + "rem",
           writingMode: "vertical-rl",
-          transform: "rotate(180deg)"
+          transform: "rotate(180deg)",
+          userSelect: "none",
         }}><p style={{ marginRight: ".25rem" }}>← Wheel</p></div>
       </div>
       {lineElements}
