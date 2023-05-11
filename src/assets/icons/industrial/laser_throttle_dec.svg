@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="laser" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<rect x="140" y="300" width="120" height="100"/>
+<circle cx="200" cy="80" r="20"/>
+<rect x="190" y="80" width="20" height="200"/>
+<rect x="130" y="70" width="20" height="20"/>
+<rect x="250" y="70" width="20" height="20"/>
+<rect x="146.89" y="27.5" transform="matrix(0.7071 0.7071 -0.7071 0.7071 72.6472 -100.3858)" width="21.21" height="20"/>
+<rect x="231.89" y="112.5" transform="matrix(0.7071 0.7071 -0.7071 0.7071 157.6472 -135.594)" width="21.21" height="20"/>
+<rect x="231.89" y="27.5" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 440.4899 -107.4568)" width="21.21" height="20"/>
+<rect x="146.89" y="112.5" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 355.4899 97.7513)" width="21.21" height="20"/>
+</svg>

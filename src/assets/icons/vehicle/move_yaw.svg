@@ -2,5 +2,6 @@
 <!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
-<polygon points="0,200 120,80 120,160 280,160 280,80 400,200 280,320 280,240 120,240 120,320 "/>
+<path d="M400,222.47L329.29,100l-16.61,61.99C276.97,154.2,239.15,150,200,150s-76.97,4.19-112.68,11.99L70.71,100L0,222.47
+	l122.47,70.71l-17.83-66.56c30.01-7.23,62.06-11.14,95.36-11.14c33.3,0,65.35,3.92,95.36,11.14l-17.83,66.56L400,222.47z"/>
 </svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<g id="turret">
+	<polygon points="140,120 100,160 139.7,160 169.74,130 199.74,160 239.74,160 190,110 	"/>
+	<polygon points="300.16,65.28 339.55,58.33 334.34,28.79 294.95,35.73 295.82,40.66 197.34,58.02 193.87,38.32 66.03,61.05 
+		76.26,119.99 204.29,97.41 200.81,77.72 299.29,60.35 	"/>
+</g>
+<g id="limiter">
+	<rect x="180" y="200" transform="matrix(-1 -4.488377e-11 4.488377e-11 -1 400 580)" width="40" height="180"/>
+	<rect x="100" y="200" transform="matrix(-1 -4.488377e-11 4.488377e-11 -1 240 440)" width="40" height="40"/>
+	<rect x="20" y="200" transform="matrix(-1 -4.488377e-11 4.488377e-11 -1 80 440)" width="40" height="40"/>
+	<rect x="260" y="200" transform="matrix(-1 -4.492907e-11 4.492907e-11 -1 560 440)" width="40" height="40"/>
+	<rect x="340" y="200" transform="matrix(-1 -4.488377e-11 4.488377e-11 -1 720 439)" width="40" height="39"/>
+	<polygon points="150,260 90,320 150,380 	"/>
+	<polygon points="250,380 310,320 250,260 	"/>
+</g>
+</svg>

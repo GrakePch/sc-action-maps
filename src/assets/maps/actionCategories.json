@@ -12,6 +12,11 @@
         "lights_controller",
         "stopwatch"
     ],
+    "v_weapon_defense": [
+        "spaceship_weapons",
+        "spaceship_missiles",
+        "spaceship_defensive"
+    ],
     "v_targeting_radar": [
         "spaceship_targeting_advanced",
         "spaceship_targeting",
@@ -19,11 +24,6 @@
         "spaceship_radar",
         "radar_tagging",
         "spaceship_scanning"
-    ],
-    "v_weapon_defense": [
-        "spaceship_weapons",
-        "spaceship_missiles",
-        "spaceship_defensive"
     ],
     "v_mining_salvaging": [
         "spaceship_mining",
