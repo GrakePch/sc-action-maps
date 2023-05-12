@@ -6,6 +6,7 @@ const i18n = {
     btn_menu: "Menu ≡",
     btn_upload: "Upload actionmaps.xml",
     btn_debug: "Debug Toggle: Displaying Action Id",
+    txt_help_upload: <>This Web App runs locally, so your file will not leave your device. <br />The file actionmaps.xml is usually under the path <span style={{ color: globalConstants.modifierColorMap._hold }}>StarCitizen/<wbr />LIVE/<wbr />USER/<wbr />Client/<wbr />0/<wbr />Profiles/<wbr />default/</span> or changing <span style={{ color: globalConstants.modifierColorMap._hold }}>LIVE/</span> to <span style={{ color: globalConstants.modifierColorMap._hold }}>PTU/</span> for PTU version.</>,
 
     txt_maxIconsOnAKey_title: "Number of Icons",
     txt_maxIconsOnAKey_info: "Set the max number of icons shown on a key.",
@@ -100,6 +101,7 @@ const i18n = {
     btn_menu: "菜单 ≡",
     btn_upload: "上传 actionmaps.xml",
     btn_debug: "调试切换：显示操作 Id",
+    txt_help_upload: <>此网页应用在本地运行，因此您的文件不会离开您的设备。<br />文件 actionmaps.xml 通常在 <span style={{ color: globalConstants.modifierColorMap._hold }}>StarCitizen/<wbr />LIVE/<wbr />USER/<wbr />Client/<wbr />0/<wbr />Profiles/<wbr />default/</span> 路径下，或者更改 <span style={{ color: globalConstants.modifierColorMap._hold }}>LIVE/</span> 为 <span style={{ color: globalConstants.modifierColorMap._hold }}>PTU/</span> 以使用PTU版本。</>,
 
     txt_maxIconsOnAKey_title: "图标数量",
     txt_maxIconsOnAKey_info: "设置单个按键上显示图标的数量上限。",
@@ -134,7 +136,7 @@ const i18n = {
     txt_mod_lctrl: "左 Ctrl",
     txt_mod_rctrl: "右 Ctrl",
     txt_mod__hold: "长按",
-    
+
     txt_keyDetails_lockPrompt: "单击按键以锁定/解锁此详细面板。",
     txt_key_lalt: "左 Alt",
     txt_key_ralt: "右 Alt",
@@ -159,7 +161,7 @@ const i18n = {
     txt_key_np_multiply: "数字键 *",
     txt_key_np_divide: "数字键 /",
     txt_key_np_period: "数字键 .",
-    
+
     txt_key_mouse1: "鼠标左键",
     txt_key_mouse2: "鼠标右键",
     txt_key_mouse3: "鼠标中键",

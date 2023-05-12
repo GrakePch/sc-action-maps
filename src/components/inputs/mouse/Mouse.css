@@ -1,6 +1,7 @@
 .Mouse-root {
     display: flex;
     flex-direction: column;
+    margin-left: 3rem;
 }
 
 .Mouse-root>div {

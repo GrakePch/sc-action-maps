@@ -85,6 +85,12 @@ body {
   background-color: #afe5f440;
 }
 
+.GitHub-link>svg {
+  fill: #afe5f4;
+  height: 100%;
+  width: 1.1rem;
+}
+
 /**/
 
 .Menu-container {
@@ -165,32 +171,70 @@ body {
 
 .upload-label {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #afe5f4;
+  /* background-color: #afe5f4; */
   color: #000;
   height: 3rem;
   flex-shrink: 0;
+  padding: 0 .75rem;
   font-size: 1.25rem;
   font-weight: bold;
   border-radius: .5rem;
-  transition: filter .15s;
+  transition: background-color .15s;
 }
-
+/* 
 .upload-label:hover {
   filter: brightness(.8);
 }
 
 .upload-label:active {
   filter: brightness(.6);
+} */
+
+.upload-main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
-.upload-label>div {
+.upload-icon {
   width: 1.5rem;
   aspect-ratio: 1;
   background-size: contain;
   margin-right: .5rem;
+}
+
+.help-icon {
+  width: 1.5rem;
+  aspect-ratio: 1;
+  background-size: contain;
+  margin-left: .5rem;
+}
+
+.help-icon:hover>* {
+  visibility: visible;
+  opacity: 1;
+}
+
+.help-box {
+  position: absolute;
+  right: 0;
+  bottom: 3.25rem;
+  padding: 1rem;
+  color: #afe5f4;
+  background-color: #000a;
+  backdrop-filter: blur(10px);
+  font-size: .8rem;
+  font-weight: normal;
+  text-align: left;
+  visibility: collapse;
+  opacity: 0;
+  transition: opacity .2s;
+  border-radius: .5rem;
 }
 
 #inputActionMaps {
