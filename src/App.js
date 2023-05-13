@@ -91,7 +91,7 @@ function App() {
 
                 <label className="upload-label btn-bg-accent" htmlFor="inputActionMaps">
                   <div className="upload-main-content">
-                    <div className="upload-icon" style={{ backgroundImage: `url(${upload})` }} />
+                    {/* <div className="upload-icon" style={{ backgroundImage: `url(${upload})` }} /> */}
                     <TextI18n elem="btn_upload" />
                   </div>
                   <div className="help-icon" style={{ backgroundImage: `url(${help})` }}>
