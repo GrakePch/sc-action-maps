@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#000000;}
+</style>
+<g>
+	<path class="st0" d="M240,340l-40,40L20,200L200,20l180,180l-40,40c6.26,0,12.38,0.58,18.32,1.68L400,200L200,0L0,200l200,200
+		l41.68-41.68C240.58,352.38,240,346.26,240,340z"/>
+	<path class="st0" d="M200,40L40,200l160,160l42.55-42.55c8.56-37.12,37.77-66.34,74.89-74.89L360,200L200,40z M200,330L70,200
+		L200,70l130,130L200,330z"/>
+	<path class="st0" d="M151,151v98h98v-98H151z M220,220h-40v-40h40V220z"/>
+</g>
+<path id="toggle" d="M365,280.13v28.28l15,15v33.14l-23.43,23.43h-33.14L300,356.56v-33.14l15-15v-28.28l-35,35v49.71L315.15,400
+	h49.71L400,364.84v-49.71L365,280.13z M352,279.99h-24v80h24V279.99z"/>
+</svg>
