@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="icon">
+        <g transform="matrix(0.172633,0.450857,-0.450857,0.172633,205.159,115.06)">
+            <rect x="40" y="40" width="50" height="70"/>
+            <g transform="matrix(1,0,0,0.857143,-5,5.71429)">
+                <rect x="120" y="40" width="50" height="70"/>
+            </g>
+            <g transform="matrix(1.25,0,0,1,-60,0)">
+                <rect x="200" y="40" width="40" height="100"/>
+            </g>
+            <g transform="matrix(1,0,0,1,5,0)">
+                <rect x="260" y="40" width="50" height="80"/>
+            </g>
+            <path d="M185.06,168.988L330,140L330,120L340,120L370,170L354.869,220L420.656,367.587L275.609,471.854L190,300L40,250L40,140L165,120L165,156.742L100,200L110,215.512L160,182.44L270,250L285,230L185.06,168.988Z"/>
+        </g>
+        <path d="M360,40L240,120L260,190L360,40Z"/>
+    </g>
+</svg>

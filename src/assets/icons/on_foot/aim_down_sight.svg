@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
-<g>
-	<path d="M266.46,120l32,80l-32,80H133.54l-32-80l32-80L266.46,120 M280,100l-160,0L80,200l40,100l160,0l40-100L280,100L280,100z"/>
-	<circle cx="200" cy="200" r="20"/>
-</g>
-<rect x="110" y="320" width="180" height="80"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="icon">
+        <g transform="matrix(1,0,0,0.9,0,14)">
+            <rect x="190" y="40" width="20" height="100"/>
+        </g>
+        <path d="M200,40C288.306,40 360,111.694 360,200C360,288.306 288.306,360 200,360C111.694,360 40,288.306 40,200C40,111.694 111.694,40 200,40ZM200,70C128.251,70 70,128.251 70,200C70,271.749 128.251,330 200,330C271.749,330 330,271.749 330,200C330,128.251 271.749,70 200,70Z"/>
+        <g transform="matrix(1,0,0,0.9,0,26)">
+            <rect x="190" y="260" width="20" height="100"/>
+        </g>
+        <g transform="matrix(0.9,0,0,1,14,0)">
+            <rect x="40" y="190" width="100" height="20"/>
+        </g>
+        <g transform="matrix(0.9,0,0,1,26,0)">
+            <rect x="260" y="190" width="100" height="20"/>
+        </g>
+        <circle cx="200" cy="200" r="10"/>
+    </g>
 </svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="icon">
+        <g transform="matrix(0.75,0,0,0.75,50,50)">
+            <g transform="matrix(1,0,0,0.9,0,14)">
+                <rect x="190" y="40" width="20" height="100"/>
+            </g>
+            <path d="M200,40C288.306,40 360,111.694 360,200C360,288.306 288.306,360 200,360C111.694,360 40,288.306 40,200C40,111.694 111.694,40 200,40ZM200,70C128.251,70 70,128.251 70,200C70,271.749 128.251,330 200,330C271.749,330 330,271.749 330,200C330,128.251 271.749,70 200,70Z"/>
+            <g transform="matrix(1,0,0,0.9,0,26)">
+                <rect x="190" y="260" width="20" height="100"/>
+            </g>
+            <g transform="matrix(0.9,0,0,1,14,0)">
+                <rect x="40" y="190" width="100" height="20"/>
+            </g>
+            <g transform="matrix(0.9,0,0,1,26,0)">
+                <rect x="260" y="190" width="100" height="20"/>
+            </g>
+            <circle cx="200" cy="200" r="10"/>
+        </g>
+        <path d="M160,20L200,60L240,20L160,20Z"/>
+        <path d="M200,340L160,380L240,380L200,340Z"/>
+        <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,400,0)">
+            <path d="M160,20L200,60L240,20L160,20Z"/>
+        </g>
+        <g transform="matrix(6.12323e-17,1,-1,6.12323e-17,400,0)">
+            <path d="M200,340L160,380L240,380L200,340Z"/>
+        </g>
+    </g>
+</svg>

@@ -19,6 +19,10 @@
         ["attack1", "v_attack_group1", "v_toggle_mining_laser_fire"],
         ["v_view_zoom_in", "zoom_in", "pc_zoom_in", "spectate_zoom_in"],
         ["v_view_zoom_out", "zoom_out", "pc_zoom_out", "spectate_zoom_out"],
-        ["pc_select", "port_modification_select"]
+        ["pc_select", "port_modification_select"],
+        ["selectpistol", "pc_qs_weapons_pistol"],
+        ["selectprimary", "pc_qs_weapons_primary"],
+        ["selectsecondary", "pc_qs_weapons_secondary"],
+        ["drop", "pc_pit_item_drop"]
     ]
 }

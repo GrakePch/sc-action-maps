@@ -896,15 +896,15 @@
         "player_choice": {
             "pc_qs_weapons_primary": [
                 "_",
-                "1"
+                "2"
             ],
             "pc_qs_weapons_secondary": [
                 "_",
-                "2"
+                "3"
             ],
             "pc_qs_weapons_pistol": [
                 "_",
-                "3"
+                "1"
             ],
             "pc_interaction_mode": [
                 "_",
