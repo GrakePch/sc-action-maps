@@ -50,6 +50,7 @@ function App() {
             <div className="App">
 
               <div className="App-readme font-narrow">
+                <div className="App-readme-close-button" onClick={() => { document.getElementsByClassName("App-readme")[0].style.display = "none"; }}><TextI18n elem="btn_readme_close" /></div>
                 <TextI18n elem="txt_readme" />
               </div>
 

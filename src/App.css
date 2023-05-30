@@ -61,12 +61,19 @@ body {
   position: fixed;
   right: 1rem;
   bottom: 4rem;
-  width: 20rem;
+  width: 19rem;
   color: #afe5f4;
   opacity: .5;
 }
+
 .App-readme:hover {
   opacity: 1;
+}
+
+.App-readme-close-button {
+  align-self: end;
+  user-select: none;
+  cursor: pointer;
 }
 
 .App-readme>p, .placeholder-description>p {

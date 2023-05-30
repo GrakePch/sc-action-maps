@@ -17,6 +17,7 @@ const i18n = {
       <p>Hover on the keys to show all the related keybindings.</p>
       <p>Click on the MENU in the bottom-right for filters, file importing, and more settings.</p>
     </>,
+    btn_readme_close: "[Close]",
 
     btn_upload: "Import actionmaps.xml",
     btn_debug: "Debug Toggle: Displaying Action Id",
@@ -125,6 +126,7 @@ const i18n = {
       <p>悬停在按键上以显示所有相关按键绑定。</p>
       <p>点击右下菜单以使用筛选、文件导入和更多设置。</p>
     </>,
+    btn_readme_close: "[关闭]",
 
     btn_upload: "导入 actionmaps.xml",
     btn_debug: "调试切换：显示操作 Id",
