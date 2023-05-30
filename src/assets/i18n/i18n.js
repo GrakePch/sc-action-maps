@@ -1,9 +1,23 @@
 import globalConstants from "../../_globalConstants";
+import TextIcon from "../../funcs/TextIcon";
 
 const i18n = {
   en_US: {
     this_lang: "English",
     btn_menu: "Menu ≡",
+
+    txt_readme: <>
+      <p>This is a community-made visual representation of the keybindings of the game Star Citizen (Alpha 3.18 and above).</p>
+      <div className="placeholder-description">
+        <div>
+          <TextIcon actionId={"P_H"} modifier={"_"} className={"icon-1x1"} />
+        </div>
+        <p>Placeholder for action whose icon has not been made yet.</p>
+      </div>
+      <p>Hover on the keys to show all the related keybindings.</p>
+      <p>Click on the MENU in the bottom-right for filters, file importing, and more settings.</p>
+    </>,
+
     btn_upload: "Import actionmaps.xml",
     btn_debug: "Debug Toggle: Displaying Action Id",
     txt_help_upload: <>This Web App runs locally, so your file will not leave your device. <br />The file actionmaps.xml is usually under the path <span style={{ color: globalConstants.modifierColorMap._hold }}>StarCitizen/<wbr />LIVE/<wbr />USER/<wbr />Client/<wbr />0/<wbr />Profiles/<wbr />default/</span> or changing <span style={{ color: globalConstants.modifierColorMap._hold }}>LIVE/</span> to <span style={{ color: globalConstants.modifierColorMap._hold }}>PTU/</span> for PTU version.</>,
@@ -99,6 +113,19 @@ const i18n = {
   zh_CN: {
     this_lang: "简体中文",
     btn_menu: "菜单 ≡",
+
+    txt_readme: <>
+      <p>此为星际公民游戏的键位可视化展示，由社区制作。（游戏版本Alpha 3.18及以上）</p>
+      <div className="placeholder-description">
+        <div>
+          <TextIcon actionId={"P_H"} modifier={"_"} className={"icon-1x1"} />
+        </div>
+        <p>图标尚未制作而使用的占位符。</p>
+      </div>
+      <p>悬停在按键上以显示所有相关按键绑定。</p>
+      <p>点击右下菜单以使用筛选、文件导入和更多设置。</p>
+    </>,
+
     btn_upload: "导入 actionmaps.xml",
     btn_debug: "调试切换：显示操作 Id",
     txt_help_upload: <>此网页应用在本地运行，因此您的文件不会离开您的设备。<br />文件 actionmaps.xml 通常在 <span style={{ color: globalConstants.modifierColorMap._hold }}>StarCitizen/<wbr />LIVE/<wbr />USER/<wbr />Client/<wbr />0/<wbr />Profiles/<wbr />default/</span> 路径下，或者更改 <span style={{ color: globalConstants.modifierColorMap._hold }}>LIVE/</span> 为 <span style={{ color: globalConstants.modifierColorMap._hold }}>PTU/</span> 以使用PTU版本。</>,

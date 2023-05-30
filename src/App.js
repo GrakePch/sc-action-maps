@@ -11,7 +11,6 @@ import ActionMapI2AContext from "./contexts/ActionMapI2AContext";
 import ModifierPriorityContext from "./contexts/ModifierPriorityContext";
 import ActionPriorityEditor from "./components/PriorityEditor/ActionPriorityEditor";
 import bug_outline from "./assets/icons_for_ui/bug-outline.svg";
-import upload from "./assets/icons_for_ui/tray-arrow-up.svg";
 import help from "./assets/icons_for_ui/help-circle.svg";
 import ModifierPriorityEditor from "./components/PriorityEditor/ModifierPriorityEditor";
 import i18n from "./assets/i18n/i18n";
@@ -49,6 +48,11 @@ function App() {
         <ActionMapI2AContext.Provider value={actionMapI2A}>
           <GlobalVarsContext.Provider value={globalVarsWithSetter}>
             <div className="App">
+
+              <div className="App-readme font-narrow">
+                <TextI18n elem="txt_readme" />
+              </div>
+
               <div className="App-main">
                 <Full defaultSz={6} isDebug={isDebugging} />
               </div>
