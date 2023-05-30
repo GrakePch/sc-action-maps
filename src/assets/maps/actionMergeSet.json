@@ -23,6 +23,7 @@
         ["selectpistol", "pc_qs_weapons_pistol"],
         ["selectprimary", "pc_qs_weapons_primary"],
         ["selectsecondary", "pc_qs_weapons_secondary"],
-        ["drop", "pc_pit_item_drop"]
+        ["drop", "pc_pit_item_drop"],
+        ["jump", "eva_strafe_up"]
     ]
 }

@@ -75,14 +75,17 @@ function KeyDetails(props) {
             {Object.entries(cateObj).map(([cate, actionIdList], jdx) =>
               <div key={jdx} className="KeyDetails-actionGroup">
 
-                <div className="KeyDetails-category">{cate}</div>
+                <div className="KeyDetails-category">
+                  <TextI18n elem={cate} isActionName={true} />
+                </div>
 
                 {actionIdList.map((actionId, kdx) =>
                   <div key={kdx} className="KeyDetails-action">
                     {getIcon(actionId, mod)}
-                    {actionId && actionId.startsWith("_custom_")
+                    <TextI18n elem={actionId && actionId.startsWith("_custom_")
                       ? Object.keys(actionsNeedHold).filter(i => Array.isArray(actionsNeedHold[i]) && actionsNeedHold[i].includes(actionId))[0]
-                      : actionId}
+                      : actionId
+                    } isActionName={true} />
                   </div>
                 )}
               </div>
