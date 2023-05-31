@@ -1,2 +1,2 @@
-All icon under current directory is from https://pictogrammers.com/library/mdi/.
+All icons under current directory are from https://pictogrammers.com/library/mdi/.
 File names may get changed.

@@ -2,6 +2,7 @@ import globalConstants from "../_globalConstants";
 import action2IconFileName from "../assets/maps/action2IconFileName.json";
 import TextIcon from "./TextIcon";
 import StarCitizenLogo from "../assets/icons/STARCITIZEN_BLACK.png";
+import SCCommunityLogo from "../assets/icons/MadeByTheCommunity_White.png";
 import consoleIcon from "../assets/icons/console.svg";
 
 const reqIcons = require.context('../assets/icons/', true, /\.(png|jpe?g|svg|JPE?G)$/)
@@ -17,7 +18,7 @@ const icons = reqIcons.keys().map(p => ({
 
 export default function getElementsWithActions(inputId, actionListObj, showing = "icon") {
   if (inputId === "win") {
-    return <img src={StarCitizenLogo} alt="Star Citizen Logo" className="color-_ star-citizen-logo" />
+    return <img src={SCCommunityLogo} alt="Star Citizen Logo" className="star-citizen-logo" />
   }
   if (inputId === "backtick") {
     return <img src={consoleIcon} alt="console" className="icon-1x1 color-_" />
