@@ -24,8 +24,8 @@ Deployed at [grakep.ch/SC-Keybinding-Visualizer](https://grakep.ch/SC-Keybinding
 
 ## Icon sources
 
-Icons under the directory **src/assets/icons/_mdi** are from [Material Design Icons](https://pictogrammers.com/library/mdi/). Those icons are covered by Apache License 2.0. Some of the file names are changed.
+Icons under the directory **src/assets/icons/_mdi/** are from [Material Design Icons](https://pictogrammers.com/library/mdi/). Those icons are covered by Apache License 2.0. Some of the file names are changed.
 
-Icons under the directory **src/assets/icons/_primitives** are created and owned by Cloud Imperium Games (CIG). [[Link]](https://robertsspaceindustries.com/pledge/ships/gladius/Gladius#holo-viewer) Icons under other directories may use elements from icons created and owned by CIG. Those icons should not be used for profit.
+Icons under the directory **src/assets/icons/_primitives/** are created and owned by Cloud Imperium Games (CIG). [[Link]](https://robertsspaceindustries.com/pledge/ships/gladius/Gladius#holo-viewer) Icons under other directories may use elements from icons created and owned by CIG. Those icons should not be used for profit.
 
-Other icons are original works, which are covered by CC BY-NC-SA.
+Other icons under the directory **src/assets/icons/** are original works, which are covered by CC BY-NC-SA.

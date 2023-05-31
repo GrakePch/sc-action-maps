@@ -1,9 +1,8 @@
 import globalConstants from "../_globalConstants";
 import action2IconFileName from "../assets/maps/action2IconFileName.json";
 import TextIcon from "./TextIcon";
-import StarCitizenLogo from "../assets/icons/STARCITIZEN_BLACK.png";
-import SCCommunityLogo from "../assets/icons/MadeByTheCommunity_White.png";
-import consoleIcon from "../assets/icons/console.svg";
+import SCCommunityLogo from "../assets/icons/_primitives/MadeByTheCommunity_White.png";
+import consoleIcon from "../assets/icons/_mdi/console.svg";
 
 const reqIcons = require.context('../assets/icons/', true, /\.(png|jpe?g|svg|JPE?G)$/)
 
