@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="icon">
+        <g>
+            <path d="M280,270L385,375L280,375L280,270Z"/>
+            <path d="M106.754,70C66.34,99.052 40,146.474 40,200C40,288.306 111.694,360 200,360C217.458,360 234.266,357.198 250,352.019L250,393.688C234.017,397.808 217.262,400 200,400C89.617,400 0,310.383 0,200C0,134.625 31.434,76.535 80,40.031L80,70L106.754,70ZM305.786,320C339.023,290.673 360,247.767 360,200C360,111.694 288.306,40 200,40C182.542,40 165.733,42.802 150,47.981L150,6.312C165.983,2.192 182.738,0 200,0C310.383,0 400,89.617 400,200C400,265.375 368.566,323.465 320,359.969L320,320L305.786,320Z"/>
+            <g transform="matrix(1,0,0,1,195.867,53.4281)">
+                <path d="M-180.867,-28.428L-75.867,76.572L-75.867,-28.428L-180.867,-28.428Z" style="fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-10,0)">
+            <rect x="60" y="180" width="20" height="40"/>
+        </g>
+        <g transform="matrix(1,0,0,3,-10,-400)">
+            <rect x="100" y="180" width="20" height="40"/>
+        </g>
+        <g transform="matrix(1,0,0,4.5,-10,-700)">
+            <rect x="140" y="180" width="20" height="40"/>
+        </g>
+        <g transform="matrix(1,0,0,2,30,-200)">
+            <rect x="140" y="180" width="20" height="40"/>
+        </g>
+        <g transform="matrix(1,0,0,4.5,30,-700)">
+            <rect x="180" y="180" width="20" height="40"/>
+        </g>
+        <g transform="matrix(1,0,0,6,30,-1000)">
+            <rect x="220" y="180" width="20" height="40"/>
+        </g>
+        <g transform="matrix(1,0,0,3,30,-400)">
+            <rect x="260" y="180" width="20" height="40"/>
+        </g>
+        <g transform="matrix(1,0,0,1,30,0)">
+            <rect x="300" y="180" width="20" height="40"/>
+        </g>
+    </g>
+</svg>
