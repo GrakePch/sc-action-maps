@@ -1,24 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;}
-</style>
-<g id="cycle_x5F_backward">
-	<rect x="67.2" y="67.2" width="7.2" height="28.8"/>
-	<polygon points="76.8,81.6 96,96 96,67.2 	"/>
-</g>
-<g id="target_x5F_subscript">
-	<path class="st0" d="M81.6,14.4H72V4.8h9.6c5.3,0,9.6,4.3,9.6,9.6V24h-9.6V14.4z M48,0l7.2,14.4H40.8L48,0z M4.8,81.6V72h9.6v9.6
-		H24v9.6h-9.6C9.1,91.2,4.8,86.9,4.8,81.6z M14.4,24H4.8v-9.6c0-5.3,4.3-9.6,9.6-9.6H24v9.6h-9.6V24z"/>
-</g>
-<g>
-	<path d="M24,28.8v9.6h7.2v-7.2h7.2V24h-9.6C26.15,24,24,26.15,24,28.8z"/>
-	<circle cx="48" cy="48" r="4.8"/>
-	<path d="M31.2,57.6H24v9.6c0,2.65,2.15,4.8,4.8,4.8h9.6v-7.2h-7.2V57.6z"/>
-	<path d="M67.2,24h-9.6v7.2h7.2v7.2H72v-9.6C72,26.15,69.85,24,67.2,24z"/>
-	<rect x="64.8" y="57.6" width="7.2" height="7.2"/>
-	<rect x="57.6" y="64.8" width="7.2" height="7.2"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="icon">
+        <g transform="matrix(-1,0,0,1,400,0)">
+            <path d="M340,20C362.083,20 380,37.917 380,60L380,200L300,120L340,120L340,60L260,60L260,20L340,20ZM140,380L60,380C37.917,380 20,362.083 20,340L20,200L100,280L60,280L60,340L140,340L140,380ZM200,0L230,60L170,60L200,0ZM60,100L20,100L20,60C20,37.917 37.917,20 60,20L100,20L100,60L60,60L60,100ZM340,340L340,300L380,300L380,340C380,362.091 362.091,380 340,380L300,380L300,340L340,340Z"/>
+        </g>
+        <g>
+            <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+                <circle cx="48" cy="48" r="4.8"/>
+            </g>
+            <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+                <path d="M24,28.8L24,38.4L31.2,38.4L31.2,31.2L38.4,31.2L38.4,24L28.8,24C26.15,24 24,26.15 24,28.8Z" style="fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+                <path d="M31.2,57.6L24,57.6L24,67.2C24,69.85 26.15,72 28.8,72L38.4,72L38.4,64.8L31.2,64.8L31.2,57.6Z" style="fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+                <path d="M67.2,24L57.6,24L57.6,31.2L64.8,31.2L64.8,38.4L72,38.4L72,28.8C72,26.15 69.85,24 67.2,24Z" style="fill-rule:nonzero;"/>
+            </g>
+            <g transform="matrix(2.55135e-16,4.16667,-4.16667,2.55135e-16,400,2.84217e-14)">
+                <path d="M67.2,24L57.6,24L57.6,31.2L64.8,31.2L64.8,38.4L72,38.4L72,28.8C72,26.15 69.85,24 67.2,24Z" style="fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
 </svg>

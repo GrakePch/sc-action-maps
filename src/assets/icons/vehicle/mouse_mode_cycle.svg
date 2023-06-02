@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="icon">
+        <g transform="matrix(1,0,0,1,180,0)">
+            <g transform="matrix(1,0,0,1,-180,0)">
+                <path d="M240,130L240,120L400,120L400,180C400,220.548 369.827,254.054 330.711,259.289L350,240L240,130Z" style="fill-rule:nonzero;"/>
+            </g>
+            <path d="M150,0.64L150,20C161.05,20 170,28.95 170,40L170,80C170,91.05 161.05,100 150,100L220,100L220,80C220,39.21 189.46,5.57 150,0.64Z" style="fill-rule:nonzero;"/>
+            <rect x="130" y="40" width="20" height="40"/>
+            <path d="M110,80L110,40C110,28.95 118.95,20 130,20L130,0.64C90.54,5.57 60,39.21 60,80L60,100L130,100C118.95,100 110,91.05 110,80Z" style="fill-rule:nonzero;"/>
+        </g>
+        <path d="M320,240L260,180L260,220L180,220L180,140L220,140L160,80L100,140L140,140L140,220L60,220L60,180L0,240L60,300L60,260L140,260L140,340L100,340L160,400L220,340L180,340L180,260L260,260L260,300L320,240Z" style="fill-rule:nonzero;"/>
+    </g>
+</svg>

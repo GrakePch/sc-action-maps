@@ -1,26 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;}
-	.st1{enable-background:new    ;}
-</style>
-<g id="cycle_x5F_backward">
-	<rect x="67.2" y="67.2" width="7.2" height="28.8"/>
-	<polygon points="76.8,81.6 96,96 96,67.2 	"/>
-</g>
-<g id="target_x5F_subscript">
-	<path class="st0" d="M81.6,14.4H72V4.8h9.6c5.3,0,9.6,4.3,9.6,9.6V24h-9.6V14.4z M48,0l7.2,14.4H40.8L48,0z M4.8,81.6V72h9.6v9.6
-		H24v9.6h-9.6C9.1,91.2,4.8,86.9,4.8,81.6z M14.4,24H4.8v-9.6c0-5.3,4.3-9.6,9.6-9.6H24v9.6h-9.6V24z"/>
-</g>
-<g id="under_x5F_reticle" class="st1">
-	<g id="Image_xA0_15">
-		<g>
-			<path d="M48,43.2c-2.65,0-4.8,2.15-4.8,4.8s2.15,4.8,4.8,4.8s4.8-2.15,4.8-4.8S50.65,43.2,48,43.2z M43.2,33.6l4.8,4.8l4.8-4.8
-				V19.2h-9.6L43.2,33.6z M43.2,62.4v14.4h9.6V62.4L48,57.6L43.2,62.4z M62.4,43.2L57.6,48l4.8,4.8h14.4v-9.6L62.4,43.2z M19.2,43.2
-				v9.6h14.4l4.8-4.8l-4.8-4.8L19.2,43.2z"/>
-		</g>
-	</g>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="icon">
+        <g transform="matrix(-1,0,0,1,400,0)">
+            <path d="M340,20C362.083,20 380,37.917 380,60L380,200L300,120L340,120L340,60L260,60L260,20L340,20ZM140,380L60,380C37.917,380 20,362.083 20,340L20,200L100,280L60,280L60,340L140,340L140,380ZM200,0L230,60L170,60L200,0ZM60,100L20,100L20,60C20,37.917 37.917,20 60,20L100,20L100,60L60,60L60,100ZM340,340L340,300L380,300L380,340C380,362.091 362.091,380 340,380L300,380L300,340L340,340Z"/>
+        </g>
+        <g transform="matrix(4.16667,0,0,4.16667,0,0)">
+            <path d="M48,43.2C45.35,43.2 43.2,45.35 43.2,48C43.2,50.65 45.35,52.8 48,52.8C50.65,52.8 52.8,50.65 52.8,48C52.8,45.35 50.65,43.2 48,43.2ZM43.2,33.6L48,38.4L52.8,33.6L52.8,19.2L43.2,19.2L43.2,33.6ZM43.2,62.4L43.2,76.8L52.8,76.8L52.8,62.4L48,57.6L43.2,62.4ZM62.4,43.2L57.6,48L62.4,52.8L76.8,52.8L76.8,43.2L62.4,43.2ZM19.2,43.2L19.2,52.8L33.6,52.8L38.4,48L33.6,43.2L19.2,43.2Z" style="fill-rule:nonzero;"/>
+        </g>
+    </g>
 </svg>

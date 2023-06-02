@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <path d="M213.3,266.61L160.09,239.96L160.09,200L0,200L0,360L70,360L160.09,359.86L160.09,319.89L213.3,293.25L213.3,266.61Z"/>
+        <path d="M330,200L330,200.27L213.3,200.07L213.3,226.71L266.52,253.36L266.52,306.64L213.3,333.29L213.3,359.93L330,359.93L330,360L400,360L400,200L330,200Z"/>
+    </g>
+    <path id="lock_1" d="M386.68,66.67L280.15,66.67C280.07,66.67 280,66.74 280,66.82L280,146.67L293.33,160L399.85,160C399.93,160 400,159.93 400,159.85L400,79.99L386.68,66.67ZM380,140L300,140L300,86.67L380,86.67L380,140Z" style="fill-rule:nonzero;"/>
+    <path id="lock_2" d="M280,0C257.91,0 240,17.91 240,40L240,66.67L260,66.67L260,40C260,28.95 268.95,20 280,20C291.05,20 300,28.95 300,40L300,66.67L320,66.67L320,40C320,17.91 302.09,0 280,0Z" style="fill-rule:nonzero;"/>
+</svg>

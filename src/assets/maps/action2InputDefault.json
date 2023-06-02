@@ -22,7 +22,7 @@
                 "u"
             ],
             "v_eject": [
-                "lalt",
+                "ralt",
                 "y"
             ]
         },
@@ -34,6 +34,10 @@
             "v_flightready": [
                 "_",
                 "r"
+            ],
+            "v_toggle_all_portlocks": [
+                "ralt",
+                "k"
             ]
         },
         "spaceship_view": {
@@ -824,7 +828,7 @@
             ],
             "focus_on_chat_textinput": [
                 "_",
-                "np_enter"
+                "enter"
             ]
         },
         "ui_notification": {

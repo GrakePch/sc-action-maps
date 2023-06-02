@@ -85,6 +85,7 @@
 
 .KeyDetails-action {
     display: flex;
+    flex-direction: row-reverse;
     gap: 1.25rem;
     justify-content: space-between;
     align-items: center;
