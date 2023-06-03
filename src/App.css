@@ -206,6 +206,19 @@ body {
 
 /**/
 
+.upload-btn-set {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.overlapping-btn {
+  position: relative;
+  flex-grow: 1;
+}
+
 .upload-label {
   display: flex;
   position: relative;
@@ -219,18 +232,8 @@ body {
   padding: 0 .75rem;
   font-size: 1.25rem;
   font-weight: bold;
-  border-radius: .5rem;
   transition: background-color .15s;
 }
-
-/* 
-.upload-label:hover {
-  filter: brightness(.8);
-}
-
-.upload-label:active {
-  filter: brightness(.6);
-} */
 
 .upload-main-content {
   display: flex;
@@ -277,6 +280,48 @@ body {
 
 #inputActionMaps {
   display: none;
+}
+
+.upload-reset {
+  border: none;
+  cursor: pointer;
+  color: #000;
+  background-color: #f79723;
+  width: 3.2rem;
+  font-weight: bold;
+  transition: filter .15s;
+  text-align: center;
+}
+
+.upload-reset:hover {
+  filter: brightness(.8);
+}
+
+.upload-reset:active {
+  filter: brightness(.6);
+}
+
+.upload-reset-confirm {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  background-color: #ee3b3c;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: filter .15s;
+}
+
+.upload-reset-confirm:hover {
+  filter: brightness(.8);
+}
+
+.upload-reset-confirm:active {
+  filter: brightness(.6);
 }
 
 /**/

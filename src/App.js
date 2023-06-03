@@ -23,6 +23,8 @@ import KeyDetails from "./components/KeyDetails/KeyDetails";
 function App() {
   const [isDebugging, setIsDebugging] = useState(false);
   const [actionMapI2A, setActionMapI2A] = useState(convertA2IToI2A(JSON.parse(JSON.stringify(action2InputDefault))));
+  const [isActionMapI2ADefault, setIsActionMapI2ADefault] = useState(true);
+  const [isActionMapI2AResetPending, setIsActionMapI2AResetPending] = useState(false);
   const [actionCatePriority, setActionCatePriority] = useState(Object.keys(actionCategories).map(item => globalConstants.actionCateDefaultVisible[item]
     ? [item, true]
     : [item, false]));
@@ -94,19 +96,48 @@ function App() {
 
                 </div>
 
-                <label className="upload-label btn-bg-accent" htmlFor="inputActionMaps">
-                  <div className="upload-main-content">
-                    {/* <div className="upload-icon" style={{ backgroundImage: `url(${upload})` }} /> */}
-                    <TextI18n elem="btn_upload" />
+                <div className="upload-btn-set">
+                  <div className="overlapping-btn">
+                    <label
+                      className="upload-label btn-bg-accent"
+                      htmlFor="inputActionMaps"
+                      onClick={() => {
+                        document.getElementById("inputActionMaps").value = "";
+                      }}>
+                      <div className="upload-main-content">
+                        {/* <div className="upload-icon" style={{ backgroundImage: `url(${upload})` }} /> */}
+                        <TextI18n elem="btn_upload" />
+                      </div>
+                      <div className="help-icon" style={{ backgroundImage: `url(${help})` }}>
+                        <div className="help-box">
+                          <TextI18n elem="txt_help_upload" />
+                        </div>
+                      </div>
+                    </label>
+                    {(!isActionMapI2ADefault && isActionMapI2AResetPending) &&
+                      <button className="upload-reset-confirm font-narrow"
+                        onClick={() => {
+                          handleUploadReset(setActionMapI2A, setIsActionMapI2ADefault);
+                          setIsActionMapI2AResetPending(false);
+                        }}>
+                        <TextI18n elem="btn_reset_confirm" />
+                      </button>
+                    }
                   </div>
-                  <div className="help-icon" style={{ backgroundImage: `url(${help})` }}>
-                    <div className="help-box">
-                      <TextI18n elem="txt_help_upload" />
-                    </div>
-                  </div>
-                </label>
 
-                <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml" onChange={() => handleFileSelect(setActionMapI2A)} />
+                  <input type="file" id="inputActionMaps" name="actionMaps" accept=".xml"
+                    onChange={() => handleFileSelect(setActionMapI2A, setIsActionMapI2ADefault)}
+                  />
+
+                  {!isActionMapI2ADefault &&
+                    <button className="upload-reset font-narrow"
+                      onClick={() => setIsActionMapI2AResetPending(!isActionMapI2AResetPending)}>
+                      {isActionMapI2AResetPending
+                        ? <TextI18n elem="btn_cancel" />
+                        : <TextI18n elem="btn_reset" />}
+                    </button>
+                  }
+                </div>
 
               </div>
               <KeyDetails
@@ -124,7 +155,7 @@ function App() {
   );
 }
 
-function handleFileSelect(setActionMap) {
+function handleFileSelect(setActionMap, setIsActionMapDefault) {
   const file = document.getElementById("inputActionMaps").files[0];
 
   if (!file) return;
@@ -142,8 +173,15 @@ function handleFileSelect(setActionMap) {
     // console.log(A2I);
     let I2A = convertA2IToI2A(A2I);
     // console.log(I2A);
-    setActionMap(I2A)
+    setActionMap(I2A);
+    setIsActionMapDefault(false);
   }
+}
+
+function handleUploadReset(setActionMap, setIsActionMapDefault) {
+  document.getElementById("inputActionMaps").value = "";
+  setActionMap(convertA2IToI2A(JSON.parse(JSON.stringify(action2InputDefault))));
+  setIsActionMapDefault(true);
 }
 
 function nextLangId(lang) {

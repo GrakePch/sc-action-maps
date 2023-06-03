@@ -20,6 +20,9 @@ const i18n = {
     btn_readme_close: "[Close]",
 
     btn_upload: "Import actionmaps.xml",
+    btn_reset: "Reset",
+    btn_cancel: "Cancel",
+    btn_reset_confirm: "Confirm to Reset Actionmaps",
     btn_debug: "Debug Toggle: Displaying Action Id",
     txt_help_upload: <>This Web App runs locally, so your file will not leave your device. <br />The file actionmaps.xml is usually under the path <span style={{ color: globalConstants.modifierColorMap._hold }}>StarCitizen/<wbr />LIVE/<wbr />USER/<wbr />Client/<wbr />0/<wbr />Profiles/<wbr />default/</span> or changing <span style={{ color: globalConstants.modifierColorMap._hold }}>LIVE/</span> to <span style={{ color: globalConstants.modifierColorMap._hold }}>PTU/</span> for PTU version.</>,
 
@@ -129,6 +132,9 @@ const i18n = {
     btn_readme_close: "[关闭]",
 
     btn_upload: "导入 actionmaps.xml",
+    btn_reset: "重置",
+    btn_cancel: "取消",
+    btn_reset_confirm: "确认以重置键位映射",
     btn_debug: "调试切换：显示操作 Id",
     txt_help_upload: <>此网页应用在本地运行，因此您的文件不会离开您的设备。<br />文件 actionmaps.xml 通常在 <span style={{ color: globalConstants.modifierColorMap._hold }}>StarCitizen/<wbr />LIVE/<wbr />USER/<wbr />Client/<wbr />0/<wbr />Profiles/<wbr />default/</span> 路径下，或者更改 <span style={{ color: globalConstants.modifierColorMap._hold }}>LIVE/</span> 为 <span style={{ color: globalConstants.modifierColorMap._hold }}>PTU/</span> 以使用PTU版本。</>,
 
