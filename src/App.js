@@ -74,7 +74,9 @@ function App() {
                   <TextI18n elem="this_lang" langOverride={nextLangId(globalVars.lang)} />
                 </button>
 
-                <button className="Menu-toggle font-narrow" onClick={() => setShowMenu(!showMenu)}>
+                <button className="Menu-toggle font-narrow" onClick={() => {
+                  setIsActionMapI2AResetPending(false);
+                  setShowMenu(!showMenu);}}>
                   <TextI18n elem="btn_menu" />
                 </button>
 
