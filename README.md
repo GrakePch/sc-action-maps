@@ -8,6 +8,10 @@ A preview for the current build. This is not the final design. Only showing the 
 
 Deployed at [grakep.ch/SC-Keybinding-Visualizer](https://grakep.ch/SC-Keybinding-Visualizer/)
 
+## Video Demo
+
+https://github.com/GrakePch/sc-action-maps/assets/21063261/fceb44ad-7a32-4ba0-a2bb-5eb2bb2b0af4
+
 ## Functionalities to be done
 
 - [x] Showing available actions for each key on a standard keyboard.
