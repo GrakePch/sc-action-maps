@@ -10,7 +10,13 @@ Deployed at [grakep.ch/SC-Keybinding-Visualizer](https://grakep.ch/SC-Keybinding
 
 ## Video Demo
 
+### English Version
+
 https://github.com/GrakePch/sc-action-maps/assets/21063261/fceb44ad-7a32-4ba0-a2bb-5eb2bb2b0af4
+
+### Chinese (Simplified) Version
+
+https://github.com/GrakePch/sc-action-maps/assets/21063261/4b0e8a79-4229-4cfe-9fa0-f30e30fa0312
 
 ## Functionalities to be done
 
